@@ -33,7 +33,7 @@ class Homepage(HomepageTemplate):
     # set the `self.item` property of the ArticleEdit Form to new_article
     # Only add the article to the Data Table if the 'Save' button is clicked
     # if the 'Cancel' button is clicked, discard new_article
-    if alert(content=ArticleEdit(item=new_article), title="Add Article",
+    if alert(content=Add_Desequilibrio(item=new_article), title="Agregar Desequilibrio",
              large=True, buttons=[("Save", True), ("Cancel", False)]):
       # Add the article to the Data Table is the user clicks 'Save'
       anvil.server.call('add_article', new_article)
