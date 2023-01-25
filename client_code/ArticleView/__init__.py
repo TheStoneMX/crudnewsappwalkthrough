@@ -4,7 +4,7 @@ import anvil.server
 import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
-from ..ArticleEdit import ArticleEdit
+from ..Add_Desequilibrio import Add_Desequilibrio
 
 class ArticleView(ArticleViewTemplate):
   def __init__(self, **properties):
@@ -16,10 +16,10 @@ class ArticleView(ArticleViewTemplate):
   def edit_article_button_click(self, **event_args):
     # Create a copy of the existing article from the Data Table 
     article_copy = dict(list(self.item))
-    # Open an alert displaying the 'ArticleEdit' Form
-    # set the `self.item` property of the ArticleEdit Form to a copy of the article to be updated
+    # Open an alert displaying the 'Add_Desequilibrio' Form
+    # set the `self.item` property of the Add_Desequilibrio Form to a copy of the article to be updated
     save_clicked = alert(
-      content=ArticleEdit(item=article_copy),
+      content=Add_Desequilibrio(item=article_copy),
       title="Update Article",
       large=True,
       buttons=[("Save", True), ("Cancel", False)]

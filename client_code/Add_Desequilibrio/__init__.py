@@ -1,4 +1,4 @@
-from ._anvil_designer import ArticleEditTemplate
+from ._anvil_designer import Add_DesequilibrioTemplate
 from anvil import *
 import anvil.server
 import anvil.tables as tables
@@ -8,7 +8,7 @@ from anvil.tables import app_tables
 # Return a list of rows from the 'categories' Data Table
 categories = [(cat['name'], cat) for cat in app_tables.categories.search()]
 
-class ArticleEdit(ArticleEditTemplate):
+class Add_Desequilibrio(Add_DesequilibrioTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
