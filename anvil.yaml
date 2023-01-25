@@ -1,0 +1,56 @@
+dependencies: []
+services:
+- source: /runtime/services/tables.yml
+  client_config: {}
+  server_config: {}
+package_name: CRUDnewsappwalkthrough
+allow_embedding: false
+name: 'Tutorial: News app (2)'
+runtime_options: {version: 2, server_version: python3-sandbox, client_version: '3',
+  server_spec: null}
+metadata: {}
+startup_form: Homepage
+db_schema:
+- name: articles
+  id: 31876
+  python_name: articles
+  columns:
+    37mzCX_Gjso=:
+      name: image
+      type: media
+      admin_ui: {order: 2, width: 200}
+    GA8H_h_nFdA=:
+      name: updated
+      type: datetime
+      admin_ui: {order: 4, width: 200}
+    RYXO5UvmKRU=:
+      name: title
+      type: string
+      admin_ui: {order: 0, width: 200}
+    iQLJekkVlUM=:
+      name: created
+      type: datetime
+      admin_ui: {order: 3, width: 200}
+    icjwId8C4Iw=:
+      name: category
+      type: liveObject
+      backend: anvil.tables.Row
+      admin_ui: {order: 5, width: 200}
+      table_id: 31877
+    mZJgzujS2K0=:
+      name: content
+      type: string
+      admin_ui: {order: 1, width: 200}
+  access: {python_name: articles, app_id: RLPRLKUK3VPTTXUH, server: full, client: none,
+    table_mapping_name: null, table_mapping_id: null, table_id: 31876}
+- name: categories
+  id: 31877
+  python_name: categories
+  columns:
+    MgVxYqFaDs8=:
+      name: name
+      type: string
+      admin_ui: {order: 0, width: 200}
+  access: {python_name: categories, app_id: RLPRLKUK3VPTTXUH, server: full, client: search,
+    table_mapping_name: null, table_mapping_id: null, table_id: 31877}
+renamed: true
