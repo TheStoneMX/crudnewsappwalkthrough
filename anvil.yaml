@@ -3,6 +3,11 @@ services:
 - source: /runtime/services/tables.yml
   client_config: {}
   server_config: {}
+- source: /runtime/services/anvil/users.yml
+  client_config: {allow_signup: true, enable_automatically: true, use_email: true,
+    confirm_email: true, require_secure_passwords: true, allow_remember_me: true,
+    remember_me_days: 30}
+  server_config: {user_table: users, email_from_address: thestonemx@outlook.com}
 package_name: CRUDnewsappwalkthrough
 allow_embedding: false
 name: Sangre Viva
@@ -46,4 +51,74 @@ db_schema:
     - name: name
       admin_ui: {width: 200}
       type: string
+  anomalies:
+    client: none
+    server: full
+    columns:
+    - name: Appearace
+      admin_ui: {order: 0, width: 200}
+      type: string
+    - name: Relevance
+      admin_ui: {order: 1, width: 200}
+      type: string
+    - name: implications
+      admin_ui: {order: 2, width: 200}
+      type: string
+    - name: Symptoms
+      admin_ui: {order: 3, width: 200}
+      type: string
+    - name: Pleomorphic
+      admin_ui: {order: 4, width: 200}
+      type: string
+    - name: Medical
+      admin_ui: {order: 5, width: 200}
+      type: string
+    - name: Intervntions
+      admin_ui: {order: 6, width: 200}
+      type: string
+    - name: Correcting
+      admin_ui: {order: 7, width: 200}
+      type: string
+    - name: investigations
+      admin_ui: {order: 8, width: 200}
+      type: string
+    - name: images
+      admin_ui: {order: 8.5, width: 200}
+      type: link_multiple
+      target: images
+    title: anomalies
+  images:
+    client: none
+    server: full
+    columns:
+    - name: images
+      admin_ui: {order: 0, width: 200}
+      type: media
+    title: images
+  users:
+    client: full
+    server: full
+    columns:
+    - name: email
+      type: string
+      admin_ui: {order: 0, width: 200}
+    - name: enabled
+      type: bool
+      admin_ui: {order: 1, width: 200}
+    - name: last_login
+      type: datetime
+      admin_ui: {order: 2, width: 200}
+    - name: password_hash
+      type: string
+      admin_ui: {order: 3, width: 200}
+    - name: n_password_failures
+      type: number
+      admin_ui: {order: 4, width: 200}
+    - name: confirmed_email
+      type: bool
+      admin_ui: {order: 5, width: 200}
+    - name: remembered_logins
+      type: simpleObject
+      admin_ui: {order: 6, width: 200}
+    title: Users
 renamed: true

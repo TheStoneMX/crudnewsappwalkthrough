@@ -1,10 +1,13 @@
 from ._anvil_designer import HomepageTemplate
 from anvil import *
+import anvil.users
 import anvil.server
 import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
 from ..Add_Desequilibrio import Add_Desequilibrio
+
+import anvil.users
 
 class Homepage(HomepageTemplate):
   def __init__(self, **properties):
@@ -39,4 +42,15 @@ class Homepage(HomepageTemplate):
       anvil.server.call('add_article', new_article)
       # Refresh articles to show the new article on the Homepage
       self.refresh_articles()
+
+  def link_login_click(self, **event_args):
+    anvil.users.login_with_form(allow_cancel=True)
+    pass
+
+  def register_click(self, **event_args):
+    anvil.users.signup_with_form()
+    # navigation.go_home()
+    pass
+
+
 
