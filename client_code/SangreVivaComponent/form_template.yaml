@@ -1,0 +1,159 @@
+container:
+  type: ColumnPanel
+  properties: {role: null, tooltip: '', border: '', foreground: '', visible: true,
+    wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{}',
+    spacing_below: small, background: ''}
+components:
+- type: Label
+  properties: {role: headline, align: center, tooltip: '', border: '', foreground: 'theme:White',
+    visible: true, text: REPORTE DE SANGRE VIVA SANGRE SECA, font_size: 32, font: '',
+    spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: 'theme:Primary
+      700', bold: true, underline: false, icon: 'fa:file-pdf-o'}
+  name: headline_1
+  layout_properties: {grid_position: 'ZURIEM,WKNXBU'}
+- type: ColumnPanel
+  properties: {role: card, col_widths: '{}'}
+  name: card_1
+  layout_properties: {grid_position: 'DOOTVY,ZMHGWP'}
+  components:
+  - type: TextBox
+    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: Nombre,
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+      font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false}
+    name: text_box_nombre
+    layout_properties: {grid_position: 'ASYOZB,UMZIVE'}
+  - type: TextBox
+    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: Apellido,
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+      font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false}
+    name: text_box_apellido
+    layout_properties: {grid_position: 'ASYOZB,SZAYHZ'}
+  - type: TextBox
+    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: Celular,
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+      font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false}
+    name: text_box_cell
+    layout_properties: {grid_position: 'HLEWOD,CRHSAI'}
+  - type: TextBox
+    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: Email,
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+      font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false}
+    name: text_box_email
+    layout_properties: {grid_position: 'HLEWOD,MRPDFE'}
+  - type: DatePicker
+    properties: {role: null, align: left, max_date: '', pick_time: false, tooltip: '',
+      placeholder: Birth Date, border: '', enabled: true, foreground: '', visible: true,
+      font_size: null, font: '', spacing_above: small, spacing_below: small, italic: false,
+      date: '', min_date: '', background: '', bold: false, underline: false, format: ''}
+    name: date_picker_1
+    layout_properties: {grid_position: 'RANVEN,DSHFJM'}
+  - type: Label
+    properties: {}
+    name: label_2
+    layout_properties: {grid_position: 'RANVEN,SXCVMK'}
+  - type: Spacer
+    properties: {height: 32}
+    name: spacer_1
+    layout_properties: {grid_position: 'JSKBZS,RRISXV'}
+  - type: Label
+    properties: {role: subheading, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: 'Informe de análisis de Sangre Viva - Sangre Seca(™)
+
+
+        Su informe de análisis de sangre consta de los resultados de dos muestras
+        separadas: 1) Sangre en vivo y 2) Sangre seca y estratificada. Los hallazgos/anomalías
+        enumerados en su informe se basan en desviaciones de la "Sangre Normal", como
+        se ilustra a continuación. La "Grado" que se indica debajo de cada anomalía
+        es una indicación del grado de desviación de lo normal. Utilizamos una escala
+        de calificación de 5 puntos:
+
+
+        1/5: Mínimo
+
+        2/5: Leve
+
+        3/5: Moderado
+
+        4/5: Grave
+
+        5/5: Extremo
+
+
+        Las muestras de sangre seca consisten en 8 muestras separadas (capas) y las
+        anomalías pueden ocurrir en más de una capa, indicada en el informe como "Observada
+        en capa(s)".', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: true, background: '', bold: true, underline: false,
+      icon: ''}
+    name: label_1
+    layout_properties: {grid_position: 'IFYSYQ,YGBIOS'}
+- type: FlowPanel
+  properties: {role: null, spacing: medium, align: center, tooltip: '', border: '',
+    foreground: '', visible: true, spacing_above: small, spacing_below: small, background: ''}
+  name: flow_anomalies_panel
+  layout_properties: {grid_position: 'HAPXUN,UHIEIN'}
+  components:
+  - type: Button
+    properties: {role: primary-color, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: EryThroCyte, font_size: null, font: '',
+      spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: '', bold: true, underline: false, icon: ''}
+    name: button_erythrocyte
+    layout_properties: {grid_position: 'FDTEAE,WJGRCI'}
+    event_bindings: {click: button_erythrocyte_click}
+  - type: Button
+    properties: {role: primary-color, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: Leukocyte, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+      underline: false, icon: ''}
+    name: button_leukocyte
+    layout_properties: {grid_position: 'FDTEAE,LLFHYT'}
+    event_bindings: {click: button_leukocyte_click}
+  - type: Button
+    properties: {role: primary-color, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: Sangre Seca, font_size: null, font: '',
+      spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: '', bold: true, underline: false, icon: ''}
+    name: button_sangre_seca
+    layout_properties: {grid_position: 'FDTEAE,DGKHQY'}
+    event_bindings: {click: button_sangre_seca_click}
+  - type: Button
+    properties: {role: primary-color, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: trombocyte, font_size: null, font: '',
+      spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: '', bold: true, underline: false, icon: ''}
+    name: button_trombocyte
+    layout_properties: {grid_position: 'FDTEAE,IRNVXB'}
+    event_bindings: {click: button_trombocyte_click}
+  - type: Button
+    properties: {role: primary-color, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: pleomorphic, font_size: null, font: '',
+      spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false, icon: ''}
+    name: button_pleomorphic
+    layout_properties: {grid_position: 'FDTEAE,TCLJWZ'}
+    event_bindings: {click: button_pleomorphic_click}
+  - type: Button
+    properties: {role: primary-color, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: plasma, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+      underline: false, icon: ''}
+    name: button_plasma
+    layout_properties: {grid_position: 'FDTEAE,EZGANC'}
+    event_bindings: {click: button_plasma_click}
+  - type: Button
+    properties: {role: primary-color, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: microbes, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+      underline: false, icon: ''}
+    name: button_microbes
+    layout_properties: {grid_position: 'FDTEAE,NROGVF'}
+    event_bindings: {click: button_microbes_click}
+- type: ColumnPanel
+  properties: {}
+  name: column_panel_tabcontent
+  layout_properties: {grid_position: 'ECNNIF,ZNPEBJ'}
+is_package: true

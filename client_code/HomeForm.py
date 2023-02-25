@@ -6,7 +6,7 @@ import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
 
-from CreateReportComponent import CreateReportComponent
+from SangreVivaComponent import SangreVivaComponent
 from ListAnomaliesComponent import ListAnomaliesComponent
 from RegisterAnomaly import RegisterAnomaly
 
@@ -16,22 +16,32 @@ class HomeForm(HomeFormTemplate):
     self.init_components(**properties)
 
     # Any code you write here will run when the form opens.
+    # For now
+    self.link_create_report_click()
 
   def link_create_report_click(self, **event_args):
-    cmpt = CreateReportComponent()
+    cmpt = SangreVivaComponent()
+    self.link_create_report.role = 'selected'
     self.column_panel_content.clear()
     self.column_panel_content.add_component(cmpt)
     
 
   def link_list_anomalies_click(self, **event_args):
     cmpt = ListAnomaliesComponent()
+    self.link_list_anomalies.role = 'selected'
     self.column_panel_content.clear()
     self.column_panel_content.add_component(cmpt)
 
   def link_add_anomaly_click(self, **event_args):
     cmpt = RegisterAnomaly()
+    self.link_register.role = 'selected'
     self.column_panel_content.clear()
     self.column_panel_content.add_component(cmpt)
+
+  def link_home_click(self, **event_args):
+    """This method is called when the link is clicked"""
+    pass
+
 
 
 
