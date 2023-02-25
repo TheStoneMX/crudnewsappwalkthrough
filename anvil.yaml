@@ -8,6 +8,7 @@ services:
     confirm_email: true, require_secure_passwords: true, allow_remember_me: true,
     remember_me_days: 30}
   server_config: {user_table: users, email_from_address: thestonemx@outlook.com}
+startup: {type: form, module: HomeForm}
 package_name: CRUDnewsappwalkthrough
 allow_embedding: false
 name: Sangre Viva
@@ -17,7 +18,7 @@ metadata: {description: 'Nosotros en Sangre Viva & Sangre Seca combinamos la té
     los desequilibrios biológicos que presenta muestra de sangre, sino también el
     plan del Alma en esta encarnación.', title: análisis de células sanguíneas vivas,
   logo_img: 'asset:logo.png'}
-startup_form: Homepage
+startup_form: null
 db_schema:
   articles:
     title: articles
@@ -52,73 +53,79 @@ db_schema:
       admin_ui: {width: 200}
       type: string
   anomalies:
+    title: anomalies
     client: none
     server: full
     columns:
     - name: Appearace
-      admin_ui: {order: 0, width: 200}
+      admin_ui: {width: 200}
       type: string
     - name: Relevance
-      admin_ui: {order: 1, width: 200}
+      admin_ui: {width: 200}
       type: string
     - name: implications
-      admin_ui: {order: 2, width: 200}
+      admin_ui: {width: 200}
       type: string
     - name: Symptoms
-      admin_ui: {order: 3, width: 200}
+      admin_ui: {width: 200}
       type: string
     - name: Pleomorphic
-      admin_ui: {order: 4, width: 200}
+      admin_ui: {width: 200}
       type: string
     - name: Medical
-      admin_ui: {order: 5, width: 200}
+      admin_ui: {width: 200}
       type: string
     - name: Intervntions
-      admin_ui: {order: 6, width: 200}
+      admin_ui: {width: 200}
       type: string
     - name: Correcting
-      admin_ui: {order: 7, width: 200}
+      admin_ui: {width: 200}
       type: string
     - name: investigations
-      admin_ui: {order: 8, width: 200}
+      admin_ui: {width: 200}
       type: string
     - name: images
-      admin_ui: {order: 8.5, width: 200}
+      admin_ui: {width: 200}
       type: link_multiple
       target: images
-    title: anomalies
   images:
+    title: images
     client: none
     server: full
     columns:
     - name: images
-      admin_ui: {order: 0, width: 200}
+      admin_ui: {width: 200}
       type: media
-    title: images
   users:
+    title: Users
     client: full
     server: full
     columns:
     - name: email
+      admin_ui: {width: 200}
       type: string
-      admin_ui: {order: 0, width: 200}
     - name: enabled
+      admin_ui: {width: 200}
       type: bool
-      admin_ui: {order: 1, width: 200}
     - name: last_login
+      admin_ui: {width: 200}
       type: datetime
-      admin_ui: {order: 2, width: 200}
     - name: password_hash
+      admin_ui: {width: 200}
       type: string
-      admin_ui: {order: 3, width: 200}
     - name: n_password_failures
+      admin_ui: {width: 200}
       type: number
-      admin_ui: {order: 4, width: 200}
     - name: confirmed_email
+      admin_ui: {width: 200}
       type: bool
-      admin_ui: {order: 5, width: 200}
     - name: remembered_logins
+      admin_ui: {width: 200}
       type: simpleObject
-      admin_ui: {order: 6, width: 200}
-    title: Users
+    - name: signed_up
+      admin_ui: {width: 200}
+      type: datetime
+    - name: email_confirmation_key
+      admin_ui: {width: 200}
+      type: string
 renamed: true

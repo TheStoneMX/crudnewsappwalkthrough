@@ -1,4 +1,4 @@
-from ._anvil_designer import HomepageTemplate
+from ._anvil_designer import AddDesequilibriosTemplate
 from anvil import *
 import anvil.users
 import anvil.server
@@ -8,11 +8,17 @@ from anvil.tables import app_tables
 from ..Add_Desequilibrio import Add_Desequilibrio
 
 import anvil.users
+import navigation
+import data_access
 
-class Homepage(HomepageTemplate):
+class AddDesequilibrios(AddDesequilibriosTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
+
+    # Any code you write here will run when the form opens.
+    user = data_access.the_user()
+    self.set_account_state(user)
 
     # Any code you write here will run when the form opens.
     self.refresh_articles()
@@ -44,13 +50,17 @@ class Homepage(HomepageTemplate):
       self.refresh_articles()
 
   def link_login_click(self, **event_args):
-    anvil.users.login_with_form(allow_cancel=True)
-    pass
+    user = anvil.users.login_with_form(allow_cancel=True)
+    self.set_account_state(user)
 
   def register_click(self, **event_args):
-    anvil.users.signup_with_form()
+    user = anvil.users.signup_with_form(allow_cancel=True)
+    set_account_state(user)
     # navigation.go_home()
     pass
 
+  def set_account_state(self, user):
+    self.link_register.visible = user is None
+    self.link_login.visible = user is None
 
 
