@@ -51,10 +51,14 @@ components:
       date: '', min_date: '', background: '', bold: false, underline: false, format: ''}
     name: date_picker_1
     layout_properties: {grid_position: 'RANVEN,DSHFJM'}
-  - type: Label
-    properties: {}
-    name: label_2
-    layout_properties: {grid_position: 'RANVEN,SXCVMK'}
+  - type: DatePicker
+    properties: {role: null, align: left, max_date: '', pick_time: false, tooltip: '',
+      placeholder: Dia de la toma de Sangre, border: '', enabled: true, foreground: '',
+      visible: true, font_size: null, font: '', spacing_above: small, spacing_below: small,
+      italic: false, date: '', min_date: '', background: '', bold: false, underline: false,
+      format: ''}
+    name: date_picker_dia_del_test
+    layout_properties: {grid_position: 'RANVEN,BDLDGC'}
   - type: Spacer
     properties: {height: 32}
     name: spacer_1
@@ -114,12 +118,20 @@ components:
     event_bindings: {click: button_leukocyte_click}
   - type: Button
     properties: {role: primary-color, align: center, tooltip: '', border: '', enabled: true,
-      foreground: '', visible: true, text: Sangre Seca, font_size: null, font: '',
-      spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-      background: '', bold: true, underline: false, icon: ''}
-    name: button_sangre_seca
-    layout_properties: {grid_position: 'FDTEAE,DGKHQY'}
-    event_bindings: {click: button_sangre_seca_click}
+      foreground: '', visible: true, text: plasma, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+      underline: false, icon: ''}
+    name: button_plasma
+    layout_properties: {grid_position: 'FDTEAE,EZGANC'}
+    event_bindings: {click: button_plasma_click}
+  - type: Button
+    properties: {role: primary-color, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: microbes, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+      underline: false, icon: ''}
+    name: button_microbes
+    layout_properties: {grid_position: 'FDTEAE,NROGVF'}
+    event_bindings: {click: button_microbes_click}
   - type: Button
     properties: {role: primary-color, align: center, tooltip: '', border: '', enabled: true,
       foreground: '', visible: true, text: trombocyte, font_size: null, font: '',
@@ -138,22 +150,28 @@ components:
     event_bindings: {click: button_pleomorphic_click}
   - type: Button
     properties: {role: primary-color, align: center, tooltip: '', border: '', enabled: true,
-      foreground: '', visible: true, text: plasma, font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
-      underline: false, icon: ''}
-    name: button_plasma
-    layout_properties: {grid_position: 'FDTEAE,EZGANC'}
-    event_bindings: {click: button_plasma_click}
-  - type: Button
-    properties: {role: primary-color, align: center, tooltip: '', border: '', enabled: true,
-      foreground: '', visible: true, text: microbes, font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
-      underline: false, icon: ''}
-    name: button_microbes
-    layout_properties: {grid_position: 'FDTEAE,NROGVF'}
-    event_bindings: {click: button_microbes_click}
+      foreground: '', visible: true, text: Sangre Seca, font_size: null, font: '',
+      spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: '', bold: true, underline: false, icon: ''}
+    name: button_sangre_seca
+    layout_properties: {grid_position: 'FDTEAE,DGKHQY'}
+    event_bindings: {click: button_sangre_seca_click}
 - type: ColumnPanel
   properties: {}
   name: column_panel_tabcontent
   layout_properties: {grid_position: 'ECNNIF,ZNPEBJ'}
+- type: Label
+  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
+    text: "Disclaimer de responsabilidad:\n\nEl an\xe1lisis de sangre naturop\xe1\
+      tico Sangre Viva Sangre Seca\u2122 no es un procedimiento de diagn\xf3stico\
+      \ m\xe9dico. \n\nLa informaci\xf3n proporcionada en este informe no debe interpretarse\
+      \ como un consejo m\xe9dico y no tiene la intenci\xf3n de reemplazar el consejo\
+      \ de un m\xe9dico o las pruebas patol\xf3gicas est\xe1ndar. \n\nEl an\xe1lisis\
+      \ de Sangre Viva Sangre Seca\u2122 se utiliza como una herramienta de evaluaci\xf3\
+      n y educaci\xf3n nutricional para ayudar con recomendaciones de dieta y estilo\
+      \ de vida.", font_size: null, font: '', spacing_above: small, icon_align: left,
+    spacing_below: small, italic: false, background: '', bold: false, underline: false,
+    icon: ''}
+  name: label_3
+  layout_properties: {grid_position: 'ZKQUWX,PKYVER'}
 is_package: true
