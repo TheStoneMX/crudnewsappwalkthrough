@@ -7,5 +7,6 @@ unique_ids:
   server_modules:
     ServerModule1: JY73GVS3P6CSBSLFQE6QNI6J7PPTLFVI
   assets:
+    logo.png: '1677341902420704730476517.4894'
     standard-page.html: 6MNPRYZ5PDMYT2VOYOVLS4QVNWVKGZ6D
     theme.css: YJLPR76NRB55JMFYOSIIBZCSFBFGL2QJ

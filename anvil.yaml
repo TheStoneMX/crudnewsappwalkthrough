@@ -5,10 +5,13 @@ services:
   server_config: {}
 package_name: CRUDnewsappwalkthrough
 allow_embedding: false
-name: 'Tutorial: News app (2)'
-runtime_options: {version: 2, server_version: python3-sandbox, client_version: '3',
-  server_spec: null}
-metadata: {}
+name: Sangre Viva
+runtime_options: {version: 2, server_version: python3-full, client_version: '3', server_spec: null}
+metadata: {description: 'Nosotros en Sangre Viva & Sangre Seca combinamos la técnica
+    revolucionaria de microscopia celular con la parte espiritual, no solo revelando
+    los desequilibrios biológicos que presenta muestra de sangre, sino también el
+    plan del Alma en esta encarnación.', title: análisis de células sanguíneas vivas,
+  logo_img: 'asset:logo.png'}
 startup_form: Homepage
 db_schema:
   articles:
