@@ -4,7 +4,6 @@ unique_ids:
     SangreVivaComponent.leukocyte: '1677359252917842723399030.4559'
     SangreVivaComponent.Plasma: '1677359316934165980415839.0541'
     SangreVivaComponent.erythrocyte: '1677359155665502575743164.6507'
-    SetHeightComponent: '1677353656110139799817792.91095'
     HomeForm: '1677352548877413811951693.1376'
     ArticleView: CJXHCOBGI24OCKCVIH2R5IGHEWBSDFET
     Add_Desequilibrio: KFP6EL23AR4FHAYQCBLPS5KKBA2CKM5S
@@ -13,11 +12,12 @@ unique_ids:
     SangreVivaComponent: '1677355349729772906996505.897'
     SangreVivaComponent.dryBlood: '16773592740814188403256.998985'
     AddDesequilibrios: 6BZMVGHHRKOCCMHO222FZQOIN7KWJKJE
-    ListAnomaliesComponent: '1677353337803801265838215.0464'
+    ListAnomaliesComponent: '1677604341531460803477265.81006'
     HomeDetailsComponent: '1677353623853749163111271.2445'
     HomeAnonComponent: '1677353601222100748065253.52487'
     SangreVivaComponent.Pleomorphic: '1677359517044585710531355.3425'
-  modules: {}
+  modules:
+    navigation: '1677597449273963718958422.5425'
   server_modules:
     ServerModule1: JY73GVS3P6CSBSLFQE6QNI6J7PPTLFVI
   assets:

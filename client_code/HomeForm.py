@@ -6,9 +6,9 @@ import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
 
-from SangreVivaComponent import SangreVivaComponent
-from ListAnomaliesComponent import ListAnomaliesComponent
-from RegisterAnomaly import RegisterAnomaly
+import anvil.users
+import navigation
+# import data_access
 
 class HomeForm(HomeFormTemplate):
   def __init__(self, **properties):
@@ -16,32 +16,41 @@ class HomeForm(HomeFormTemplate):
     self.init_components(**properties)
 
     # Any code you write here will run when the form opens.
-    # For now
-    self.link_create_report_click()
+    self.base_title = "Home"
+    # user = data_access.the_user()
+    # self.set_account_state(user)
+    navigation.home_form = self
+    navigation.go_home()
 
   def link_create_report_click(self, **event_args):
-    cmpt = SangreVivaComponent()
-    self.link_create_report.role = 'selected'
+    navigation.go_create_report()
+
+  def link_list_anomalies_click(self, **event_args):
+    # navigation.go_list_anomalies()
+    pass
+
+  def link_add_anomaly_click(self, **event_args):
+    navigation.go_add_anomaly()
+
+  def link_home_click(self, **event_args):
+    navigation.go_home()
+
+  def set_active_nav(self, state):
+    self.link_home.role = 'selected' if state == 'home' else None
+    self.link_create_report.role = 'selected' if state == 'report' else None
+    self.link_list_anomalies.role = 'selected' if state == 'list' else None
+    self.link_register_anomaly.role = 'selected' if state == 'register' else None
+    self.link_register_anomaly.role = 'selected' if state == 'anomalies' else None
+  
+  def load_component(self, cmpt):
     self.column_panel_content.clear()
     self.column_panel_content.add_component(cmpt)
     
-
-  def link_list_anomalies_click(self, **event_args):
-    cmpt = ListAnomaliesComponent()
-    self.link_list_anomalies.role = 'selected'
-    self.column_panel_content.clear()
-    self.column_panel_content.add_component(cmpt)
-
-  def link_add_anomaly_click(self, **event_args):
-    cmpt = RegisterAnomaly()
-    self.link_register.role = 'selected'
-    self.column_panel_content.clear()
-    self.column_panel_content.add_component(cmpt)
-
-  def link_home_click(self, **event_args):
-    """This method is called when the link is clicked"""
-    pass
-
-
-
+    # if data_access.the_user():
+    #   self.set_account_state(data_access.the_user())
+  # def set_account_state(self, user):
+  #   self.link_account.visible = user is not None
+  #   self.link_logout.visible = user is not None
+  #   self.link_login.visible = user is None
+  #   self.link_register.visible = user is None
 
