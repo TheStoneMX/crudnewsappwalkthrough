@@ -1,6 +1,6 @@
 container:
   type: ColumnPanel
-  properties: {col_widths: '{}'}
+  properties: {col_widths: '{"YJUSPF":30,"MFURPP":30}'}
 components:
 - type: Label
   properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
@@ -23,29 +23,17 @@ components:
   properties: {}
   name: label_6
   layout_properties: {grid_position: 'NYHNMO,SZNWOC'}
-- type: Label
-  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
-    text: 'Content:', font_size: null, font: '', spacing_above: small, icon_align: left,
-    spacing_below: small, italic: false, background: '', bold: false, underline: false,
-    icon: ''}
-  name: label_2
-  layout_properties: {grid_position: 'QPBUHU,JIJXCV', full_width_row: false}
-- type: TextArea
-  properties: {role: null, align: left, height: 455, tooltip: '', placeholder: '',
-    border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
-    auto_expand: true, font: '', spacing_above: small, spacing_below: small, italic: false,
-    background: '', bold: false, underline: false}
-  name: content_box
-  layout_properties: {grid_position: 'ZVDVWI,KQGVDH', full_width_row: false}
-  data_bindings:
-  - {property: text, code: 'self.item[''content'']', writeback: true}
+- type: Spacer
+  properties: {height: 11}
+  name: spacer_1
+  layout_properties: {grid_position: 'YQCHQT,UZFKNK'}
 - type: Label
   properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
     text: 'Category:', font_size: null, font: '', spacing_above: small, icon_align: left,
     spacing_below: small, italic: false, background: '', bold: false, underline: false,
     icon: ''}
   name: label_3
-  layout_properties: {grid_position: 'JJXCOY,MVNJQX'}
+  layout_properties: {grid_position: 'QPBUHU,YJUSPF', full_width_row: false}
 - type: DropDown
   properties:
     role: null
@@ -67,9 +55,93 @@ components:
     underline: false
     include_placeholder: true
   name: category_box
-  layout_properties: {grid_position: 'JJXCOY,YOUPYM'}
+  layout_properties: {grid_position: 'QPBUHU,MFURPP', full_width_row: false}
   data_bindings:
   - {property: selected_value, code: 'self.item[''category'']', writeback: true}
+- type: Label
+  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
+    text: 'Appearance:', font_size: null, font: '', spacing_above: small, icon_align: left,
+    spacing_below: small, italic: false, background: '', bold: false, underline: false,
+    icon: ''}
+  name: label_2
+  layout_properties: {grid_position: 'EETPMM,ZMRJTA', full_width_row: false}
+- type: TextArea
+  properties: {role: null, align: left, height: 92, tooltip: '', placeholder: '',
+    border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+    auto_expand: true, font: '', spacing_above: small, spacing_below: small, italic: false,
+    background: '', bold: false, underline: false}
+  name: content_box
+  layout_properties: {grid_position: 'ZVDVWI,KQGVDH', full_width_row: false}
+  data_bindings:
+  - {property: text, code: 'self.item[''Appearance'']', writeback: true}
+- type: Label
+  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
+    text: 'Relevance:', font_size: null, font: '', spacing_above: small, icon_align: left,
+    spacing_below: small, italic: false, background: '', bold: false, underline: false,
+    icon: ''}
+  name: label_relevance
+  layout_properties: {grid_position: 'XUXQPN,SLZEEY'}
+- type: TextArea
+  properties: {}
+  name: text_area_relevance
+  layout_properties: {grid_position: 'VMIHEW,PQYCZE', full_width_row: false}
+  data_bindings:
+  - {property: text, code: 'self.item[''Relevance'']', writeback: true}
+- type: Label
+  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
+    text: 'Implications:', font_size: null, font: '', spacing_above: small, icon_align: left,
+    spacing_below: small, italic: false, background: '', bold: false, underline: false,
+    icon: ''}
+  name: label_implications
+  layout_properties: {grid_position: 'AWFBHP,AFMYZE'}
+- type: TextArea
+  properties: {}
+  name: text_area_implcations
+  layout_properties: {grid_position: 'IBNPAZ,KKMVQT'}
+  data_bindings:
+  - {property: text, code: 'self.item[''Implications'']', writeback: true}
+- type: Label
+  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
+    text: 'Symptoms:', font_size: null, font: '', spacing_above: small, icon_align: left,
+    spacing_below: small, italic: false, background: '', bold: false, underline: false,
+    icon: ''}
+  name: label_Symptoms
+  layout_properties: {grid_position: 'NBWPWC,IVSZIC'}
+- type: Label
+  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
+    text: 'Pleomorphic Perspective:', font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+    underline: false, icon: ''}
+  name: label_Pleomorphic
+  layout_properties: {grid_position: 'CYYIHP,OXJADK'}
+- type: Label
+  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
+    text: 'Medical Perspective:', font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+    underline: false, icon: ''}
+  name: label_medical_perspective
+  layout_properties: {grid_position: 'TYRAJM,WUISWS'}
+- type: Label
+  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
+    text: 'Interventions:', font_size: null, font: '', spacing_above: small, icon_align: left,
+    spacing_below: small, italic: false, background: '', bold: false, underline: false,
+    icon: ''}
+  name: label_Interventions
+  layout_properties: {grid_position: 'FORILA,QZNILM'}
+- type: Label
+  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
+    text: 'Working with: ', font_size: null, font: '', spacing_above: small, icon_align: left,
+    spacing_below: small, italic: false, background: '', bold: false, underline: false,
+    icon: ''}
+  name: label_Working_with
+  layout_properties: {grid_position: 'TNEWID,FJDNVI'}
+- type: Label
+  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
+    text: 'Further Investigations:', font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+    underline: false, icon: ''}
+  name: label_Further_Investigations
+  layout_properties: {grid_position: 'MCFSUD,ZIIQKM'}
 - type: Label
   properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
     text: 'Image:', font_size: null, font: '', spacing_above: small, icon_align: left,
