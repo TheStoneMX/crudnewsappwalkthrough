@@ -21,6 +21,21 @@ class Add_DesequilibrioComponent(Add_DesequilibrioComponentTemplate):
     """This method is called when a new file is loaded into this FileLoader"""
     # When a new file is loaded, add the image to self.item
     self.item['image'] = file
+    
+  def clear_text_controls(self):
+    text_areas = [c for c in self.get_components() if isinstance(c, anvil.TextArea)]
+    for text_area in text_areas:
+      text_area.text = ''   
+      
+  def primary_color_save_click(self, **event_args):
+    # # Add the article to the Data Table is the user clicks 'Save'
+    anvil.server.call('add_article', new_article)
+
+  def primary_color_cancel_click(self, **event_args):
+    self.clear_text_controls()
+
+
+
 
 
 

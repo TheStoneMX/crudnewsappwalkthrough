@@ -82,7 +82,7 @@ components:
   name: label_relevance
   layout_properties: {grid_position: 'XUXQPN,SLZEEY'}
 - type: TextArea
-  properties: {}
+  properties: {height: 168.1597}
   name: text_area_relevance
   layout_properties: {grid_position: 'VMIHEW,PQYCZE', full_width_row: false}
   data_bindings:
@@ -95,7 +95,7 @@ components:
   name: label_implications
   layout_properties: {grid_position: 'AWFBHP,AFMYZE'}
 - type: TextArea
-  properties: {}
+  properties: {height: 202.1597}
   name: text_area_implcations
   layout_properties: {grid_position: 'IBNPAZ,KKMVQT'}
   data_bindings:
@@ -107,6 +107,12 @@ components:
     icon: ''}
   name: label_Symptoms
   layout_properties: {grid_position: 'NBWPWC,IVSZIC'}
+- type: TextArea
+  properties: {height: 195.1597}
+  name: text_area_Symtoms
+  layout_properties: {grid_position: 'KTCOAZ,OTDIFZ'}
+  data_bindings:
+  - {property: text, code: 'self.item[''Symptoms'']', writeback: true}
 - type: Label
   properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
     text: 'Pleomorphic Perspective:', font_size: null, font: '', spacing_above: small,
@@ -114,6 +120,12 @@ components:
     underline: false, icon: ''}
   name: label_Pleomorphic
   layout_properties: {grid_position: 'CYYIHP,OXJADK'}
+- type: TextArea
+  properties: {height: 201.1597}
+  name: text_area_Pleomorphic
+  layout_properties: {grid_position: 'JFEBHQ,DIZAZJ'}
+  data_bindings:
+  - {property: text, code: 'self.item[''Pleomorphic'']', writeback: true}
 - type: Label
   properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
     text: 'Medical Perspective:', font_size: null, font: '', spacing_above: small,
@@ -121,6 +133,12 @@ components:
     underline: false, icon: ''}
   name: label_medical_perspective
   layout_properties: {grid_position: 'TYRAJM,WUISWS'}
+- type: TextArea
+  properties: {height: 179.1597}
+  name: text_area_med_perspective
+  layout_properties: {grid_position: 'YRDMZV,MVXLRA'}
+  data_bindings:
+  - {property: text, code: 'self.item[''MedPerspective'']', writeback: true}
 - type: Label
   properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
     text: 'Interventions:', font_size: null, font: '', spacing_above: small, icon_align: left,
@@ -128,6 +146,12 @@ components:
     icon: ''}
   name: label_Interventions
   layout_properties: {grid_position: 'FORILA,QZNILM'}
+- type: TextArea
+  properties: {height: 167.1597}
+  name: text_area_Interventions
+  layout_properties: {grid_position: 'ARELFV,GAKAZW'}
+  data_bindings:
+  - {property: text, code: 'self.item[''Interventions'']', writeback: true}
 - type: Label
   properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
     text: 'Working with: ', font_size: null, font: '', spacing_above: small, icon_align: left,
@@ -135,6 +159,12 @@ components:
     icon: ''}
   name: label_Working_with
   layout_properties: {grid_position: 'TNEWID,FJDNVI'}
+- type: TextArea
+  properties: {height: 195.1597}
+  name: text_area_working_with
+  layout_properties: {grid_position: 'FQDOXM,MLEDOC'}
+  data_bindings:
+  - {property: text, code: 'self.item[''workingwith'']', writeback: true}
 - type: Label
   properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
     text: 'Further Investigations:', font_size: null, font: '', spacing_above: small,
@@ -142,6 +172,16 @@ components:
     underline: false, icon: ''}
   name: label_Further_Investigations
   layout_properties: {grid_position: 'MCFSUD,ZIIQKM'}
+- type: TextArea
+  properties: {height: 148.1597}
+  name: text_area_investigations
+  layout_properties: {grid_position: 'YDZZBR,XIWACG'}
+  data_bindings:
+  - {property: text, code: 'self.item[''investigations'']', writeback: true}
+- type: Spacer
+  properties: {height: 30}
+  name: spacer_2
+  layout_properties: {grid_position: 'RVMBVA,AHMMJZ'}
 - type: Label
   properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
     text: 'Image:', font_size: null, font: '', spacing_above: small, icon_align: left,
@@ -154,4 +194,28 @@ components:
   name: image_uploader
   layout_properties: {grid_position: 'WGDQFH,GBEAKT'}
   event_bindings: {change: image_uploader_change}
+- type: Spacer
+  properties: {height: 32}
+  name: spacer_3
+  layout_properties: {grid_position: 'TDNNWW,KFCOBO'}
+- type: Button
+  properties: {role: primary-color, align: center, tooltip: '', border: '', enabled: true,
+    foreground: '', visible: true, text: CANCELAR, font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+    underline: false, icon: ''}
+  name: primary_color_cancel
+  layout_properties: {grid_position: 'KACMAF,CXPTQH'}
+  event_bindings: {click: primary_color_cancel_click}
+- type: Button
+  properties: {role: primary-color, align: center, tooltip: '', border: '', enabled: true,
+    foreground: '', visible: true, text: GUARDAR, font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+    underline: false, icon: ''}
+  name: primary_color_save
+  layout_properties: {grid_position: 'KACMAF,HSHXCF'}
+  event_bindings: {click: primary_color_save_click}
+- type: Spacer
+  properties: {height: 32}
+  name: spacer_4
+  layout_properties: {grid_position: 'OLQGOV,IAAAQR'}
 is_package: true
