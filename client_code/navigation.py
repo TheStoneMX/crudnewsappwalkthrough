@@ -5,9 +5,9 @@ import anvil.tables.query as q
 from anvil.tables import app_tables
 
 from SangreVivaComponent import SangreVivaComponent
-from RegisterAnomalyComponent import RegisterAnomalyComponent
 from HomeAnonComponent import HomeAnonComponent
 from ListAnomaliesComponent import ListAnomaliesComponent
+from Add_DesequilibrioComponent import Add_DesequilibrioComponent 
 
 
 home_form = None
@@ -39,7 +39,7 @@ def go_register_anomaly():
   set_active_nav('register')
   set_title("Agregar Desequilibrio")
   form = get_form()
-  form.load_component(RegisterAnomalyComponent())    
+  form.load_component(Add_DesequilibrioComponent())    
 
 def go_home():
   set_active_nav('home')

@@ -30,7 +30,7 @@ class HomeForm(HomeFormTemplate):
     pass
 
   def link_add_anomaly_click(self, **event_args):
-    navigation.go_add_anomaly()
+    navigation.go_register_anomaly()
 
   def link_home_click(self, **event_args):
     navigation.go_home()
