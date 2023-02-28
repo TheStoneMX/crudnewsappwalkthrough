@@ -13,7 +13,8 @@ class Add_DesequilibrioComponent(Add_DesequilibrioComponentTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
-
+    # initialize an empty dictionary which we'll use to record user inputs
+    new_article = {}
     # Any code you write here will run when the form opens.
     self.category_box.items = categories
 
@@ -29,7 +30,7 @@ class Add_DesequilibrioComponent(Add_DesequilibrioComponentTemplate):
       
   def primary_color_save_click(self, **event_args):
     # # Add the article to the Data Table is the user clicks 'Save'
-    anvil.server.call('add_article', new_article)
+    server.call('add_article', new_article)
 
   def primary_color_cancel_click(self, **event_args):
     self.clear_text_controls()
