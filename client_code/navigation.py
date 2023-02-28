@@ -9,6 +9,7 @@ from RegisterAnomalyComponent import RegisterAnomalyComponent
 from HomeAnonComponent import HomeAnonComponent
 from ListAnomaliesComponent import ListAnomaliesComponent
 
+
 home_form = None
 
 def get_form():
@@ -32,6 +33,12 @@ def go_add_anomaly():
   set_active_nav('anomalies')
   set_title("Agregar Desequilibrio")
   form = get_form()
+  form.load_component(RegisterAnomalyComponent()) 
+
+def go_register_anomaly():
+  set_active_nav('register')
+  set_title("Agregar Desequilibrio")
+  form = get_form()
   form.load_component(RegisterAnomalyComponent())    
 
 def go_home():
@@ -40,7 +47,7 @@ def go_home():
   form = get_form()
   user = anvil.users.get_user()
   # if user:
-  form.load_component(SangreVivaComponent())
+  form.load_component(HomeAnonComponent())
   # else:
   #   form.load_component(HomeAnonComponent())
 

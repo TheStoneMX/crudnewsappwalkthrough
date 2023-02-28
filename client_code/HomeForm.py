@@ -40,7 +40,7 @@ class HomeForm(HomeFormTemplate):
     self.link_create_report.role = 'selected' if state == 'report' else None
     self.link_list_anomalies.role = 'selected' if state == 'list' else None
     self.link_register_anomaly.role = 'selected' if state == 'register' else None
-    self.link_register_anomaly.role = 'selected' if state == 'anomalies' else None
+ 
   
   def load_component(self, cmpt):
     self.column_panel_content.clear()
