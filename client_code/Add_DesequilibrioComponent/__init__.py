@@ -13,8 +13,8 @@ class Add_DesequilibrioComponent(Add_DesequilibrioComponentTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
-    # initialize an empty dictionary which we'll use to record user inputs
-    new_article = {}
+    self.new_row = None
+ 
     # Any code you write here will run when the form opens.
     self.category_box.items = categories
 
@@ -27,13 +27,31 @@ class Add_DesequilibrioComponent(Add_DesequilibrioComponentTemplate):
     text_areas = [c for c in self.get_components() if isinstance(c, anvil.TextArea)]
     for text_area in text_areas:
       text_area.text = ''   
+
+  def primary_color_save_click(self, **event_args): 
+  # def primary_color_save_click(self, **event_args):
+  #   # Create a dictionary to store the values
+  #   new_row = {}
+  #   # Iterate over each TextArea control in the Form
+  #   for text_area in self.get_components(anvil.TextArea): 
+  #     # Get the name of the TextArea control (i.e. the column name in the database)
+  #     column_name = text_area.name
+  #     # Get the value of the TextArea control
+  #     value = text_area.text 
+  #     # Add the column name and value to the new_row dictionary
+  #     new_row[column_name] = value
       
-  def primary_color_save_click(self, **event_args):
-    # # Add the article to the Data Table is the user clicks 'Save'
-    server.call('add_article', new_article)
+  #   # Add the article to the Data Table is the user clicks 'Save'
+  #     print(new_row)
+    server.call('add_article', self.new_row)
+    self.clear_text_controls()
 
   def primary_color_cancel_click(self, **event_args):
     self.clear_text_controls()
+
+  def form_show(self, **event_args):
+    self.new_row = self.item
+
 
 
 
