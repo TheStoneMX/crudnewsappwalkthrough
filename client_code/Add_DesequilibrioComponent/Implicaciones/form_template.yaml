@@ -1,3 +1,21 @@
-container: {type: ColumnPanel}
-components: []
+container:
+  type: ColumnPanel
+  properties: {col_widths: '{}'}
+components:
+- type: Label
+  properties: {role: headline, align: center, tooltip: '', border: '', foreground: '',
+    visible: true, text: 'Implicaciones: se dan las posibles causas de la morfología
+      anormal (la negrita indica las causas predominantes)', font_size: null, font: '',
+    spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '',
+    bold: false, underline: false, icon: ''}
+  name: headline_1
+  layout_properties: {grid_position: 'GHCBPE,CLGAET'}
+- type: TextArea
+  properties: {height: 670.1596999999999}
+  name: text_area_implcations
+  layout_properties:
+    col_widths: {}
+    grid_position: XDLEIG,KIRNKS
+  data_bindings:
+  - {property: text, code: 'self.item[''Implications'']', writeback: true}
 is_package: true

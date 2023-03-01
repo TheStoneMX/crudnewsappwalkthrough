@@ -6,6 +6,16 @@ import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
 
+from .Apariencia import Apariencia
+from .Implicaciones import Implicaciones
+from .intervenciones import intervenciones
+# from investigacion import investigacion
+from .medica import medica
+from .pleomorfica import pleomorfica
+from .Relacion import Relacion
+from .sintomas import sintomas
+from .trabajando import trabajando
+
 # Return a list of rows from the 'categories' Data Table
 categories = [(cat['name'], cat) for cat in app_tables.categories.search()]
 
@@ -52,6 +62,14 @@ class Add_DesequilibrioComponent(Add_DesequilibrioComponentTemplate):
   def form_show(self, **event_args):
     self.new_row = self.item
 
+  def button_Apariencia_click(self, **event_args):
+    cmpt = Apariencia()
+    add_component(cmpt)
+    
+  def add_component(self, cmpt):
+      # self.link_list_anomalies.role = 'selected'
+    self.column_panel_tabcontent.clear()
+    self.column_panel_tabcontent.add_component(cmpt)  
 
 
 

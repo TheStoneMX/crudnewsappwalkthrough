@@ -89,6 +89,10 @@ class SangreVivaComponent(SangreVivaComponentTemplate):
     self.column_panel_tabcontent.clear()
     self.column_panel_tabcontent.add_component(cmpt)
 
+  def add_component(self, cmpt):
+      # self.link_list_anomalies.role = 'selected'
+    self.column_panel_tabcontent.clear()
+    self.column_panel_tabcontent.add_component(cmpt)  
 
 
 

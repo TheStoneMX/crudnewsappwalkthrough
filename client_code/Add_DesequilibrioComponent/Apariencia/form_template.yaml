@@ -1,3 +1,25 @@
-container: {type: ColumnPanel}
-components: []
+container:
+  type: ColumnPanel
+  properties: {col_widths: '{}'}
+components:
+- type: Label
+  properties: {role: headline, align: center, tooltip: '', border: '', foreground: '',
+    visible: true, text: 'Apariencia: se describe la apariencia de la anomalía para
+      una identificación precisa.', font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+    underline: false, icon: ''}
+  name: headline_1
+  layout_properties: {grid_position: 'MIXFFH,AOZTCT'}
+- type: TextArea
+  properties: {role: null, align: left, height: 598, tooltip: '', placeholder: '',
+    border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+    auto_expand: true, font: '', spacing_above: small, spacing_below: small, italic: false,
+    background: '', bold: false, underline: false}
+  name: content_box
+  layout_properties:
+    col_widths: {}
+    grid_position: HWBFOG,UVQRYM
+    full_width_row: false
+  data_bindings:
+  - {property: text, code: 'self.item[''Appearance'']', writeback: true}
 is_package: true
