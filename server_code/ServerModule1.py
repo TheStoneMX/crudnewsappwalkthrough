@@ -13,7 +13,13 @@ def add_article(article_dict):
 def get_articles():
   # Get a list of articles from the Data Table, sorted by 'created' column, in descending order
   return app_tables.articles.search(tables.order_by("created", ascending=False))
-
+  
+@anvil.server.callable
+def get_desequilibrio(desequilibrio):
+  # Get a list of articles from the Data Table, sorted by 'created' column, in descending order
+  # Search the table for articles with the given name
+  return app_tables.articles.search(tables.q['title'] == name)
+  
 @anvil.server.callable
 def update_article(article, article_dict):
   # Check if the article to be updated does exist in the Data Table
