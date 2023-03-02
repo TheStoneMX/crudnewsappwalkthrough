@@ -22,26 +22,24 @@ class HomeForm(HomeFormTemplate):
     navigation.home_form = self
     navigation.go_home()
 
+  def link_home_click(self, **event_args):
+    navigation.go_home()
+    
   def link_create_report_click(self, **event_args):
     navigation.go_create_report()
-
-  def link_list_anomalies_click(self, **event_args):
-    # navigation.go_list_anomalies()
-    pass
 
   def link_add_anomaly_click(self, **event_args):
     navigation.go_register_anomaly()
 
-  def link_home_click(self, **event_args):
-    navigation.go_home()
-
+  def link_biblioteca_anomalies_click(self, **event_args):
+    navigation.go_biblioteca_anomalies()
+    
   def set_active_nav(self, state):
     self.link_home.role = 'selected' if state == 'home' else None
     self.link_create_report.role = 'selected' if state == 'report' else None
     self.link_list_anomalies.role = 'selected' if state == 'list' else None
     self.link_register_anomaly.role = 'selected' if state == 'register' else None
  
-  
   def load_component(self, cmpt):
     self.column_panel_content.clear()
     self.column_panel_content.add_component(cmpt)
@@ -53,4 +51,5 @@ class HomeForm(HomeFormTemplate):
   #   self.link_logout.visible = user is not None
   #   self.link_login.visible = user is None
   #   self.link_register.visible = user is None
+
 

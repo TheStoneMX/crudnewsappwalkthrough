@@ -1,0 +1,180 @@
+container:
+  type: ColumnPanel
+  properties: {col_widths: '{}'}
+components:
+- type: Label
+  properties: {role: headline, align: center, tooltip: '', border: '', foreground: 'theme:White',
+    visible: true, text: ANOMALIAS DE ERITOCITOS, font_size: 32, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: 'theme:Primary
+      500', bold: true, underline: false, icon: ''}
+  name: headline_1
+  layout_properties:
+    col_widths: {}
+    grid_position: JCOPXL,KZDLRA
+- type: Spacer
+  properties: {height: 32}
+  name: spacer_3
+  layout_properties:
+    col_widths: {}
+    grid_position: YKKEUZ,TRPSIG
+- type: RadioButton
+  properties: {role: null, selected: false, align: left, tooltip: '', border: '',
+    enabled: true, foreground: '', value: '', visible: true, text: Acanthocytes, font_size: null,
+    font: '', spacing_above: small, spacing_below: small, italic: false, background: '',
+    bold: false, group_name: ERITOCYTES, underline: false}
+  name: radio_button_Acanthocytes
+  layout_properties: {grid_position: 'IAHDOC,KMAZJO'}
+- type: RadioButton
+  properties: {role: null, selected: false, align: left, tooltip: '', border: '',
+    enabled: true, foreground: '', value: '', visible: true, text: Anisocytosis, font_size: null,
+    font: '', spacing_above: small, spacing_below: small, italic: false, background: '',
+    bold: false, group_name: ERITOCYTES, underline: false}
+  name: radio_button_Anisocytosis
+  layout_properties: {grid_position: 'IAHDOC,NVADYV'}
+- type: RadioButton
+  properties: {role: null, selected: false, align: left, tooltip: '', border: '',
+    enabled: true, foreground: '', value: '', visible: true, text: Anisopoikilocytosis,
+    font_size: null, font: '', spacing_above: small, spacing_below: small, italic: false,
+    background: '', bold: false, group_name: ERITOCYTES, underline: false}
+  name: radio_button_Anisopoikilocytosis
+  layout_properties: {grid_position: 'IAHDOC,VZVYGM'}
+- type: RadioButton
+  properties: {role: null, selected: false, align: left, tooltip: '', border: '',
+    enabled: true, foreground: '', value: '', visible: true, text: Cloud Patterns,
+    font_size: null, font: '', spacing_above: small, spacing_below: small, italic: false,
+    background: '', bold: false, group_name: ERITOCYTES, underline: false}
+  name: radio_button_cloud_patterns
+  layout_properties: {grid_position: 'DKUWZK,RRSVPX'}
+- type: RadioButton
+  properties: {role: null, selected: false, align: left, tooltip: '', border: '',
+    enabled: true, foreground: '', value: '', visible: true, text: Echinocytes, font_size: null,
+    font: '', spacing_above: small, spacing_below: small, italic: false, background: '',
+    bold: false, group_name: ERITOCYTES, underline: false}
+  name: radio_button_Echinocytes
+  layout_properties: {grid_position: 'DKUWZK,DKDQYU'}
+- type: RadioButton
+  properties: {role: null, selected: false, align: left, tooltip: '', border: '',
+    enabled: true, foreground: '', value: '', visible: true, text: Elliptocytes, font_size: null,
+    font: '', spacing_above: small, spacing_below: small, italic: false, background: '',
+    bold: false, group_name: ERITOCYTES, underline: false}
+  name: radio_button_Elliptocytes
+  layout_properties: {grid_position: 'DKUWZK,FUGRFZ'}
+- type: RadioButton
+  properties: {role: null, selected: false, align: left, tooltip: '', border: '',
+    enabled: true, foreground: '', value: '', visible: true, text: Ghost Cells, font_size: null,
+    font: '', spacing_above: small, spacing_below: small, italic: false, background: '',
+    bold: false, group_name: ERITOCYTES, underline: false}
+  name: radio_button_Ghost_Cells
+  layout_properties: {grid_position: 'GKWWSH,AUJUSP'}
+- type: RadioButton
+  properties: {role: null, selected: false, align: left, tooltip: '', border: '',
+    enabled: true, foreground: '', value: '', visible: true, text: Keratocytes, font_size: null,
+    font: '', spacing_above: small, spacing_below: small, italic: false, background: '',
+    bold: false, group_name: ERITOCYTES, underline: false}
+  name: radio_button_Keratocytes
+  layout_properties: {grid_position: 'GKWWSH,CPPYEI'}
+- type: RadioButton
+  properties: {role: null, selected: false, align: left, tooltip: '', border: '',
+    enabled: true, foreground: '', value: '', visible: true, text: Poikilocytes, font_size: null,
+    font: '', spacing_above: small, spacing_below: small, italic: false, background: '',
+    bold: false, group_name: ERITOCYTES, underline: false}
+  name: radio_button_Poikilocytes
+  layout_properties: {grid_position: 'GKWWSH,XTYVUK'}
+- type: RadioButton
+  properties: {role: null, selected: false, align: left, tooltip: '', border: '',
+    enabled: true, foreground: '', value: '', visible: true, text: Protein Linkage,
+    font_size: null, font: '', spacing_above: small, spacing_below: small, italic: false,
+    background: '', bold: false, group_name: ERITOCYTES, underline: false}
+  name: radio_button_Protein_Linkage
+  layout_properties: {grid_position: 'PMFWCK,GNSAXM'}
+- type: RadioButton
+  properties: {role: null, selected: false, align: left, tooltip: '', border: '',
+    enabled: true, foreground: '', value: '', visible: true, text: RBC Rings, font_size: null,
+    font: '', spacing_above: small, spacing_below: small, italic: false, background: '',
+    bold: false, group_name: ERITOCYTES, underline: false}
+  name: radio_button_RBC_Rings
+  layout_properties: {grid_position: 'PMFWCK,EMXUXN'}
+- type: RadioButton
+  properties: {role: null, selected: false, align: left, tooltip: '', border: '',
+    enabled: true, foreground: '', value: '', visible: true, text: Rouleau, font_size: null,
+    font: '', spacing_above: small, spacing_below: small, italic: false, background: '',
+    bold: false, group_name: ERITOCYTES, underline: false}
+  name: radio_button_Rouleau
+  layout_properties: {grid_position: 'PMFWCK,GSNOUD'}
+- type: RadioButton
+  properties: {role: null, selected: false, align: left, tooltip: '', border: '',
+    enabled: true, foreground: '', value: '', visible: true, text: Schistocytes, font_size: null,
+    font: '', spacing_above: small, spacing_below: small, italic: false, background: '',
+    bold: false, group_name: ERITOCYTES, underline: false}
+  name: radio_button_Schistocytes
+  layout_properties: {grid_position: 'BKQSDZ,INHRTR'}
+- type: RadioButton
+  properties: {role: null, selected: false, align: left, tooltip: '', border: '',
+    enabled: true, foreground: '', value: '', visible: true, text: Sickle Cells, font_size: null,
+    font: '', spacing_above: small, spacing_below: small, italic: false, background: '',
+    bold: false, group_name: ERITOCYTES, underline: false}
+  name: radio_button_Sickle_Cells
+  layout_properties: {grid_position: 'BKQSDZ,QFDLOO'}
+- type: RadioButton
+  properties: {role: null, selected: false, align: left, tooltip: '', border: '',
+    enabled: true, foreground: '', value: '', visible: true, text: Stomatocytes, font_size: null,
+    font: '', spacing_above: small, spacing_below: small, italic: false, background: '',
+    bold: false, group_name: ERITOCYTES, underline: false}
+  name: radio_button_Stomatocytes
+  layout_properties: {grid_position: 'BKQSDZ,JILFPM'}
+- type: RadioButton
+  properties: {role: null, selected: false, align: left, tooltip: '', border: '',
+    enabled: true, foreground: '', value: '', visible: true, text: Target Cells, font_size: null,
+    font: '', spacing_above: small, spacing_below: small, italic: false, background: '',
+    bold: false, group_name: ERITOCYTES, underline: false}
+  name: radio_button_Target_Cells
+  layout_properties: {grid_position: 'YJETHB,RZEQZA'}
+- type: RadioButton
+  properties: {role: null, selected: false, align: left, tooltip: '', border: '',
+    enabled: true, foreground: '', value: '', visible: true, text: Spherocytes, font_size: null,
+    font: '', spacing_above: small, spacing_below: small, italic: false, background: '',
+    bold: false, group_name: ERITOCYTES, underline: false}
+  name: radio_button_Spherocytes
+  layout_properties: {grid_position: 'YJETHB,KVFODD'}
+- type: RadioButton
+  properties: {role: null, selected: false, align: left, tooltip: '', border: '',
+    enabled: true, foreground: '', value: '', visible: true, text: radio_button_14,
+    font_size: null, font: '', spacing_above: small, spacing_below: small, italic: false,
+    background: '', bold: false, group_name: ERITOCYTES, underline: false}
+  name: radio_button_14
+  layout_properties: {grid_position: 'YJETHB,BNMNSZ'}
+- type: RadioButton
+  properties: {role: null, selected: false, align: left, tooltip: '', border: '',
+    enabled: true, foreground: '', value: '', visible: true, text: Erythrocyte Aggregation,
+    font_size: null, font: '', spacing_above: small, spacing_below: small, italic: false,
+    background: '', bold: false, group_name: ERITOCYTES, underline: false}
+  name: radio_button_Erythrocyte_Aggregation
+  layout_properties: {grid_position: 'FRTUWC,QXDEFF'}
+- type: RadioButton
+  properties: {role: null, selected: false, align: left, tooltip: '', border: '',
+    enabled: true, foreground: '', value: '', visible: true, text: Single Membrane Protrusion,
+    font_size: null, font: '', spacing_above: small, spacing_below: small, italic: false,
+    background: '', bold: false, group_name: ERITOCYTES, underline: false}
+  name: radio_button_Single_Membrane_Protrusion
+  layout_properties: {grid_position: 'FRTUWC,RVIOKF'}
+- type: RadioButton
+  properties: {role: null, selected: false, align: left, tooltip: '', border: '',
+    enabled: true, foreground: '', value: '', visible: true, text: radio_button_1,
+    font_size: null, font: '', spacing_above: small, spacing_below: small, italic: false,
+    background: '', bold: false, group_name: ERITOCYTES, underline: false}
+  name: radio_button_1
+  layout_properties: {grid_position: 'FRTUWC,PTHBYQ'}
+- type: ColumnPanel
+  properties: {col_widths: '{}'}
+  name: column_panel_1
+  layout_properties:
+    col_widths: {}
+    grid_position: SXAYUX,UXAZGG
+  components: []
+- type: Spacer
+  properties: {height: 32}
+  name: spacer_2
+  layout_properties:
+    col_widths: {}
+    grid_position: PXTOKS,ANXCSV
+is_package: true

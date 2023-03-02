@@ -6,9 +6,8 @@ from anvil.tables import app_tables
 
 from SangreVivaComponent import SangreVivaComponent
 from HomeAnonComponent import HomeAnonComponent
-from ListAnomaliesComponent import ListAnomaliesComponent
 from Add_DesequilibrioComponent import Add_DesequilibrioComponent 
-
+from .AnomaliesComponent import AnomaliesComponent
 
 home_form = None
 
@@ -23,11 +22,11 @@ def go_create_report():
   form = get_form()
   form.load_component(SangreVivaComponent())
 
-def go_list_anomalies():
+def go_biblioteca_anomalies():
   set_active_nav('list')
   set_title("Lista De Desequilibrios")
   form = get_form()
-  form.load_component(ListAnomaliesComponent)
+  form.load_component(AnomaliesComponent())
 
 def go_add_anomaly():
   set_active_nav('anomalies')

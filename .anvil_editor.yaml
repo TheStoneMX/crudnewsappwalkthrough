@@ -2,6 +2,8 @@ unique_ids:
   forms:
     SangreVivaComponent.Microbes: '1677359498418160131607432.31714'
     SangreVivaComponent.leukocyte: '1677359252917842723399030.4559'
+    AnomaliesComponent.InfoForm: '1677796195983756796796343.1337'
+    AnomaliesComponent.erythrocyte: '1677794938865663414123154.4817'
     SangreVivaComponent.Plasma: '1677359316934165980415839.0541'
     SangreVivaComponent.erythrocyte: '1677359155665502575743164.6507'
     HomeForm: '1677352548877413811951693.1376'
@@ -10,8 +12,8 @@ unique_ids:
     SangreVivaComponent: '1677355349729772906996505.897'
     SangreVivaComponent.dryBlood: '16773592740814188403256.998985'
     AddDesequilibrios: 6BZMVGHHRKOCCMHO222FZQOIN7KWJKJE
-    ListAnomaliesComponent: '1677604341531460803477265.81006'
     HomeDetailsComponent: '1677353623853749163111271.2445'
+    AnomaliesComponent: '1677604341531460803477265.81006'
     Add_DesequilibrioComponent: KFP6EL23AR4FHAYQCBLPS5KKBA2CKM5S
     HomeAnonComponent: '1677353601222100748065253.52487'
     SangreVivaComponent.Pleomorphic: '1677359517044585710531355.3425'
