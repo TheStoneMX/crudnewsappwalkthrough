@@ -14,8 +14,7 @@ class Add_DesequilibrioComponent(Add_DesequilibrioComponentTemplate):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
     self.new_row = None
- 
-    # Any code you write here will run when the form opens.
+   # Any code you write here will run when the form opens.
     self.category_box.items = categories
 
   def image_uploader_change(self, file, **event_args):
@@ -28,7 +27,23 @@ class Add_DesequilibrioComponent(Add_DesequilibrioComponentTemplate):
     for text_area in text_areas:
       text_area.text = ''   
 
-  def primary_color_save_click(self, **event_args): 
+  def primary_color_save_click(self, **event_args):  
+  #   # Add the article to the Data Table is the user clicks 'Save'
+  #     print(new_row)
+    server.call('add_article', self.new_row)
+    self.clear_text_controls()
+    self.category_box.selected_value = None
+    self.title_box.text = ''
+
+  def primary_color_cancel_click(self, **event_args):
+    self.clear_text_controls()
+    self.category_box.selected_value = None
+    self.title_box.text = ''
+
+  def form_show(self, **event_args):
+    self.new_row = self.item
+
+
   # def primary_color_save_click(self, **event_args):
   #   # Create a dictionary to store the values
   #   new_row = {}
@@ -40,20 +55,6 @@ class Add_DesequilibrioComponent(Add_DesequilibrioComponentTemplate):
   #     value = text_area.text 
   #     # Add the column name and value to the new_row dictionary
   #     new_row[column_name] = value
-      
-  #   # Add the article to the Data Table is the user clicks 'Save'
-  #     print(new_row)
-    server.call('add_article', self.new_row)
-    self.clear_text_controls()
-
-  def primary_color_cancel_click(self, **event_args):
-    self.clear_text_controls()
-
-  def form_show(self, **event_args):
-    self.new_row = self.item
-
-
-
 
 
 

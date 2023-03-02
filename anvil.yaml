@@ -68,6 +68,9 @@ db_schema:
     - name: investigations
       admin_ui: {order: 14, width: 200}
       type: string
+    - name: Almico
+      admin_ui: {order: 14, width: 200}
+      type: string
   categories:
     title: categories
     client: search
