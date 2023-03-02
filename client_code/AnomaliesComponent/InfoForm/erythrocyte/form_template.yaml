@@ -24,6 +24,7 @@ components:
     bold: false, group_name: ERITOCYTES, underline: false}
   name: radio_button_Acanthocytes
   layout_properties: {grid_position: 'IAHDOC,KMAZJO'}
+  event_bindings: {clicked: radio_button_Acanthocytes_clicked}
 - type: RadioButton
   properties: {role: null, selected: false, align: left, tooltip: '', border: '',
     enabled: true, foreground: '', value: '', visible: true, text: Anisocytosis, font_size: null,
@@ -31,6 +32,7 @@ components:
     bold: false, group_name: ERITOCYTES, underline: false}
   name: radio_button_Anisocytosis
   layout_properties: {grid_position: 'IAHDOC,NVADYV'}
+  event_bindings: {clicked: radio_button_Anisocytosis_clicked}
 - type: RadioButton
   properties: {role: null, selected: false, align: left, tooltip: '', border: '',
     enabled: true, foreground: '', value: '', visible: true, text: Anisopoikilocytosis,

@@ -15,12 +15,6 @@ def get_articles():
   return app_tables.articles.search(tables.order_by("created", ascending=False))
   
 @anvil.server.callable
-def get_desequilibrio(desequilibrio):
-  # Get a list of articles from the Data Table, sorted by 'created' column, in descending order
-  # Search the table for articles with the given name
-  return app_tables.articles.search(tables.q['title'] == name)
-  
-@anvil.server.callable
 def update_article(article, article_dict):
   # Check if the article to be updated does exist in the Data Table
   # Only perform the update operation if the article exists
@@ -41,3 +35,22 @@ def delete_article(article):
   else:
     # Raise an exception if the article doesn't exist in the Data Table
     raise Exception("Article does not exist")
+
+@anvil.server.callable
+def get_desequilibrio(desequilibrio):
+  # Get a list of articles from the Data Table, sorted by 'created' column, in descending order
+  # Search the table for articles with the given name
+  return app_tables.articles.search(tables.q['title'] == name)
+  
+@anvil.server.callable
+def get_desequilibrio(desequilibrio):
+  # Get a list of articles from the Data Table, sorted by 'created' column, in descending order
+  # search for the row with the given title
+  desequilibrio = app_tables.articles.search(tables.q['title'] == desequilibrio)
+    # check if a row was found
+  if len(desequilibrio) > 0:
+      # get the first row
+      return desequilibrio[0]
+  else:
+    return None
+      

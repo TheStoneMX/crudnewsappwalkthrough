@@ -3,7 +3,7 @@ unique_ids:
     SangreVivaComponent.Microbes: '1677359498418160131607432.31714'
     SangreVivaComponent.leukocyte: '1677359252917842723399030.4559'
     AnomaliesComponent.InfoForm: '1677796195983756796796343.1337'
-    AnomaliesComponent.erythrocyte: '1677794938865663414123154.4817'
+    AnomaliesComponent.InfoForm.erythrocyte: '1677794938865663414123154.4817'
     SangreVivaComponent.Plasma: '1677359316934165980415839.0541'
     SangreVivaComponent.erythrocyte: '1677359155665502575743164.6507'
     HomeForm: '1677352548877413811951693.1376'
@@ -20,7 +20,7 @@ unique_ids:
   modules:
     navigation: '1677597449273963718958422.5425'
   server_modules:
-    ServerModule1: JY73GVS3P6CSBSLFQE6QNI6J7PPTLFVI
+    ServerModule: JY73GVS3P6CSBSLFQE6QNI6J7PPTLFVI
   assets:
     logo.png: '1677341902420704730476517.4894'
     standard-page.html: 6MNPRYZ5PDMYT2VOYOVLS4QVNWVKGZ6D

@@ -50,46 +50,41 @@ class SangreVivaComponent(SangreVivaComponentTemplate):
   def button_erythrocyte_click(self, **event_args):
     cmpt = erythrocyte()
     # self.link_list_anomalies.role = 'selected'
-    self.column_panel_tabcontent.clear()
-    self.column_panel_tabcontent.add_component(cmpt)
+    self.add_component_2_tab_control(cmpt)
 
   def button_leukocyte_click(self, **event_args):
     cmpt = leukocyte()
     # self.link_list_anomalies.role = 'selected'
-    self.column_panel_tabcontent.clear()
-    self.column_panel_tabcontent.add_component(cmpt)
+    self.add_component_2_tab_control(cmpt)
 
   def button_sangre_seca_click(self, **event_args):
     cmpt = dryBlood()
     # self.link_list_anomalies.role = 'selected'
-    self.column_panel_tabcontent.clear()
-    self.column_panel_tabcontent.add_component(cmpt)
+    self.add_component_2_tab_control(cmpt)
 
   def button_trombocyte_click(self, **event_args):
     cmpt = Trombocyte()
     # self.link_list_anomalies.role = 'selected'
-    self.column_panel_tabcontent.clear()
-    self.column_panel_tabcontent.add_component(cmpt)
+    self.add_component_2_tab_control(cmpt)
 
   def button_pleomorphic_click(self, **event_args):
     cmpt = Pleomorphic()
     # self.link_list_anomalies.role = 'selected'
-    self.column_panel_tabcontent.clear()
-    self.column_panel_tabcontent.add_component(cmpt)
+    self.add_component_2_tab_control(cmpt)
 
   def button_plasma_click(self, **event_args):
     cmpt = Plasma()
     # self.link_list_anomalies.role = 'selected'
-    self.column_panel_tabcontent.clear()
-    self.column_panel_tabcontent.add_component(cmpt)
+    self.add_component_2_tab_control(cmpt)
 
   def button_microbes_click(self, **event_args):
     cmpt = Microbes()
+    self.add_component_2_tab_control(cmpt)
+
+  def add_component_2_tab_control(self, cmpt):
     # self.link_list_anomalies.role = 'selected'
     self.column_panel_tabcontent.clear()
-    self.column_panel_tabcontent.add_component(cmpt)
-
-
+    self.column_panel_tabcontent.add_component(cmpt)    
 
 
 
