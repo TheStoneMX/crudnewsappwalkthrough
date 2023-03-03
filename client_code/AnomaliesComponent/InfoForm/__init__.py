@@ -13,6 +13,9 @@ class InfoForm(InfoFormTemplate):
     self.init_components(**properties)
     self._my_string = ''
     # Any code you write here will run before the form opens.
+    # Assuming `articles` is the name of the data table
+    self.table = app_tables.articles    
+    
 # define a property to hold the string
   @property
   def my_string(self):
@@ -27,21 +30,28 @@ class InfoForm(InfoFormTemplate):
   def button_apariencia_click(self, **event_args):
     # we query DB and fill the Info Form
     article_data = anvil.server.call('get_desequilibrio', self._my_string)
-    
-    row = article_data[1]
+    # row = article_data[1]
+    # # Get the list of column names
+    #  self.table.get_columns()
+
+
+
+
+
+
     
     # Accessing the row's properties
-    title = row['title']  # Assuming there's a `title` column in the table
-    Appearance = row['Appearance']  # Assuming there's a `content` column in the table
-    category = row['category']  # Assuming there's a `date_published` column in the table
+    # title = row['title']  # Assuming there's a `title` column in the table
+    # Appearance = row['Appearance']  # Assuming there's a `content` column in the table
+    # category = row['category']  # Assuming there's a `date_published` column in the table
     
     # Printing the values
     # print(f"Title: {title}")
     # print(f"Content: {Appearance}")
     # print(f"Category: {category}")
-    print('title', title)
-    print('Appearance', Appearance)
-    print('category', category)
+    # print('title', title)
+    # print('Appearance', Appearance)
+    # print('category', category)
 
 
 
