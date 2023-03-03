@@ -4,6 +4,7 @@ import anvil.tables.query as q
 from anvil.tables import app_tables
 import anvil.server
 from datetime import datetime
+import Anomalies
 
 @anvil.server.callable
 def add_article(article_dict):
@@ -17,6 +18,7 @@ def get_articles():
 @anvil.server.callable
 def update_article(article, article_dict):
   # Check if the article to be updated does exist in the Data Table
+
   # Only perform the update operation if the article exists
   if app_tables.articles.has_row(article):
     # Set the 'updated' property to datetime.now()
@@ -43,7 +45,8 @@ def get_desequilibrio(desequilibrio):
       print('desequilibrio',desequilibrio )
       results = app_tables.articles.get(title = desequilibrio)
       print('results', results)
-
+      desequilibrio = Article()
+      
       column_names = app_tables.articles.list_columns()
       # Print the row properties
       for column_name in column_names:
