@@ -38,20 +38,19 @@ def delete_article(article):
 
 @anvil.server.callable
 def get_desequilibrio(desequilibrio):
-  # Get a list of articles from the Data Table, sorted by 'created' column, in descending order
-  # Search the table for articles with the given name
-  return app_tables.articles.search(tables.q['title'] == name)
-  
-@anvil.server.callable
-def get_desequilibrio(desequilibrio):
-  # Get a list of articles from the Data Table, sorted by 'created' column, in descending order
-  # search for the row with the given title
-  desequilibrio = app_tables.articles.search(q.title == 'Rouleau')
-  
-    # check if a row was found
-  if len(desequilibrio) > 0:
-      # get the first row
-      return desequilibrio[0]
-  else:
-    return None
+    try:
+        # filter the 'articles' table by the 'title' column
+        print('desequilibrio',desequilibrio )
+        results = app_tables.articles.get(title = desequilibrio)
+        print('results', results)
+        # if a matching row is found, return it; otherwise, raise an exception
+        if len(results) > 0:
+            return results[0]
+        else:
+            raise Exception(f"No article found with title '{desequilibrio}'")
+    except Exception as e:
+        print(str(e))
+        return None
       
+  
+  

@@ -5,7 +5,6 @@ import anvil.users
 import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
-from .InfoForm import InfoForm
 from .erythrocyte import erythrocyte
 
 class AnomaliesComponent(AnomaliesComponentTemplate):
@@ -24,6 +23,5 @@ class AnomaliesComponent(AnomaliesComponentTemplate):
     self.column_panel_tabcontent.add_component(cmpt)   
 
   def button_erythrocyte_click(self, **event_args):
-    cmpt = InfoForm()
+    cmpt = erythrocyte()
     self.add_component_2_tab_control(cmpt)
-    cmpt.my_string = 'erythrocyte'
