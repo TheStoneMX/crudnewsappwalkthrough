@@ -26,7 +26,26 @@ class InfoForm(InfoFormTemplate):
    
   def button_apariencia_click(self, **event_args):
     # we query DB and fill the Info Form
-    anvil.server.call('get_desequilibrio', self._my_string)
+    article_data = anvil.server.call('get_desequilibrio', self._my_string)
+    
+    row = article_data[1]
+    
+    # Accessing the row's properties
+    title = row['title']  # Assuming there's a `title` column in the table
+    Appearance = row['Appearance']  # Assuming there's a `content` column in the table
+    category = row['category']  # Assuming there's a `date_published` column in the table
+    
+    # Printing the values
+    # print(f"Title: {title}")
+    # print(f"Content: {Appearance}")
+    # print(f"Category: {category}")
+    print('title', title)
+    print('Appearance', Appearance)
+    print('category', category)
+
+
+
+
 
 
 

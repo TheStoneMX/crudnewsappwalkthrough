@@ -30,7 +30,7 @@ components:
         foreground: '', visible: true, text: Relación, font_size: null, font: '',
         spacing_above: small, icon_align: left, spacing_below: small, italic: false,
         background: '', bold: false, underline: false, icon: ''}
-      name: button_2
+      name: button_relacion
       layout_properties: {}
     - type: Button
       properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
