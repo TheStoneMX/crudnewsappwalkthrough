@@ -24,6 +24,6 @@ class AnomaliesComponent(AnomaliesComponentTemplate):
     self.column_panel_tabcontent.add_component(cmpt)   
 
   def button_erythrocyte_click(self, **event_args):
-    cmpt = erythrocyte()
-    cmpt.
-    # cmpt.
+    cmpt = InfoForm()
+    self.add_component_2_tab_control(cmpt)
+    cmpt.my_string = 'erythrocyte'
