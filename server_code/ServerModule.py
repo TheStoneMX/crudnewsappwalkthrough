@@ -46,7 +46,7 @@ def get_desequilibrio(desequilibrio):
 def get_desequilibrio(desequilibrio):
   # Get a list of articles from the Data Table, sorted by 'created' column, in descending order
   # search for the row with the given title
-  desequilibrio = app_tables.articles.search(q.title == desequilibrio)
+  desequilibrio = app_tables.articles.search(q.title == 'Rouleau')
   
     # check if a row was found
   if len(desequilibrio) > 0:
