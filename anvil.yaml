@@ -12,7 +12,7 @@ startup: {type: form, module: HomeForm}
 package_name: CRUDnewsappwalkthrough
 allow_embedding: false
 name: Sangre Viva
-runtime_options: {version: 2, server_version: python3-full, client_version: '2', server_spec: null}
+runtime_options: {version: 2, server_version: python3-full, client_version: '3', server_spec: null}
 metadata: {description: 'Nosotros en Sangre Viva & Sangre Seca combinamos la técnica
     revolucionaria de microscopia celular con la parte espiritual, no solo revelando
     los desequilibrios biológicos que presenta muestra de sangre, sino también el
@@ -28,6 +28,9 @@ db_schema:
     - name: title
       admin_ui: {width: 200}
       type: string
+    - name: Appearance
+      admin_ui: {width: 200}
+      type: string
     - name: image
       admin_ui: {width: 200}
       type: media
@@ -41,32 +44,32 @@ db_schema:
       admin_ui: {width: 200}
       type: link_single
       target: categories
-    - name: Appearance
-      admin_ui: {order: 6, width: 200}
-      type: string
     - name: Relevance
-      admin_ui: {order: 7, width: 200}
+      admin_ui: {width: 200}
       type: string
     - name: Implications
-      admin_ui: {order: 8, width: 200}
+      admin_ui: {width: 200}
       type: string
     - name: Symptoms
-      admin_ui: {order: 9, width: 200}
+      admin_ui: {width: 200}
       type: string
     - name: Pleomorphic
-      admin_ui: {order: 10, width: 200}
+      admin_ui: {width: 200}
       type: string
     - name: MedPerspective
-      admin_ui: {order: 11, width: 200}
+      admin_ui: {width: 200}
       type: string
     - name: Interventions
-      admin_ui: {order: 12, width: 200}
+      admin_ui: {width: 200}
       type: string
     - name: workingwith
-      admin_ui: {order: 13, width: 200}
+      admin_ui: {width: 200}
       type: string
     - name: investigations
-      admin_ui: {order: 14, width: 200}
+      admin_ui: {width: 200}
+      type: string
+    - name: Almica
+      admin_ui: {width: 200}
       type: string
   categories:
     title: categories
@@ -126,7 +129,7 @@ db_schema:
     server: full
     columns:
     - name: email
-      admin_ui: {width: 200}
+      admin_ui: {width: 237}
       type: string
     - name: enabled
       admin_ui: {width: 200}
