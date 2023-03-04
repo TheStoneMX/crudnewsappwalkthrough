@@ -68,8 +68,8 @@ components:
     event_bindings: {click: link_create_report_click}
   - type: Link
     properties: {role: null, url: '', align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: Biblioteca de Desequilibrios, font_size: null, wrap_on: mobile,
-      font: '', col_spacing: medium, spacing_above: small, icon_align: left, col_widths: '',
+      visible: true, text: Desequilibrios, font_size: null, wrap_on: mobile, font: '',
+      col_spacing: medium, spacing_above: small, icon_align: left, col_widths: '',
       spacing_below: small, italic: false, background: '', bold: false, underline: false,
       icon: 'fa:list'}
     name: link_biblioteca_anomalies
