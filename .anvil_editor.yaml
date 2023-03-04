@@ -18,7 +18,7 @@ unique_ids:
     HomeAnonComponent: '1677353601222100748065253.52487'
     SangreVivaComponent.Pleomorphic: '1677359517044585710531355.3425'
   modules:
-    Anomalies: '1677867446730153471108470.61462'
+    AnomaliesComponent.Anomalies: '1677867446730153471108470.61462'
     navigation: '1677597449273963718958422.5425'
   server_modules:
     ServerModule: JY73GVS3P6CSBSLFQE6QNI6J7PPTLFVI

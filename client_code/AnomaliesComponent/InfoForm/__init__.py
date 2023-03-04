@@ -6,6 +6,7 @@ import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
 
+from ..Anomalies import *
 
 class InfoForm(InfoFormTemplate):
   def __init__(self, **properties):
@@ -14,7 +15,17 @@ class InfoForm(InfoFormTemplate):
     self._my_string = ''
     # Any code you write here will run before the form opens.
     # Assuming `articles` is the name of the data table
-    self.table = app_tables.articles    
+    self.title = None
+    self.apariencia = None
+    self.relacion = None
+    self.implicaciones = None
+    self.sintomas = None
+    self.pleomorfica = None
+    self.medica = None
+    self.intervenciones = None
+    self.trabajando = None
+    self.investigaciones = None
+    self.almica = None
     
 # define a property to hold the string
   @property
@@ -33,7 +44,14 @@ class InfoForm(InfoFormTemplate):
     # row = article_data[1]
     # # Get the list of column names
     #  self.table.get_columns()
+  # Loop through the query results and assign the values to the corresponding TextBox components
+  for row in article_query:
+      title_textbox= row['title'] + "\n"
+      appearance_textbox += row['Appearance'] + "\n"
+      relevance_textbox.text += row['Relevance'] + "\n"
 
+  # def set_properties( article_data):
+    
 
 
 
