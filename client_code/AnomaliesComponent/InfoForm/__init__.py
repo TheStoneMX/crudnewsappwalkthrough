@@ -18,8 +18,6 @@ class InfoForm(InfoFormTemplate):
     
     ## Propiedades de la forma 
     # self.Title = None
-    self.Appearance = None
-    self.Image = None
     self.Created = None
     self.UpDated = None
     self.Categoty = None
@@ -49,9 +47,11 @@ class InfoForm(InfoFormTemplate):
     # Set the values of the form controls for each article
     self.label_tittle.text = article_data['Title']
     self.rich_text_main_text.content = article_data['Appearance']
-    self.Image = article_data['Image']
+    self.Anomaly_Image.source = article_data['Image']
+    ##
     self.Created = article_data['Created']
     self.UpDated = article_data['UpDated']
+    ##
     self.Categoty = article_data['Category']
     self.Relevance = article_data['Relevance']
     self.Implications = article_data['Implications']
@@ -70,37 +70,64 @@ class InfoForm(InfoFormTemplate):
           article_data = anvil.server.call('get_desequilibrio', self._my_string)
           #
           self.set_form_controls(article_data)
-          #
-          # print('Title', self.article_data['Title'])
-          # print('Appearance', self.article_data['Appearance'])
-          # print('Relevance', self.article_data['Relevance'])          # for item in article_data:
-          #     print(item)
-          # print('article_data', article_data['title'])
+
       except Exception as e:
           # handle the exception here, for example:
           print("An error occurred:", e)
-      # row = article_data[1]
-      # # Get the list of column names
-      #  self.table.get_columns()
+  
 
-
-
-
-
-
+  def button_relacion_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    self.rich_text_main_text.content = self.Relevance
     
-    # Accessing the row's properties
-    # title = row['title']  # Assuming there's a `title` column in the table
-    # Appearance = row['Appearance']  # Assuming there's a `content` column in the table
-    # category = row['category']  # Assuming there's a `date_published` column in the table
+  def button_Implicaciones_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    self.rich_text_main_text.content = self.Implications
     
-    # Printing the values
-    # print(f"Title: {title}")
-    # print(f"Content: {Appearance}")
-    # print(f"Category: {category}")
-    # print('title', title)
-    # print('Appearance', Appearance)
-    # print('category', category)
+  def button_Sintomas_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    self.rich_text_main_text.content = self.Symptoms
+
+  def button_Pleomorfica_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    self.rich_text_main_text.content = self.Pleomorphic
+
+  def button_Medica_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    self.rich_text_main_text.content = self.MedPerspecive
+
+  def button_Intervenciones_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    self.rich_text_main_text.content = self.Interventions
+
+  def button_Trabajando_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    self.rich_text_main_text.content = self.WorkingWith
+
+  def button_Investigaciones_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    self.rich_text_main_text.content = self.Investigations
+
+  def button_Almica_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    self.rich_text_main_text.content = self.Almica
+
+  def disble_buttons(self):
+    #
+    self.button_apariencia.
+
+  def enable_buttons(self):
+    #
+
+
+
+
+
+
+
+
+
+
 
 
 

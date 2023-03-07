@@ -32,6 +32,7 @@ components:
         background: '', bold: false, underline: false, icon: ''}
       name: button_relacion
       layout_properties: {}
+      event_bindings: {click: button_relacion_click}
     - type: Button
       properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
         foreground: '', visible: true, text: Implicaciones, font_size: null, font: '',
@@ -41,6 +42,7 @@ components:
       layout_properties:
         col_widths: {}
         grid_position: OUMJUF,FEUWUF
+      event_bindings: {click: button_Implicaciones_click}
     - type: Button
       properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
         foreground: '', visible: true, text: Sintomas, font_size: null, font: '',
@@ -48,6 +50,7 @@ components:
         background: '', bold: false, underline: false, icon: ''}
       name: button_Sintomas
       layout_properties: {}
+      event_bindings: {click: button_Sintomas_click}
     - type: Button
       properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
         foreground: '', visible: true, text: Pleomórfica, font_size: null, font: '',
@@ -55,6 +58,7 @@ components:
         background: '', bold: false, underline: false, icon: ''}
       name: button_Pleomorfica
       layout_properties: {}
+      event_bindings: {click: button_Pleomorfica_click}
     - type: Button
       properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
         foreground: '', visible: true, text: Perspectiva Médica, font_size: null,
@@ -62,6 +66,7 @@ components:
         background: '', bold: false, underline: false, icon: ''}
       name: button_Medica
       layout_properties: {}
+      event_bindings: {click: button_Medica_click}
     - type: Button
       properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
         foreground: '', visible: true, text: Intervenciones, font_size: null, font: '',
@@ -69,6 +74,7 @@ components:
         background: '', bold: false, underline: false, icon: ''}
       name: button_Intervenciones
       layout_properties: {}
+      event_bindings: {click: button_Intervenciones_click}
     - type: Button
       properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
         foreground: '', visible: true, text: Trabajando con, font_size: null, font: '',
@@ -76,6 +82,7 @@ components:
         background: '', bold: false, underline: false, icon: ''}
       name: button_Trabajando
       layout_properties: {}
+      event_bindings: {click: button_Trabajando_click}
     - type: Button
       properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
         foreground: '', visible: true, text: Investigaciones adicionales, font_size: null,
@@ -83,6 +90,7 @@ components:
         background: '', bold: false, underline: false, icon: ''}
       name: button_Investigaciones
       layout_properties: {}
+      event_bindings: {click: button_Investigaciones_click}
     - type: Button
       properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
         foreground: '', visible: true, text: Configuaración del Alma, font_size: null,
@@ -90,19 +98,30 @@ components:
         background: '', bold: false, underline: false, icon: ''}
       name: button_Almica
       layout_properties: {}
+      event_bindings: {click: button_Almica_click}
   - type: Label
-    properties: {role: headline, align: center, tooltip: '', border: '', foreground: '',
-      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
-      spacing_below: small, italic: false, background: '', bold: false, underline: false,
-      icon: ''}
+    properties: {role: headline, align: center, tooltip: '', border: '', foreground: 'theme:Black',
+      visible: true, text: '', font_size: 43, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: 'theme:Secondary 500', bold: true,
+      underline: false, icon: ''}
     name: label_tittle
     layout_properties: {grid_position: 'BNLZXD,MWWQBD'}
+  - type: Spacer
+    properties: {height: 32}
+    name: spacer_2
+    layout_properties: {grid_position: 'DZJCJE,KSOKEC'}
   - type: Image
-    properties: {}
-    name: image
+    properties: {height: 348}
+    name: Anomaly_Image
     layout_properties: {grid_position: 'CJPCMB,XHDITQ'}
+  - type: Spacer
+    properties: {height: 32}
+    name: spacer_3
+    layout_properties: {grid_position: 'HBPNTZ,PZTDJA'}
   - type: RichText
-    properties: {}
+    properties: {role: null, align: left, tooltip: '', enable_slots: true, border: '',
+      foreground: '', visible: true, font_size: 24, content: '', font: '', spacing_above: small,
+      spacing_below: small, data: null, background: '', format: markdown}
     name: rich_text_main_text
     layout_properties: {grid_position: 'ORAHLG,OPKAKP'}
 is_package: true
