@@ -14,7 +14,24 @@ class InfoForm(InfoFormTemplate):
     self._my_string = ''
     # Any code you write here will run before the form opens.
     # Assuming `articles` is the name of the data table
-    self.table = app_tables.articles    
+    self.table = app_tables.articles  
+    
+    ## Propiedades de la forma 
+    self.Title = None
+    self.Apperance = None
+    self.Image = None
+    self.Created = None
+    self.UpDated = None
+    self.Categoty = None
+    self.Relevance = None
+    self.Implications = None
+    self.Symptoms = None
+    self.Pleomorphic = None
+    self.MedPerspecive = None
+    self.Interventions = None
+    self.WorkingWith = None
+    self.Investigations = None 
+    self.Almica = None 
     
 # define a property to hold the string
   @property
@@ -26,15 +43,38 @@ class InfoForm(InfoFormTemplate):
     self._my_string = value
     # do something with the string, e.g. update a label
     # self.label_1.text = value
-   
+
+    
+  def set_form_controls(self, article_data):
+    # Set the values of the form controls for each article
+    self.Title = article_data['title']
+    self.Apperance = article_data['Apperance']
+    self.Image = article_data['Image']
+    self.Created = article_data['Created']
+    self.UpDated = article_data['UpDated']
+    self.Categoty = article_data['Categoty']
+    self.Relevance = article_data['Relevance']
+    self.Implications = article_data['Implications']
+    self.Symptoms = article_data['Symptoms']
+    self.Pleomorphic = article_data['Pleomorphic']
+    self.MedPerspecive = article_data['MedPerspecive']
+    self.Interventions = article_data['Interventions']
+    self.WorkingWith = article_data['WorkingWith']
+    self.Investigations = article_data['Investigations']
+    self.Almica = article_data['Almica']
+
+    
   def button_apariencia_click(self, **event_args):
       try:
-          print("button_apariencia_clicked")
           # we query DB and fill the Info Form
           article_data = anvil.server.call('get_desequilibrio', self._my_string)
-          print('Article Data Len', len(article_data))
-          for item in article_data:
-              print(item)
+          #
+          self.set_form_controls(article_data)
+          #
+          print('Title', self.article_data['title'])
+          print('Appearance', self.article_data['Appearance'])
+          print('Relevance', self.article_data['Relevance'])          # for item in article_data:
+          #     print(item)
           # print('article_data', article_data['title'])
       except Exception as e:
           # handle the exception here, for example:
