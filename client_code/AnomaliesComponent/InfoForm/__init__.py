@@ -114,10 +114,11 @@ class InfoForm(InfoFormTemplate):
 
   def disble_buttons(self):
     #
-    self.button_apariencia.
+
 
   def enable_buttons(self):
     #
+    self.button_apariencia.disabled = True
 
 
 
