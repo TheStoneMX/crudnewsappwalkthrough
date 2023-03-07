@@ -38,7 +38,7 @@ components:
         foreground: '', visible: true, text: Implicaciones, font_size: null, font: '',
         spacing_above: small, icon_align: left, spacing_below: small, italic: false,
         background: '', bold: false, underline: false, icon: ''}
-      name: button_2_Implicaciones
+      name: button_Implicaciones
       layout_properties:
         col_widths: {}
         grid_position: OUMJUF,FEUWUF
@@ -69,7 +69,7 @@ components:
       event_bindings: {click: button_Medica_click}
     - type: Button
       properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
-        foreground: '', visible: true, text: Intervenciones, font_size: null, font: '',
+        foreground: '', visible: true, text: Recomendaciones, font_size: null, font: '',
         spacing_above: small, icon_align: left, spacing_below: small, italic: false,
         background: '', bold: false, underline: false, icon: ''}
       name: button_Intervenciones

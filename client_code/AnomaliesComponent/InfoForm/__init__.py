@@ -30,7 +30,9 @@ class InfoForm(InfoFormTemplate):
     self.WorkingWith = None
     self.Investigations = None 
     self.Almica = None 
-    
+    #
+    self.disble_buttons()
+   
 # define a property to hold the string
   @property
   def my_string(self):
@@ -62,7 +64,6 @@ class InfoForm(InfoFormTemplate):
     self.WorkingWith = article_data['WorkingWith']
     self.Investigations = article_data['Investigations']
     self.Almica = article_data['Almica']
-
     
   def button_apariencia_click(self, **event_args):
       try:
@@ -70,7 +71,7 @@ class InfoForm(InfoFormTemplate):
           article_data = anvil.server.call('get_desequilibrio', self._my_string)
           #
           self.set_form_controls(article_data)
-
+          self.enable_buttons()
       except Exception as e:
           # handle the exception here, for example:
           print("An error occurred:", e)
@@ -114,12 +115,30 @@ class InfoForm(InfoFormTemplate):
 
   def disble_buttons(self):
     #
-
+    self.button_relacion.disabled = True
+    self.button_Implicaciones.disabled = True
+    self.button_Sintomas.disabled = True
+    self.button_Pleomorfica.disabled = True
+    self.button_Medica.disabled = True
+    self.button_Intervenciones.disabled = True
+    self.button_Trabajando.disabled = True
+    self.button_Investigaciones.disabled = True
+    self.button_Almica.disabled = True
 
   def enable_buttons(self):
     #
     self.button_apariencia.disabled = True
+    self.button_relacion.disabled = False
+    self.button_Implicaciones.disabled = False
+    self.button_Sintomas.disabled = False
+    self.button_Pleomorfica.disabled = False
+    self.button_Medica.disabled = False
+    self.button_Intervenciones.disabled = False
+    self.button_Trabajando.disabled = False
+    self.button_Investigaciones.disabled = False
+    self.button_Almica.disabled = False
 
+    
 
 
 
