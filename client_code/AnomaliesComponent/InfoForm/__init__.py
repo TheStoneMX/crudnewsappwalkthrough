@@ -31,7 +31,6 @@ class InfoForm(InfoFormTemplate):
     self.Investigations = None 
     self.Almica = None 
     #
-    self.disble_buttons()
    
 # define a property to hold the string
   @property
@@ -113,30 +112,37 @@ class InfoForm(InfoFormTemplate):
     """This method is called when the button is clicked"""
     self.rich_text_main_text.content = self.Almica
 
-  def disble_buttons(self):
-    #
-    self.button_relacion.disabled = True
-    self.button_Implicaciones.disabled = True
-    self.button_Sintomas.disabled = True
-    self.button_Pleomorfica.disabled = True
-    self.button_Medica.disabled = True
-    self.button_Intervenciones.disabled = True
-    self.button_Trabajando.disabled = True
-    self.button_Investigaciones.disabled = True
-    self.button_Almica.disabled = True
-
   def enable_buttons(self):
     #
-    self.button_apariencia.disabled = True
-    self.button_relacion.disabled = False
-    self.button_Implicaciones.disabled = False
-    self.button_Sintomas.disabled = False
-    self.button_Pleomorfica.disabled = False
-    self.button_Medica.disabled = False
-    self.button_Intervenciones.disabled = False
-    self.button_Trabajando.disabled = False
-    self.button_Investigaciones.disabled = False
-    self.button_Almica.disabled = False
+    self.button_relacion.enabled = True
+    self.button_Implicaciones.enabled = True
+    self.button_Sintomas.enabled = True
+    self.button_Pleomorfica.enabled = True
+    self.button_Medica.enabled = True
+    self.button_Intervenciones.enabled = True
+    self.button_Trabajando.enabled = True
+    self.button_Investigaciones.enabled = True
+    self.button_Almica.enabled = True
+
+  def disable_buttons(self):
+    #
+    print('enable_buttons', self.enable_buttons)
+    self.button_apariencia.enabled = True
+    self.button_relacion.enabled = False
+    self.button_Implicaciones.enabled = False
+    self.button_Sintomas.enabled = False
+    self.button_Pleomorfica.enabled = False
+    self.button_Medica.enabled = False
+    self.button_Intervenciones.enabled = False
+    self.button_Trabajando.enabled = False
+    self.button_Investigaciones.enabled = False
+    self.button_Almica.enabled = False
+
+  def form_show(self, **event_args):
+    """This method is called when the column panel is shown on the screen"""
+    self.disable_buttons()
+
+
 
     
 

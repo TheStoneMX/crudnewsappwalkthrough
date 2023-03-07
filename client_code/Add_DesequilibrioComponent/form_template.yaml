@@ -72,8 +72,12 @@ components:
         500', bold: false, underline: false, icon: ''}
     name: label_2
     layout_properties: {grid_position: 'ZSSOWK,BFUBPC', full_width_row: false}
+- type: RichText
+  properties: {}
+  name: rich_text_1
+  layout_properties: {grid_position: 'HSUFYW,CUVKKJ'}
 - type: TextArea
-  properties: {role: null, align: left, height: 92, tooltip: '', placeholder: '',
+  properties: {role: null, align: left, height: 220, tooltip: '', placeholder: '',
     border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
     auto_expand: true, font: '', spacing_above: small, spacing_below: small, italic: false,
     background: '', bold: false, underline: false}
@@ -89,7 +93,7 @@ components:
   name: label_relevance
   layout_properties: {grid_position: 'URFPAI,LYKGJI', full_width_row: false}
 - type: TextArea
-  properties: {height: 168.1597}
+  properties: {height: 263.1597}
   name: text_area_relevance
   layout_properties: {grid_position: 'VMIHEW,PQYCZE', full_width_row: false}
   data_bindings:
@@ -102,7 +106,7 @@ components:
   name: label_implications
   layout_properties: {grid_position: 'ZFTFWQ,XQXZLJ', full_width_row: false}
 - type: TextArea
-  properties: {height: 202.1597}
+  properties: {height: 263.1597}
   name: text_area_implcations
   layout_properties: {grid_position: 'IBNPAZ,KKMVQT'}
   data_bindings:
