@@ -17,7 +17,7 @@ class InfoForm(InfoFormTemplate):
     self.table = app_tables.articles  
     
     ## Propiedades de la forma 
-    self.Title = None
+    # self.Title = None
     self.Appearance = None
     self.Image = None
     self.Created = None
@@ -47,8 +47,8 @@ class InfoForm(InfoFormTemplate):
     
   def set_form_controls(self, article_data):
     # Set the values of the form controls for each article
-    self.Title = article_data['Title']
-    self.Appearance = article_data['Appearance']
+    self.label_tittle.text = article_data['Title']
+    self.rich_text_main_text.content = article_data['Appearance']
     self.Image = article_data['Image']
     self.Created = article_data['Created']
     self.UpDated = article_data['UpDated']
