@@ -18,7 +18,7 @@ class InfoForm(InfoFormTemplate):
     
     ## Propiedades de la forma 
     self.Title = None
-    self.Apperance = None
+    self.Appearance = None
     self.Image = None
     self.Created = None
     self.UpDated = None
@@ -47,17 +47,17 @@ class InfoForm(InfoFormTemplate):
     
   def set_form_controls(self, article_data):
     # Set the values of the form controls for each article
-    self.Title = article_data['title']
-    self.Apperance = article_data['Apperance']
+    self.Title = article_data['Title']
+    self.Appearance = article_data['Appearance']
     self.Image = article_data['Image']
     self.Created = article_data['Created']
     self.UpDated = article_data['UpDated']
-    self.Categoty = article_data['Categoty']
+    self.Categoty = article_data['Category']
     self.Relevance = article_data['Relevance']
     self.Implications = article_data['Implications']
     self.Symptoms = article_data['Symptoms']
     self.Pleomorphic = article_data['Pleomorphic']
-    self.MedPerspecive = article_data['MedPerspecive']
+    self.MedPerspecive = article_data['MedPerspective']
     self.Interventions = article_data['Interventions']
     self.WorkingWith = article_data['WorkingWith']
     self.Investigations = article_data['Investigations']
@@ -71,9 +71,9 @@ class InfoForm(InfoFormTemplate):
           #
           self.set_form_controls(article_data)
           #
-          print('Title', self.article_data['title'])
-          print('Appearance', self.article_data['Appearance'])
-          print('Relevance', self.article_data['Relevance'])          # for item in article_data:
+          # print('Title', self.article_data['Title'])
+          # print('Appearance', self.article_data['Appearance'])
+          # print('Relevance', self.article_data['Relevance'])          # for item in article_data:
           #     print(item)
           # print('article_data', article_data['title'])
       except Exception as e:

@@ -29,51 +29,51 @@ db_schema:
     client: none
     server: full
     columns:
-    - name: title
+    - name: Title
       admin_ui: {width: 200}
       type: string
-    - name: image
+    - name: Appearance
+      admin_ui: {width: 200}
+      type: string
+    - name: Image
       admin_ui: {width: 200}
       type: media
-    - name: created
+    - name: Created
       admin_ui: {width: 200}
       type: datetime
-    - name: updated
+    - name: UpDated
       admin_ui: {width: 200}
       type: datetime
-    - name: category
+    - name: Category
       admin_ui: {width: 200}
       type: link_single
       target: categories
-    - name: Appearance
-      admin_ui: {order: 6, width: 200}
-      type: string
     - name: Relevance
-      admin_ui: {order: 7, width: 200}
+      admin_ui: {width: 200}
       type: string
     - name: Implications
-      admin_ui: {order: 8, width: 200}
+      admin_ui: {width: 200}
       type: string
     - name: Symptoms
-      admin_ui: {order: 9, width: 200}
+      admin_ui: {width: 200}
       type: string
     - name: Pleomorphic
-      admin_ui: {order: 10, width: 200}
+      admin_ui: {width: 200}
       type: string
     - name: MedPerspective
-      admin_ui: {order: 11, width: 200}
+      admin_ui: {width: 200}
       type: string
     - name: Interventions
-      admin_ui: {order: 12, width: 200}
+      admin_ui: {width: 200}
       type: string
-    - name: workingwith
-      admin_ui: {order: 13, width: 200}
+    - name: WorkingWith
+      admin_ui: {width: 200}
       type: string
-    - name: investigations
-      admin_ui: {order: 14, width: 200}
+    - name: Investigations
+      admin_ui: {width: 200}
       type: string
     - name: Almica
-      admin_ui: {order: 14, width: 200}
+      admin_ui: {width: 200}
       type: string
   categories:
     title: categories
@@ -133,7 +133,7 @@ db_schema:
     server: full
     columns:
     - name: email
-      admin_ui: {width: 200}
+      admin_ui: {width: 237}
       type: string
     - name: enabled
       admin_ui: {width: 200}

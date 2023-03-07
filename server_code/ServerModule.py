@@ -42,7 +42,7 @@ def delete_article(article):
 def get_desequilibrio(desequilibrio):
     try:
       # filter the 'articles' table by the 'title' column
-      results = app_tables.articles.get(title = desequilibrio)
+      results = app_tables.articles.get(Title = desequilibrio)
       # desequilibrio = Anomalies()
       # print('Appearance', results['Appearance'])
       # column_names = app_tables.articles.list_columns()

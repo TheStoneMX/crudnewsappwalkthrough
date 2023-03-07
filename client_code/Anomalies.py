@@ -15,7 +15,7 @@ class Article:
             article = articles[0]
 
             # store the data in instance variables
-            self.title = article['title']
+            self.title = article['Title']
             self.apariencia = article['Appearance']
             self.relacion = article['Relevance']
             self.implicaciones = article['Implications']
@@ -23,8 +23,8 @@ class Article:
             self.pleomorfica = article['Pleomorphic']
             self.medica = article['MedPerspective']
             self.intervenciones = article['Interventions']
-            self.trabajando = article['workingwith']
-            self.investigaciones = article['investigations']
+            self.trabajando = article['WorkingWith']
+            self.investigaciones = article['Investigations']
             self.almica = article['Almica']
         else:
             # if no row was found, set all instance variables to None
@@ -42,7 +42,7 @@ class Article:
 
     def __str__(self):
         # define how the object should be represented as a string
-        return f"Article: {self.title}"
+        return f"Article: {self.Title}"
 
     def fill_text_controls(self, apariencia_text_box, relacion_text_box,
                            implicaciones_text_box, sintomas_text_box,

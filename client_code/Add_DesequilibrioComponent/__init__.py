@@ -33,12 +33,12 @@ class Add_DesequilibrioComponent(Add_DesequilibrioComponentTemplate):
     server.call('add_article', self.new_row)
     self.clear_text_controls()
     self.category_box.selected_value = None
-    self.title_box.text = ''
+    self.Title_box.text = ''
 
   def primary_color_cancel_click(self, **event_args):
     self.clear_text_controls()
     self.category_box.selected_value = None
-    self.title_box.text = ''
+    self.Title_box.text = ''
 
   def form_show(self, **event_args):
     self.new_row = self.item
