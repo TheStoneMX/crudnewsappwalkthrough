@@ -29,8 +29,12 @@ class InfoForm(InfoFormTemplate):
    
   def button_apariencia_click(self, **event_args):
       try:
+          print("button_apariencia_clicked")
           # we query DB and fill the Info Form
           article_data = anvil.server.call('get_desequilibrio', self._my_string)
+          print('Article Data Len', len(article_data))
+          for item in article_data:
+              print(item)
           # print('article_data', article_data['title'])
       except Exception as e:
           # handle the exception here, for example:
