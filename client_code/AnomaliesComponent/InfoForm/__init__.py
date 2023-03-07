@@ -28,11 +28,16 @@ class InfoForm(InfoFormTemplate):
     # self.label_1.text = value
    
   def button_apariencia_click(self, **event_args):
-    # we query DB and fill the Info Form
-    article_data = anvil.server.call('get_desequilibrio', self._my_string)
-    # row = article_data[1]
-    # # Get the list of column names
-    #  self.table.get_columns()
+      try:
+          # we query DB and fill the Info Form
+          article_data = anvil.server.call('get_desequilibrio', self._my_string)
+          # print('article_data', article_data['title'])
+      except Exception as e:
+          # handle the exception here, for example:
+          print("An error occurred:", e)
+      # row = article_data[1]
+      # # Get the list of column names
+      #  self.table.get_columns()
 
 
 
