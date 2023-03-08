@@ -57,12 +57,12 @@ components:
     event_bindings: {click: button_microbes_click}
   - type: Button
     properties: {role: primary-color, align: center, tooltip: '', border: '', enabled: true,
-      foreground: '', visible: true, text: trombocyte, font_size: null, font: '',
+      foreground: '', visible: true, text: thrombocyte, font_size: null, font: '',
       spacing_above: small, icon_align: left, spacing_below: small, italic: false,
       background: '', bold: true, underline: false, icon: ''}
     name: button_trombocyte
     layout_properties: {grid_position: 'FDTEAE,IRNVXB'}
-    event_bindings: {click: button_trombocyte_click}
+    event_bindings: {click: button_thrombocyte_click}
   - type: Button
     properties: {role: primary-color, align: center, tooltip: '', border: '', enabled: true,
       foreground: '', visible: true, text: pleomorphic, font_size: null, font: '',

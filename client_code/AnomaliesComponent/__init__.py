@@ -9,7 +9,7 @@ from .erythrocyte import erythrocyte
 from .leukocyte import leukocyte
 from .plasma import plasma
 from .microbes import microbes
-from .trombocyte import trombocyte
+from .thrombocyte import thrombocyte
 from .pleomorphic import pleomorphic
 
 class AnomaliesComponent(AnomaliesComponentTemplate):
@@ -21,11 +21,6 @@ class AnomaliesComponent(AnomaliesComponentTemplate):
   def button_Info_click(self, **event_args):
     cmpt = InfoForm()
     self.add_component_2_tab_control(cmpt)
-    
-  def add_component_2_tab_control(self, cmpt):
-    # self.link_list_anomalies.role = 'selected'
-    self.column_panel_tabcontent.clear()
-    self.column_panel_tabcontent.add_component(cmpt)   
 
   def button_erythrocyte_click(self, **event_args):
     cmpt = erythrocyte()
@@ -43,15 +38,18 @@ class AnomaliesComponent(AnomaliesComponentTemplate):
     cmpt = microbes()
     self.add_component_2_tab_control(cmpt)
 
-  def button_trombocyte_click(self, **event_args):
+  def button_thrombocyte_click(self, **event_args):
     cmpt = trombocyte()
     self.add_component_2_tab_control(cmpt)
 
   def button_pleomorphic_click(self, **event_args):
     cmpt = pleomorphic()
     self.add_component_2_tab_control(cmpt)
-
-
+    
+  def add_component_2_tab_control(self, cmpt):
+    # self.link_list_anomalies.role = 'selected'
+    self.column_panel_tabcontent.clear()
+    self.column_panel_tabcontent.add_component(cmpt) 
 
 
 

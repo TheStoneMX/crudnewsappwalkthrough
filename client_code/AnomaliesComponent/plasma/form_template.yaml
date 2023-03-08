@@ -1,3 +1,42 @@
-container: {type: ColumnPanel}
-components: []
+container:
+  type: ColumnPanel
+  properties: {col_widths: '{}'}
+components:
+- type: Label
+  properties: {role: headline}
+  name: headline_1
+  layout_properties: {grid_position: 'SJAGVV,DPXYYP'}
+- type: ColumnPanel
+  properties: {col_widths: '{}'}
+  name: column_panel_1
+  layout_properties: {grid_position: 'HVQYKU,UESVFX'}
+  components:
+  - type: RadioButton
+    properties: {role: null, selected: false, align: left, tooltip: '', border: '',
+      enabled: true, foreground: '', value: '', visible: true, text: Fribina, font_size: null,
+      font: '', spacing_above: small, spacing_below: small, italic: false, background: '',
+      bold: false, group_name: Plasma, underline: false}
+    name: radio_button_fibrina
+    layout_properties: {grid_position: 'SIPQFE,TCOLBT'}
+  - type: RadioButton
+    properties: {role: null, selected: false, align: left, tooltip: '', border: '',
+      enabled: true, foreground: '', value: '', visible: true, text: Agregacion Trombocitaria,
+      font_size: null, font: '', spacing_above: small, spacing_below: small, italic: false,
+      background: '', bold: false, group_name: Plasma, underline: false}
+    name: radio_button_Agregacion_Trombocitaria
+    layout_properties: {grid_position: 'SIPQFE,BOWEWO'}
+  - type: RadioButton
+    properties: {role: null, selected: false, align: left, tooltip: '', border: '',
+      enabled: true, foreground: '', value: '', visible: true, text: Cristales de Acido Urico,
+      font_size: null, font: '', spacing_above: small, spacing_below: small, italic: false,
+      background: '', bold: false, group_name: Plasma, underline: false}
+    name: radio_button_Cristales_acido_urico
+    layout_properties: {grid_position: 'FJUYPQ,OCXWQT'}
+  - type: RadioButton
+    properties: {role: null, selected: false, align: left, tooltip: '', border: '',
+      enabled: true, foreground: '', value: '', visible: true, text: Crsi, font_size: null,
+      font: '', spacing_above: small, spacing_below: small, italic: false, background: '',
+      bold: false, group_name: Plasma, underline: false}
+    name: radio_button_Cristales_Colesterol
+    layout_properties: {grid_position: 'FJUYPQ,GDLLPS'}
 is_package: true
