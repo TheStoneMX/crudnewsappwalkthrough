@@ -1,3 +1,54 @@
-container: {type: ColumnPanel}
-components: []
+container:
+  type: ColumnPanel
+  properties: {col_widths: '{}'}
+components:
+- type: Spacer
+  properties: {height: 32}
+  name: spacer_1
+  layout_properties: {grid_position: 'WDEORW,BHOHHS'}
+- type: Label
+  properties: {role: headline}
+  name: headline_1
+  layout_properties: {grid_position: 'TFWGFS,XPMVZT'}
+- type: Spacer
+  properties: {height: 32}
+  name: spacer_2
+  layout_properties: {grid_position: 'JDDIOC,DTUZET'}
+- type: ColumnPanel
+  properties: {col_widths: '{}'}
+  name: column_panel_1
+  layout_properties: {grid_position: 'HPDKBX,XKGEWL'}
+  components:
+  - type: RadioButton
+    properties: {text: radio_button_1}
+    name: radio_button_1
+    layout_properties: {grid_position: 'JPAXWQ,SCHXMM'}
+  - type: RadioButton
+    properties: {text: radio_button_2}
+    name: radio_button_2
+    layout_properties: {grid_position: 'JPAXWQ,NIQJMU'}
+  - type: RadioButton
+    properties: {text: radio_button_3}
+    name: radio_button_3
+    layout_properties: {grid_position: 'OVEDOJ,NCWPYW'}
+  - type: RadioButton
+    properties: {text: radio_button_4}
+    name: radio_button_4
+    layout_properties: {grid_position: 'OVEDOJ,MTVWLQ'}
+  - type: RadioButton
+    properties: {text: radio_button_5}
+    name: radio_button_5
+    layout_properties: {grid_position: 'VWEXVT,BKQZVM'}
+  - type: RadioButton
+    properties: {text: radio_button_6}
+    name: radio_button_6
+    layout_properties: {grid_position: 'VWEXVT,ORHFPC'}
+  - type: RadioButton
+    properties: {text: radio_button_7}
+    name: radio_button_7
+    layout_properties: {grid_position: 'WQTCXW,WGPHGA'}
+  - type: Spacer
+    properties: {height: 32}
+    name: spacer_3
+    layout_properties: {grid_position: 'OBDICM,UCCPSE'}
 is_package: true

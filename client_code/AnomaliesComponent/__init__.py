@@ -8,7 +8,6 @@ from anvil.tables import app_tables
 from .erythrocyte import erythrocyte
 from .leukocyte import leukocyte
 from .plasma import plasma
-from .microbes import microbes
 from .thrombocyte import thrombocyte
 from .pleomorphic import pleomorphic
 
@@ -34,12 +33,8 @@ class AnomaliesComponent(AnomaliesComponentTemplate):
     cmpt = plasma()
     self.add_component_2_tab_control(cmpt)
 
-  def button_microbes_click(self, **event_args):
-    cmpt = microbes()
-    self.add_component_2_tab_control(cmpt)
-
   def button_thrombocyte_click(self, **event_args):
-    cmpt = trombocyte()
+    cmpt = thrombocyte()
     self.add_component_2_tab_control(cmpt)
 
   def button_pleomorphic_click(self, **event_args):

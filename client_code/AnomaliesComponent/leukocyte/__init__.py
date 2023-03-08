@@ -12,3 +12,33 @@ class leukocyte(leukocyteTemplate):
     self.init_components(**properties)
 
     # Any code you write here will run before the form opens.
+
+  def radio_button_Cohesion_neutrofilos_clicked(self, **event_args):
+    """This method is called when this radio button is selected"""
+    pass
+
+  def radio_button_basofilia_clicked(self, **event_args):
+    """This method is called when this radio button is selected"""
+    pass
+
+  def radio_button_Neutrofilos_Hipersegmenados_clicked(self, **event_args):
+    """This method is called when this radio button is selected"""
+    pass
+
+  def radio_button_Globulos_Blancos_Interrumpidos_clicked(self, **event_args):
+    """This method is called when this radio button is selected"""
+    pass
+
+  def radio_button_neutrofilos_no_viables_clicked(self, **event_args):
+    """This method is called when this radio button is selected"""
+    pass
+
+  def radio_button_neutrofilos_banda_clicked(self, **event_args):
+    """This method is called when this radio button is selected"""
+    pass
+
+
+
+
+
+

@@ -21,6 +21,7 @@ components:
       background: '', bold: false, group_name: Leucocitos, underline: false}
     name: radio_button_Cohesion_neutrofilos
     layout_properties: {grid_position: 'BFBCFF,ERICLO'}
+    event_bindings: {clicked: radio_button_Cohesion_neutrofilos_clicked}
   - type: RadioButton
     properties: {role: null, selected: false, align: left, tooltip: '', border: '',
       enabled: true, foreground: '', value: '', visible: true, text: Basofilia, font_size: null,
@@ -28,6 +29,7 @@ components:
       bold: false, group_name: Leucocitos, underline: false}
     name: radio_button_basofilia
     layout_properties: {grid_position: 'BFBCFF,LWLHLD'}
+    event_bindings: {clicked: radio_button_basofilia_clicked}
   - type: RadioButton
     properties: {role: null, selected: false, align: left, tooltip: '', border: '',
       enabled: true, foreground: '', value: '', visible: true, text: Neutrofilos Hipersegmenados,
@@ -35,6 +37,7 @@ components:
       background: '', bold: false, group_name: Leucocitos, underline: false}
     name: radio_button_Neutrofilos_Hipersegmenados
     layout_properties: {grid_position: 'JTVFET,HRGYQF'}
+    event_bindings: {clicked: radio_button_Neutrofilos_Hipersegmenados_clicked}
   - type: RadioButton
     properties: {role: null, selected: false, align: left, tooltip: '', border: '',
       enabled: true, foreground: '', value: '', visible: true, text: Globulos Blancos Interrunpidos,
@@ -42,6 +45,7 @@ components:
       background: '', bold: false, group_name: Leucocitos, underline: false}
     name: radio_button_Globulos_Blancos_Interrumpidos
     layout_properties: {grid_position: 'JTVFET,VCGDIE'}
+    event_bindings: {clicked: radio_button_Globulos_Blancos_Interrumpidos_clicked}
   - type: RadioButton
     properties: {role: null, selected: false, align: left, tooltip: '', border: '',
       enabled: true, foreground: '', value: '', visible: true, text: Neutrofilos NO viables,
@@ -49,6 +53,7 @@ components:
       background: '', bold: false, group_name: Leucocitos, underline: false}
     name: radio_button_neutrofilos_no_viables
     layout_properties: {grid_position: 'RCWAFT,DKAZSH'}
+    event_bindings: {clicked: radio_button_neutrofilos_no_viables_clicked}
   - type: RadioButton
     properties: {role: null, selected: false, align: left, tooltip: '', border: '',
       enabled: true, foreground: '', value: '', visible: true, text: Neutrofilos en Banda,
@@ -56,4 +61,5 @@ components:
       background: '', bold: false, group_name: Leucocitos, underline: false}
     name: radio_button_neutrofilos_banda
     layout_properties: {grid_position: 'RCWAFT,BELOCD'}
+    event_bindings: {clicked: radio_button_neutrofilos_banda_clicked}
 is_package: true
