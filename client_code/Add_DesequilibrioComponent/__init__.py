@@ -20,7 +20,7 @@ class Add_DesequilibrioComponent(Add_DesequilibrioComponentTemplate):
   def image_uploader_change(self, file, **event_args):
     """This method is called when a new file is loaded into this FileLoader"""
     # When a new file is loaded, add the image to self.item
-    self.item['image'] = file
+    self.item['Image'] = file
     
   def clear_text_controls(self):
     text_areas = [c for c in self.get_components() if isinstance(c, anvil.TextArea)]

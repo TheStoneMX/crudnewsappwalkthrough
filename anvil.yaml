@@ -75,6 +75,9 @@ db_schema:
     - name: Almica
       admin_ui: {width: 200}
       type: string
+    - name: created
+      admin_ui: {order: 15, width: 200}
+      type: datetime
   categories:
     title: categories
     client: search

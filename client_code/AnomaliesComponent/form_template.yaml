@@ -4,8 +4,8 @@ container:
 components:
 - type: Label
   properties: {role: headline, align: center, tooltip: '', border: '', foreground: 'theme:White',
-    visible: true, text: BIBLIOTECA DE SANGRE VIVA SANGRE SECA, font_size: 32, font: '',
-    spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: 'theme:Primary
+    visible: true, text: Sangre Viva Diccionario, font_size: 32, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: 'theme:Primary
       700', bold: true, underline: false, icon: 'fa:file-pdf-o'}
   name: headline_1
   layout_properties:
