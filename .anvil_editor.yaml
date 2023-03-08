@@ -2,14 +2,19 @@ unique_ids:
   forms:
     SangreVivaComponent.Microbes: '1677359498418160131607432.31714'
     SangreVivaComponent.leukocyte: '1677359252917842723399030.4559'
+    AnomaliesComponent.plasma: '1678297331823411924613243.42865'
     AnomaliesComponent.InfoForm: '1677796195983756796796343.1337'
     AnomaliesComponent.erythrocyte: '1677794938865663414123154.4817'
     SangreVivaComponent.Plasma: '1677359316934165980415839.0541'
     Add_DesequilibrioComponent_copy: '1678226007604835074732053.4106'
     SangreVivaComponent.erythrocyte: '1677359155665502575743164.6507'
     HomeForm: '1677352548877413811951693.1376'
+    AnomaliesComponent.trombocyte: '1678297361126665964039652.4911'
     ArticleView: CJXHCOBGI24OCKCVIH2R5IGHEWBSDFET
+    AnomaliesComponent.pleomorphic: '1678297386260650863169817.6439'
+    AnomaliesComponent.leukocyte: '1678297306681240522075346.1761'
     SangreVivaComponent.Trombocyte: '1677359337018646390717070.9819'
+    AnomaliesComponent.microbes: '1678297348464137166312806.08028'
     SangreVivaComponent: '1677355349729772906996505.897'
     SangreVivaComponent.dryBlood: '16773592740814188403256.998985'
     AddDesequilibrios: 6BZMVGHHRKOCCMHO222FZQOIN7KWJKJE

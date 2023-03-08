@@ -7,7 +7,7 @@ from anvil.tables import app_tables
 from SangreVivaComponent import SangreVivaComponent
 from HomeAnonComponent import HomeAnonComponent
 from Add_DesequilibrioComponent import Add_DesequilibrioComponent 
-from .AnomaliesComponent import AnomaliesComponent
+from AnomaliesComponent import AnomaliesComponent
 
 home_form = None
 

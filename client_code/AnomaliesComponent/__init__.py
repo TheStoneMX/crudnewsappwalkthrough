@@ -6,6 +6,11 @@ import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
 from .erythrocyte import erythrocyte
+from .leukocyte import leukocyte
+from .plasma import plasma
+from .microbes import microbes
+from .trombocyte import trombocyte
+from .pleomorphic import pleomorphic
 
 class AnomaliesComponent(AnomaliesComponentTemplate):
   def __init__(self, **properties):
@@ -25,3 +30,28 @@ class AnomaliesComponent(AnomaliesComponentTemplate):
   def button_erythrocyte_click(self, **event_args):
     cmpt = erythrocyte()
     self.add_component_2_tab_control(cmpt)
+
+  def button_leukocyte_click(self, **event_args):
+    cmpt = leukocyte()
+    self.add_component_2_tab_control(cmpt)
+
+  def button_plasma_click(self, **event_args):
+    cmpt = plasma()
+    self.add_component_2_tab_control(cmpt)
+
+  def button_microbes_click(self, **event_args):
+    cmpt = microbes()
+    self.add_component_2_tab_control(cmpt)
+
+  def button_trombocyte_click(self, **event_args):
+    cmpt = trombocyte()
+    self.add_component_2_tab_control(cmpt)
+
+  def button_pleomorphic_click(self, **event_args):
+    cmpt = pleomorphic()
+    self.add_component_2_tab_control(cmpt)
+
+
+
+
+
