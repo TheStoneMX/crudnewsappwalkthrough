@@ -3,10 +3,10 @@ container:
   properties: {col_widths: '{}'}
 components:
 - type: Label
-  properties: {role: headline, align: center, tooltip: '', border: '', foreground: '',
+  properties: {role: headline, align: center, tooltip: '', border: '', foreground: 'theme:White',
     visible: true, text: ANOMALIAS DE LEUCOCITOS, font_size: 32, font: '', spacing_above: small,
-    icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
-    underline: false, icon: ''}
+    icon_align: left, spacing_below: small, italic: false, background: 'theme:Primary
+      500', bold: false, underline: false, icon: ''}
   name: headline_1
   layout_properties: {grid_position: 'MEPVOH,RONAHX'}
 - type: ColumnPanel

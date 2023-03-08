@@ -12,3 +12,28 @@ class pleomorphic(pleomorphicTemplate):
     self.init_components(**properties)
 
     # Any code you write here will run before the form opens.
+
+  def radio_button_rbc_paracitados_clicked(self, **event_args):
+    """This method is called when this radio button is selected"""
+    pass
+
+  def radio_button_wbc_paracitadas_clicked(self, **event_args):
+    """This method is called when this radio button is selected"""
+    pass
+
+  def radio_button_pteroharpen_clicked(self, **event_args):
+    """This method is called when this radio button is selected"""
+    pass
+
+  def radio_button_rbc_Fermentados_clicked(self, **event_args):
+    """This method is called when this radio button is selected"""
+    pass
+
+  def radio_button_ascitis_clicked(self, **event_args):
+    """This method is called when this radio button is selected"""
+    pass
+
+
+
+
+
