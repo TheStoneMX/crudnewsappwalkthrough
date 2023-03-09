@@ -13,6 +13,11 @@ class pleomorphic(pleomorphicTemplate):
 
     # Any code you write here will run before the form opens.
 
+  def radio_button_Interrumpidos_clicked(self, **event_args):
+    cmpt = InfoForm()
+    self.add_component_2_tab_control(cmpt)
+    cmpt.my_string = 'WBCs Interrumpidos'
+    
   def radio_button_rbc_paracitados_clicked(self, **event_args):
     """This method is called when this radio button is selected"""
     pass
