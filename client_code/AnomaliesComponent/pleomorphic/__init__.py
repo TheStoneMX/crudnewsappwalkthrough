@@ -33,6 +33,72 @@ class pleomorphic(pleomorphicTemplate):
     """This method is called when this radio button is selected"""
     pass
 
+  def radio_button_protit_clicked(self, **event_args):
+    """This method is called when this radio button is selected"""
+    pass
+
+  def radio_button_Sistatogenia_clicked(self, **event_args):
+    """This method is called when this radio button is selected"""
+    pass
+
+  def radio_button_symprotit_clicked(self, **event_args):
+    """This method is called when this radio button is selected"""
+    pass
+
+  def radio_button_dioekothecits_clicked(self, **event_args):
+    """This method is called when this radio button is selected"""
+    pass
+
+  def radio_button_ascits_clicked(self, **event_args):
+    """This method is called when this radio button is selected"""
+    pass
+
+  def radio_button_talus_clicked(self, **event_args):
+    """This method is called when this radio button is selected"""
+    pass
+
+  def radio_button_spermits_clicked(self, **event_args):
+    """This method is called when this radio button is selected"""
+    pass
+
+  def radio_button_PTeroharpen_clicked(self, **event_args):
+    """This method is called when this radio button is selected"""
+    pass
+
+  def radio_button_coloid_tectis_clicked(self, **event_args):
+    """This method is called when this radio button is selected"""
+    pass
+
+  def radio_button_mychits_clicked(self, **event_args):
+    """This method is called when this radio button is selected"""
+    pass
+
+  def radio_button_condrites_clicked(self, **event_args):
+    """This method is called when this radio button is selected"""
+    pass
+
+  def radio_button_syinascits_clicked(self, **event_args):
+    """This method is called when this radio button is selected"""
+    pass
+
+  def radio_button_tecits_clicked(self, **event_args):
+    """This method is called when this radio button is selected"""
+    pass
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
