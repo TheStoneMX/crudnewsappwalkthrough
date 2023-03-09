@@ -38,19 +38,11 @@ components:
     event_bindings: {clicked: radio_button_Numero_Aumentado_disminuido_clicked}
   - type: RadioButton
     properties: {role: null, selected: false, align: left, tooltip: '', border: '',
-      enabled: true, foreground: '', value: '', visible: true, text: Globulos Blancos Interrunpidos,
-      font_size: null, font: '', spacing_above: small, spacing_below: small, italic: false,
-      background: '', bold: false, group_name: Leucocitos, underline: false}
-    name: radio_button_Globulos_Blancos_Interrumpidos
-    layout_properties: {grid_position: 'KENPSB,OCBAYX'}
-    event_bindings: {clicked: radio_button_Globulos_Blancos_Interrumpidos_clicked}
-  - type: RadioButton
-    properties: {role: null, selected: false, align: left, tooltip: '', border: '',
       enabled: true, foreground: '', value: '', visible: true, text: No Viables, font_size: null,
       font: '', spacing_above: small, spacing_below: small, italic: false, background: '',
       bold: false, group_name: Leucocitos, underline: false}
     name: radio_button_no_viables
-    layout_properties: {grid_position: 'OXPXVN,XJNXAA YZGYNF,LRQLOZ'}
+    layout_properties: {grid_position: 'KENPSB,KQRRGL'}
     event_bindings: {clicked: radio_button_neutrofilos_no_viables_clicked}
   - type: RadioButton
     properties: {role: null, selected: false, align: left, tooltip: '', border: '',
@@ -58,31 +50,15 @@ components:
       font: '', spacing_above: small, spacing_below: small, italic: false, background: '',
       bold: false, group_name: Leucocitos, underline: false}
     name: radio_button_en_banda
-    layout_properties: {grid_position: 'OXPXVN,XJNXAA XMVMOH,PWAMGR'}
+    layout_properties: {grid_position: 'OXPXVN,XJNXAA'}
     event_bindings: {clicked: radio_button_neutrofilos_banda_clicked}
-  - type: RadioButton
-    properties: {role: null, selected: false, align: left, tooltip: '', border: '',
-      enabled: true, foreground: '', value: '', visible: true, text: Basofilia, font_size: null,
-      font: '', spacing_above: small, spacing_below: small, italic: false, background: '',
-      bold: false, group_name: Leucocitos, underline: false}
-    name: radio_button_basofilia
-    layout_properties: {grid_position: 'OXPXVN,MIQTCH TAFBYE,PJRBAE'}
-    event_bindings: {clicked: radio_button_basofilia_clicked}
-  - type: RadioButton
-    properties: {role: null, selected: false, align: left, tooltip: '', border: '',
-      enabled: true, foreground: '', value: '', visible: true, text: Macrocitos, font_size: null,
-      font: '', spacing_above: small, spacing_below: small, italic: false, background: '',
-      bold: false, group_name: Leucocitos, underline: false}
-    name: radio_button_macrocitos
-    layout_properties: {grid_position: 'OXPXVN,MIQTCH OTPMNL,LFXJBG'}
-    event_bindings: {clicked: radio_button_macrocitos_clicked}
   - type: RadioButton
     properties: {role: null, selected: false, align: left, tooltip: '', border: '',
       enabled: true, foreground: '', value: '', visible: true, text: Metamielocitos,
       font_size: null, font: '', spacing_above: small, spacing_below: small, italic: false,
       background: '', bold: false, group_name: Leucocitos, underline: false}
     name: radio_button_metamielocitos
-    layout_properties: {grid_position: 'WOJTBL,YSSLUC'}
+    layout_properties: {grid_position: 'OXPXVN,ETOWJN'}
     event_bindings: {clicked: radio_button_metamielocitos_clicked}
   - type: RadioButton
     properties: {role: null, selected: false, align: left, tooltip: '', border: '',
@@ -90,7 +66,7 @@ components:
       font: '', spacing_above: small, spacing_below: small, italic: false, background: '',
       bold: false, group_name: Leucocitos, underline: false}
     name: radio_button_mielocitos
-    layout_properties: {grid_position: 'WOJTBL,ABDCLR'}
+    layout_properties: {grid_position: 'QVRWPZ,XGMDDW'}
     event_bindings: {clicked: radio_button_mielocitos_clicked}
   - type: RadioButton
     properties: {role: null, selected: false, align: left, tooltip: '', border: '',
@@ -98,7 +74,7 @@ components:
       font: '', spacing_above: small, spacing_below: small, italic: false, background: '',
       bold: false, group_name: Leucocitos, underline: false}
     name: radio_button_Cohesion
-    layout_properties: {grid_position: 'MQPWBD,RGVQWQ'}
+    layout_properties: {grid_position: 'QVRWPZ,IHONQY'}
     event_bindings: {clicked: radio_button_Cohesion_neutrofilos_clicked}
   - type: RadioButton
     properties: {role: null, selected: false, align: left, tooltip: '', border: '',
@@ -110,12 +86,20 @@ components:
     event_bindings: {clicked: radio_button_Neutrofilos_Hipersegmenados_clicked}
   - type: RadioButton
     properties: {role: null, selected: false, align: left, tooltip: '', border: '',
-      enabled: true, foreground: '', value: '', visible: true, text: Neutrófilos interrumpidos,
+      enabled: true, foreground: '', value: '', visible: true, text: Macrocitos, font_size: null,
+      font: '', spacing_above: small, spacing_below: small, italic: false, background: '',
+      bold: false, group_name: Leucocitos, underline: false}
+    name: radio_button_macrocitos
+    layout_properties: {grid_position: 'MQPWBD,OQRKEJ'}
+    event_bindings: {clicked: radio_button_macrocitos_clicked}
+  - type: RadioButton
+    properties: {role: null, selected: false, align: left, tooltip: '', border: '',
+      enabled: true, foreground: '', value: '', visible: true, text: Interrunpidos,
       font_size: null, font: '', spacing_above: small, spacing_below: small, italic: false,
       background: '', bold: false, group_name: Leucocitos, underline: false}
-    name: radio_button_interrumpidos
-    layout_properties: {grid_position: 'QHXNQH,QFNCVY'}
-    event_bindings: {clicked: radio_button_interrumpidos_clicked}
+    name: radio_button_Interrumpidos
+    layout_properties: {grid_position: 'DVDRDR,INKOEJ'}
+    event_bindings: {clicked: radio_button_Interrumpidos_clicked}
   - type: Label
     properties: {role: headline, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
@@ -133,19 +117,11 @@ components:
     event_bindings: {clicked: radio_button_empty_wbc_clicked}
   - type: RadioButton
     properties: {role: null, selected: false, align: left, tooltip: '', border: '',
-      enabled: true, foreground: '', value: '', visible: true, text: Células de Linfocitos Plasma,
-      font_size: null, font: '', spacing_above: small, spacing_below: small, italic: false,
-      background: '', bold: false, group_name: Leucocitos, underline: false}
-    name: radio_button_Linfocitos_Plasma
-    layout_properties: {grid_position: 'EIQXME,QIRHSK'}
-    event_bindings: {clicked: radio_button_Linfocitos_Plasma_clicked}
-  - type: RadioButton
-    properties: {role: null, selected: false, align: left, tooltip: '', border: '',
       enabled: true, foreground: '', value: '', visible: true, text: WBCs con Membrana translúcida,
       font_size: null, font: '', spacing_above: small, spacing_below: small, italic: false,
       background: '', bold: false, group_name: Leucocitos, underline: false}
     name: radio_button_wbc_translucent
-    layout_properties: {grid_position: 'OHVXFD,LAILKX'}
+    layout_properties: {grid_position: 'TPQBTB,VPOOVY'}
     event_bindings: {clicked: radio_button_wbc_translucent_clicked}
   - type: RadioButton
     properties: {role: null, selected: false, align: left, tooltip: '', border: '',
@@ -153,7 +129,7 @@ components:
       font_size: null, font: '', spacing_above: small, spacing_below: small, italic: false,
       background: '', bold: false, group_name: Leucocitos, underline: false}
     name: radio_button_eosinofilos
-    layout_properties: {grid_position: 'XXDFHS,SAUGIO'}
+    layout_properties: {grid_position: 'IDYFRV,RTWZSF'}
     event_bindings: {clicked: radio_button_eosinofilos_clicked}
   - type: RadioButton
     properties: {role: null, selected: false, align: left, tooltip: '', border: '',
@@ -161,7 +137,7 @@ components:
       font_size: null, font: '', spacing_above: small, spacing_below: small, italic: false,
       background: '', bold: false, group_name: Leucocitos, underline: false}
     name: radio_button_basofilos
-    layout_properties: {grid_position: 'OSIEFK,NMKIMQ'}
+    layout_properties: {grid_position: 'IDYFRV,KZWXEN'}
     event_bindings: {clicked: radio_button_basofilos_clicked}
   - type: RadioButton
     properties: {role: null, selected: false, align: left, tooltip: '', border: '',
@@ -169,8 +145,16 @@ components:
       font_size: null, font: '', spacing_above: small, spacing_below: small, italic: false,
       background: '', bold: false, group_name: Leucocitos, underline: false}
     name: radio_button_linfocitos
-    layout_properties: {grid_position: 'MIRAMK,ZLBLRA'}
+    layout_properties: {grid_position: 'DNZIQX,CMUIHE'}
     event_bindings: {clicked: radio_button_linfocitos_clicked}
+  - type: RadioButton
+    properties: {role: null, selected: false, align: left, tooltip: '', border: '',
+      enabled: true, foreground: '', value: '', visible: true, text: Células de Linfocitos Plasma,
+      font_size: null, font: '', spacing_above: small, spacing_below: small, italic: false,
+      background: '', bold: false, group_name: Leucocitos, underline: false}
+    name: radio_button_Linfocitos_Plasma
+    layout_properties: {grid_position: 'DNZIQX,QTBSCV'}
+    event_bindings: {clicked: radio_button_Linfocitos_Plasma_clicked}
   - type: RadioButton
     properties: {role: null, selected: false, align: left, tooltip: '', border: '',
       enabled: true, foreground: '', value: '', visible: true, text: Recuento de monocitos aumentado Disminuido,

@@ -29,12 +29,12 @@ class leukocyte(leukocyteTemplate):
   def radio_button_Neutrofilos_Hipersegmenados_clicked(self, **event_args):
     cmpt = InfoForm()
     self.add_component_2_tab_control(cmpt)
-    cmpt.my_string = ''
+    cmpt.my_string = 'Neutrofilos hipersegmentados'
 
   def radio_button_Globulos_Blancos_Interrumpidos_clicked(self, **event_args):
     cmpt = InfoForm()
     self.add_component_2_tab_control(cmpt)
-    cmpt.my_string = 'Hipersegmenados'
+    cmpt.my_string = 'WBCs Interrumpidos'
 
   def radio_button_neutrofilos_no_viables_clicked(self, **event_args):
     cmpt = InfoForm()
@@ -69,27 +69,17 @@ class leukocyte(leukocyteTemplate):
   def radio_button_empty_wbc_clicked(self, **event_args):
     cmpt = InfoForm()
     self.add_component_2_tab_control(cmpt)
-    cmpt.my_string = ''
+    cmpt.my_string = 'Globulos blancos vacíos'
 
   def radio_button_Linfocitos_Plasma_clicked(self, **event_args):
     cmpt = InfoForm()
     self.add_component_2_tab_control(cmpt)
-    cmpt.my_string = 'empty_wbc'
+    cmpt.my_string = 'Linfocitos Plasma'
 
   def radio_button_wbc_translucent_clicked(self, **event_args):
     cmpt = InfoForm()
     self.add_component_2_tab_control(cmpt)
-    cmpt.my_string = ''
-
-  def radio_button_3_clicked(self, **event_args):
-    cmpt = InfoForm()
-    self.add_component_2_tab_control(cmpt)
-    cmpt.my_string = 'translucent'
-
-  def radio_button_interrumpidos_clicked(self, **event_args):
-    cmpt = InfoForm()
-    self.add_component_2_tab_control(cmpt)
-    cmpt.my_string = 'interrumpidos'
+    cmpt.my_string = 'WBCs translucida'
 
   def radio_button_eosinofilos_clicked(self, **event_args):
     cmpt = InfoForm()
@@ -115,6 +105,12 @@ class leukocyte(leukocyteTemplate):
     # self.link_list_anomalies.role = 'selected'
     self.column_panel_tabcontent.clear()
     self.column_panel_tabcontent.add_component(cmpt)     
+
+  def radio_button_Interrumpidos_clicked(self, **event_args):
+    cmpt = InfoForm()
+    self.add_component_2_tab_control(cmpt)
+    cmpt.my_string = 'WBCs Interrumpidos'
+
 
 
 
