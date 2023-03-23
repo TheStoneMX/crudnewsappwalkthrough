@@ -155,7 +155,7 @@ components:
   event_bindings: {clicked: radio_button_Spherocytes_clicked}
 - type: RadioButton
   properties: {role: null, selected: false, align: left, tooltip: '', border: '',
-    enabled: true, foreground: '', value: '', visible: true, text: Erythrocyte Aggregation,
+    enabled: true, foreground: '', value: '', visible: true, text: Agregación de eritrocitos,
     font_size: null, font: '', spacing_above: small, spacing_below: small, italic: false,
     background: '', bold: false, group_name: ERITOCYTES, underline: false}
   name: radio_button_Erythrocyte_Aggregation
