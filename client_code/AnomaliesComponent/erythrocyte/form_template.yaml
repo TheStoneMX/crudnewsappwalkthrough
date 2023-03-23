@@ -19,7 +19,7 @@ components:
     grid_position: YKKEUZ,TRPSIG
 - type: RadioButton
   properties: {role: null, selected: false, align: left, tooltip: '', border: '',
-    enabled: true, foreground: '', value: '', visible: true, text: Acanthocytes, font_size: null,
+    enabled: true, foreground: '', value: '', visible: true, text: Acantocitos, font_size: null,
     font: '', spacing_above: small, spacing_below: small, italic: false, background: '',
     bold: false, group_name: ERITOCYTES, underline: false}
   name: radio_button_Acanthocytes
