@@ -86,20 +86,28 @@ components:
       event_bindings: {click: button_Trabajando_click}
     - type: Button
       properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
-        foreground: '', visible: true, text: Investigaciones adicionales, font_size: null,
-        font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        foreground: '', visible: true, text: Investigaciones, font_size: null, font: '',
+        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
         background: '', bold: false, underline: false, icon: ''}
       name: button_Investigaciones
       layout_properties: {}
       event_bindings: {click: button_Investigaciones_click}
     - type: Button
       properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
-        foreground: '', visible: true, text: Configuaración del Alma, font_size: null,
-        font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        foreground: '', visible: true, text: Plan del Alma, font_size: null, font: '',
+        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
         background: '', bold: false, underline: false, icon: ''}
       name: button_Almica
       layout_properties: {}
       event_bindings: {click: button_Almica_click}
+    - type: Button
+      properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
+        foreground: '', visible: true, text: Consejos, font_size: null, font: '',
+        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false, icon: ''}
+      name: button_Consejos
+      layout_properties: {}
+      event_bindings: {click: button_consejos_click}
   - type: Label
     properties: {role: headline, align: center, tooltip: '', border: '', foreground: 'theme:Black',
       visible: true, text: '', font_size: 43, font: '', spacing_above: small, icon_align: left,

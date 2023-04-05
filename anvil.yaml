@@ -78,7 +78,7 @@ db_schema:
     - name: created
       admin_ui: {order: 15, width: 200}
       type: datetime
-    - name: consejos
+    - name: Consejos
       admin_ui: {order: 16, width: 200}
       type: string
   categories:

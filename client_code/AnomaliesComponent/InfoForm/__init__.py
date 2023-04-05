@@ -30,6 +30,7 @@ class InfoForm(InfoFormTemplate):
     self.WorkingWith = None
     self.Investigations = None 
     self.Almica = None 
+    self.Consejos = None
     #
    
 # define a property to hold the string
@@ -63,6 +64,7 @@ class InfoForm(InfoFormTemplate):
     self.WorkingWith = article_data['WorkingWith']
     self.Investigations = article_data['Investigations']
     self.Almica = article_data['Almica']
+    self.Consejos = article_data['Consejos']
     
   def button_apariencia_click(self, **event_args):
       try:
@@ -112,6 +114,10 @@ class InfoForm(InfoFormTemplate):
     """This method is called when the button is clicked"""
     self.rich_text_main_text.content = self.Almica
 
+  def button_consejos_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    self.rich_text_main_text.content = self.Consejos
+    
   def enable_buttons(self):
     #
     self.button_relacion.enabled = True
@@ -123,6 +129,7 @@ class InfoForm(InfoFormTemplate):
     self.button_Trabajando.enabled = True
     self.button_Investigaciones.enabled = True
     self.button_Almica.enabled = True
+    self.button_Consejos.enabled  = True
 
   def disable_buttons(self):
     #
@@ -137,10 +144,14 @@ class InfoForm(InfoFormTemplate):
     self.button_Trabajando.enabled = False
     self.button_Investigaciones.enabled = False
     self.button_Almica.enabled = False
-
+    self.button_Consejos.enabled  = False
+    
   def form_show(self, **event_args):
     """This method is called when the column panel is shown on the screen"""
     self.disable_buttons()
+
+
+
 
 
 
