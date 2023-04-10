@@ -27,7 +27,7 @@ components:
   event_bindings: {clicked: radio_button_Acanthocytes_clicked}
 - type: RadioButton
   properties: {role: null, selected: false, align: left, tooltip: '', border: '',
-    enabled: true, foreground: '', value: '', visible: true, text: Anisocytosis, font_size: null,
+    enabled: true, foreground: '', value: '', visible: true, text: Anisocitosis, font_size: null,
     font: '', spacing_above: small, spacing_below: small, italic: false, background: '',
     bold: false, group_name: ERITOCYTES, underline: false}
   name: radio_button_Anisocytosis
