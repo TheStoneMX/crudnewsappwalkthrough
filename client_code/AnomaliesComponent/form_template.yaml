@@ -3,7 +3,7 @@ container:
   properties: {col_widths: '{}'}
 components:
 - type: Label
-  properties: {role: headline, align: center, tooltip: '', border: '', foreground: 'theme:White', visible: true, text: Sangre Viva Diccionario, font_size: 32, font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: 'theme:Primary 700', bold: true, underline: false, icon: 'fa:file-pdf-o'}
+  properties: {role: headline, bold: true, align: center, spacing_above: small, background: 'theme:Primary 700', icon: 'fa:file-pdf-o', underline: false, font: '', icon_align: left, foreground: 'theme:White', spacing_below: small, visible: true, border: '', italic: false, font_size: 32, tooltip: '', text: Sangre Viva Vademécum}
   name: headline_1
   layout_properties:
     col_widths: {}
@@ -13,29 +13,29 @@ components:
   name: spacer_1
   layout_properties: {grid_position: 'LXPWEO,PVEDJA'}
 - type: FlowPanel
-  properties: {role: null, spacing: medium, align: center, tooltip: '', border: '', foreground: '', visible: true, spacing_above: small, spacing_below: small, background: ''}
+  properties: {role: null, align: center, spacing_above: small, background: '', foreground: '', spacing_below: small, visible: true, border: '', tooltip: '', spacing: medium}
   name: flow_anomalies_panel
   layout_properties:
     col_widths: {}
     grid_position: RLWTFE,MFMRRQ
   components:
   - type: Button
-    properties: {role: primary-color, align: center, tooltip: '', border: '', enabled: true, foreground: '', visible: true, text: EryThroCyte, font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '', bold: false, underline: false, icon: ''}
+    properties: {role: primary-color, bold: false, align: center, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: EryThroCyte}
     name: button_erythrocyte
     layout_properties: {grid_position: 'FDTEAE,WJGRCI'}
     event_bindings: {click: button_erythrocyte_click}
   - type: Button
-    properties: {role: primary-color, align: center, tooltip: '', border: '', enabled: true, foreground: '', visible: true, text: Leukocyte, font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '', bold: false, underline: false, icon: ''}
+    properties: {role: primary-color, bold: false, align: center, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: Leukocyte}
     name: button_leukocyte
     layout_properties: {grid_position: 'FDTEAE,LLFHYT'}
     event_bindings: {click: button_leukocyte_click}
   - type: Button
-    properties: {role: primary-color, align: center, tooltip: '', border: '', enabled: true, foreground: '', visible: true, text: pleomorphic, font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '', bold: false, underline: false, icon: ''}
+    properties: {role: primary-color, bold: false, align: center, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: pleomorphic}
     name: button_pleomorphic
     layout_properties: {grid_position: 'FDTEAE,TCLJWZ'}
     event_bindings: {click: button_pleomorphic_click}
   - type: Button
-    properties: {role: primary-color, align: center, tooltip: '', border: '', enabled: true, foreground: '', visible: true, text: plasma, font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '', bold: false, underline: false, icon: ''}
+    properties: {role: primary-color, bold: false, align: center, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: plasma}
     name: button_plasma
     layout_properties: {grid_position: 'FDTEAE,EZGANC'}
     event_bindings: {click: button_plasma_click}
@@ -52,22 +52,22 @@ components:
 - type: Label
   properties:
     role: null
+    bold: true
     align: left
-    tooltip: ''
-    border: ''
-    foreground: ''
-    visible: true
-    text: "Disclaimer de responsabilidad:\n\nEl análisis de sangre naturopático Sangre Viva Sangre Seca™ no es un procedimiento de diagnóstico médico. \n\nLa información proporcionada en este informe no debe interpretarse como un consejo médico y no tiene la intención de reemplazar el consejo de un médico o las pruebas patológicas estándar. \n\nEl análisis de Sangre Viva Sangre Seca™ se utiliza como una herramienta de evaluación y educación nutricional para ayudar con recomendaciones de dieta y estilo de vida."
-    font_size: null
-    font: ''
     spacing_above: small
-    icon_align: left
-    spacing_below: small
-    italic: false
     background: ''
-    bold: false
-    underline: false
     icon: ''
+    underline: false
+    font: ''
+    icon_align: left
+    foreground: ''
+    spacing_below: small
+    visible: true
+    border: ''
+    italic: false
+    font_size: 21
+    tooltip: ''
+    text: "Disclaimer de responsabilidad:\n\nEl análisis de sangre naturopático Sangre Viva Sangre Seca™ no es un procedimiento de diagnóstico médico. \n\nLa información proporcionada en este informe no debe interpretarse como un consejo médico y no tiene la intención de reemplazar el consejo de un médico o las pruebas patológicas estándar. \n\nEl análisis de Sangre Viva Sangre Seca™ se utiliza como una herramienta de evaluación y educación nutricional para ayudar con recomendaciones de dieta y estilo de vida."
   name: label_3
   layout_properties:
     col_widths: {}
