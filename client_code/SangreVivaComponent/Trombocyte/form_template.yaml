@@ -3,10 +3,7 @@ container:
   properties: {col_widths: '{}'}
 components:
 - type: Label
-  properties: {role: headline, align: center, tooltip: '', border: '', foreground: 'theme:White',
-    visible: true, text: ANOMALODADES DE TROMBOCITOS, font_size: null, font: '', spacing_above: small,
-    icon_align: left, spacing_below: small, italic: false, background: 'theme:Primary
-      500', bold: false, underline: false, icon: ''}
+  properties: {role: headline, align: center, tooltip: '', border: '', foreground: 'theme:White', visible: true, text: ANOMALODADES DE TROMBOCITOS, font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: 'theme:Primary 500', bold: false, underline: false, icon: ''}
   name: headline_1
   layout_properties: {grid_position: 'KNNNQG,HFSIEM'}
 - type: Spacer
@@ -19,17 +16,11 @@ components:
   layout_properties: {grid_position: 'DYJXQU,EPNEOJ'}
   components:
   - type: CheckBox
-    properties: {role: null, align: left, tooltip: '', border: '', enabled: true,
-      foreground: '', allow_indeterminate: false, visible: true, text: Thrombocyte Aggregation,
-      font_size: null, font: '', spacing_above: small, spacing_below: small, italic: false,
-      background: '', bold: false, checked: false, underline: false}
+    properties: {role: null, align: left, tooltip: '', border: '', enabled: true, foreground: '', allow_indeterminate: false, visible: true, text: Thrombocyte Aggregation, font_size: null, font: '', spacing_above: small, spacing_below: small, italic: false, background: '', bold: false, checked: false, underline: false}
     name: check_box_Thrombocyte_Aggregation
     layout_properties: {grid_position: 'GZPKKY,KCHFGQ'}
   - type: CheckBox
-    properties: {role: null, align: left, tooltip: '', border: '', enabled: true,
-      foreground: '', allow_indeterminate: false, visible: true, text: Thrombosis,
-      font_size: null, font: '', spacing_above: small, spacing_below: small, italic: false,
-      background: '', bold: false, checked: false, underline: false}
+    properties: {role: null, align: left, tooltip: '', border: '', enabled: true, foreground: '', allow_indeterminate: false, visible: true, text: Thrombosis, font_size: null, font: '', spacing_above: small, spacing_below: small, italic: false, background: '', bold: false, checked: false, underline: false}
     name: check_box_Thrombosis
     layout_properties: {grid_position: 'GZPKKY,AUYGMJ'}
 is_package: true

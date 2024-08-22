@@ -4,9 +4,7 @@ services:
   client_config: {}
   server_config: {}
 - source: /runtime/services/anvil/users.yml
-  client_config: {allow_signup: true, enable_automatically: true, use_email: true,
-    confirm_email: true, require_secure_passwords: true, allow_remember_me: true,
-    remember_me_days: 30}
+  client_config: {allow_signup: true, enable_automatically: true, use_email: true, confirm_email: true, require_secure_passwords: true, allow_remember_me: true, remember_me_days: 30}
   server_config: {user_table: users, email_from_address: thestonemx@outlook.com}
 startup: {type: form, module: HomeForm}
 package_name: CRUDnewsappwalkthrough
@@ -17,11 +15,7 @@ runtime_options:
   server_version: python3-full
   client_version: '2'
   server_spec: {base: python310-machine-learning}
-metadata: {description: 'Nosotros en Sangre Viva & Sangre Seca combinamos la técnica
-    revolucionaria de microscopia celular con la parte espiritual, no solo revelando
-    los desequilibrios biológicos que presenta muestra de sangre, sino también el
-    plan del Alma en esta encarnación.', title: análisis de células sanguíneas vivas,
-  logo_img: 'asset:logo.png'}
+metadata: {description: 'Nosotros en Sangre Viva & Sangre Seca combinamos la técnica revolucionaria de microscopia celular con la parte espiritual, no solo revelando los desequilibrios biológicos que presenta muestra de sangre, sino también el plan del Alma en esta encarnación.', title: análisis de células sanguíneas vivas, logo_img: 'asset:logo.png'}
 startup_form: null
 db_schema:
   articles:
