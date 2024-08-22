@@ -2,48 +2,39 @@ container:
   type: ColumnPanel
   properties: {col_widths: '{}', background: '#fbf4df'}
 components:
-- name: label_1
-  properties: {text: Análisis Holístico de Células Sanguíneas en Sangre Viva & Sangre Seca, bold: true, align: center, visible: true, font_size: 26}
-  type: Label
-  layout_properties: {grid_position: 'YSBKKQ,UYJQPY'}
-- name: text_area_1
+- type: Label
+  properties: {role: null, bold: false, align: left, spacing_above: large, background: '#fbf4df', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: medium, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: 'El análisis de células sanguíneas vivas es la observación de células sanguíneas vivas utilizando un microscopio especializado de alta potencia con una cámara que proyecta una imagen de las células sanguíneas vivas en una pantalla para que el médico y el cliente las vean juntos, lo que permite grabar imágenes y videos para su estudio y analisis.'}
+  name: label_1
+  layout_properties: {grid_position: 'KGYVQY,PXDOIA'}
+- type: Label
+  properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: 'Nosotros en Sangre Viva & Sangre Seca combinamos la técnica revolucionaria de microscopia celular con la parte espiritual, no solo revelando los desequilibrios biológicos que presenta muestra de sangre, sino también el plan del Alma en esta encarnación.'}
+  name: label_2
+  layout_properties: {grid_position: 'CJGYBQ,SPSGRR'}
+- type: Label
+  properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: '¿Qué significa esto? Bueno si alguna vez te has preguntado por qué estás en la Tierra, por qué con esa familia, esos padres y la vida que tienes, eres de los nuestros. Somos de los que creemos en que nacemos para seguir un plan trazado antes de nuestra llegada al mundo material, yo le llamo el plan del alma. Por eso te invito a adentrarte en los misterios de la Sangre Viva y Sangre Seca.'}
+  name: label_3
+  layout_properties: {grid_position: 'IHQGHX,WLEMJO'}
+- type: Label
   properties:
-    text: |-
-      El análisis de células sanguíneas vivas implica la observación directa de estas células mediante un microscopio de campo oscuro, proyectando su imagen en una pantalla para que tanto el especialista como el cliente puedan visualizar y analizar juntas las células vivas. Este proceso permite grabar imágenes y videos para un estudio y análisis más detallado.
-
-      En Sangre Viva & Sangre Seca, combinamos esta innovadora técnica de microscopía celular con una perspectiva espiritual única. No solo detectamos los desequilibrios biológicos en tu sangre, sino que también exploramos el propósito del alma en esta encarnación.
-
-      ¿Qué significa esto? Si alguna vez te has preguntado cuál es tu misión en la Tierra, por qué naciste en tu familia, con tus padres y en la vida que llevas, entonces estás en el lugar correcto. Creemos que nacemos para cumplir un plan diseñado antes de nuestra llegada al mundo material, lo que llamamos "el plan del alma". Te invitamos a descubrir los misterios de la Sangre Viva y Sangre Seca con nosotros.
-    height: 309.87109375
-    align: center
-  type: TextArea
-  layout_properties: {grid_position: 'QMPTLF,NBRDWD'}
-- name: label_2
-  properties:
-    text: |
-      ¿Cómo lo logramos?
-
-      Tomamos una muestra de sangre a través de un pequeño pinchazo en el dedo índice y colocamos una gota en un portaobjetos de vidrio. Luego, la muestra se coloca bajo el microscopio y se proyecta en una pantalla. En el análisis de sangre viva, la muestra no se seca ni se tiñe previamente, lo que permite observar los elementos de la sangre en su estado vivo.
+    role: null
+    bold: false
     align: left
-    bold: true
-    font_size: 26
-  type: Label
-  layout_properties: {grid_position: 'IZFTTO,QTVJLR'}
-- name: label_3
-  properties:
-    text: |-
-      Ejemplo de un desequilibrio biológico revelado: Acanthocitos
-
-      La presencia de acantocitos indica una posible disfunción en el hígado y el bazo, órganos responsables del mantenimiento de las membranas de los glóbulos rojos.
-      Esta anormalidad se debe a un cambio en la distribución de lípidos en la membrana de los glóbulos rojos, resultando en una composición lipídica alterada.
-      Los acantocitos tienen un exceso de colesterol en su membrana celular, lo que expande su exterior.
-    font_size: 21
-  type: Label
-  layout_properties: {grid_position: 'MXKYRV,JBODUJ'}
-- name: text_area_5
-  properties: {text: 'Ejemplo de un desequilibrio biológico revelado: Acanthocitos:', height: 31.7265625}
-  type: TextArea
-  layout_properties: {grid_position: 'YCPSKE,NXREMQ'}
+    spacing_above: small
+    background: ''
+    icon: ''
+    underline: false
+    font: ''
+    icon_align: left
+    foreground: ''
+    spacing_below: small
+    visible: true
+    border: ''
+    italic: false
+    font_size: null
+    tooltip: ''
+    text: "Como se logra? \nSe se toma la muestra de sangres por medio de un pequeño pinchazo en dedo indice, y se coloca una gota de sangre en un portaobjetos de vidrio, se coloca en el microscopio y luego se ve en la pantalla. En el análisis de sangre viva, la sangre no se seca ni se tiñe de antemano, por lo que los elementos de la sangre se pueden ver en su estado vivo."
+  name: label_4
+  layout_properties: {grid_position: 'FGOGLW,DSCWWY'}
 - type: Label
   properties:
     role: null
