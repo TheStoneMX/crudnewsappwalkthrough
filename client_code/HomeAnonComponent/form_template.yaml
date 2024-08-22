@@ -22,22 +22,31 @@ components:
   properties:
     text: |
       ¿Cómo lo logramos?
-
       Tomamos una muestra de sangre a través de un pequeño pinchazo en el dedo índice y colocamos una gota en un portaobjetos de vidrio. Luego, la muestra se coloca bajo el microscopio y se proyecta en una pantalla. En el análisis de sangre viva, la muestra no se seca ni se tiñe previamente, lo que permite observar los elementos de la sangre en su estado vivo.
-    align: left
+    align: center
     bold: true
     font_size: 26
   type: Label
   layout_properties: {grid_position: 'IZFTTO,QTVJLR'}
+- name: label_7
+  properties: {text: 'Ejemplo de un desequilibrio biológico revelado:  Acanthocitos', align: left, bold: true, font_size: 21}
+  type: Label
+  layout_properties: {grid_position: 'KYPERJ,ALUOIG'}
+- name: image_3
+  properties: {source: _/theme/acanthocytes-in-blood-1296x728-body.webp}
+  type: Image
+  layout_properties: {grid_position: 'JASGDD,ICYZPG'}
 - name: label_3
   properties:
-    text: |-
-      Ejemplo de un desequilibrio biológico revelado: Acanthocitos
+    text: |2-
+
 
       La presencia de acantocitos indica una posible disfunción en el hígado y el bazo, órganos responsables del mantenimiento de las membranas de los glóbulos rojos.
       Esta anormalidad se debe a un cambio en la distribución de lípidos en la membrana de los glóbulos rojos, resultando en una composición lipídica alterada.
       Los acantocitos tienen un exceso de colesterol en su membrana celular, lo que expande su exterior.
     font_size: 21
+    align: center
+    bold: true
   type: Label
   layout_properties: {grid_position: 'MXKYRV,JBODUJ'}
 - name: text_area_5
