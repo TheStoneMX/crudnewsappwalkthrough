@@ -1,162 +1,162 @@
-dependencies: []
-services:
-- source: /runtime/services/tables.yml
-  client_config: {}
-  server_config: {}
-- source: /runtime/services/anvil/users.yml
-  client_config: {allow_signup: true, enable_automatically: true, use_email: true, confirm_email: true, require_secure_passwords: true, allow_remember_me: true, remember_me_days: 30}
-  server_config: {user_table: users, email_from_address: thestonemx@outlook.com}
-startup: {type: form, module: HomeForm}
-package_name: CRUDnewsappwalkthrough
 allow_embedding: false
+db_schema:
+  anomalies:
+    client: none
+    columns:
+    - admin_ui: {width: 200}
+      name: Appearace
+      type: string
+    - admin_ui: {width: 200}
+      name: Relevance
+      type: string
+    - admin_ui: {width: 200}
+      name: implications
+      type: string
+    - admin_ui: {width: 200}
+      name: Symptoms
+      type: string
+    - admin_ui: {width: 200}
+      name: Pleomorphic
+      type: string
+    - admin_ui: {width: 200}
+      name: Medical
+      type: string
+    - admin_ui: {width: 200}
+      name: Intervntions
+      type: string
+    - admin_ui: {width: 200}
+      name: Correcting
+      type: string
+    - admin_ui: {width: 200}
+      name: investigations
+      type: string
+    - admin_ui: {width: 200}
+      name: images
+      target: images
+      type: link_multiple
+    server: full
+    title: anomalies
+  articles:
+    client: none
+    columns:
+    - admin_ui: {width: 200}
+      name: Title
+      type: string
+    - admin_ui: {width: 200}
+      name: Appearance
+      type: string
+    - admin_ui: {width: 200}
+      name: Image
+      type: media
+    - admin_ui: {width: 200}
+      name: Created
+      type: datetime
+    - admin_ui: {width: 200}
+      name: UpDated
+      type: datetime
+    - admin_ui: {width: 200}
+      name: Category
+      target: categories
+      type: link_single
+    - admin_ui: {width: 200}
+      name: Relevance
+      type: string
+    - admin_ui: {width: 200}
+      name: Implications
+      type: string
+    - admin_ui: {width: 200}
+      name: Symptoms
+      type: string
+    - admin_ui: {width: 200}
+      name: Pleomorphic
+      type: string
+    - admin_ui: {width: 200}
+      name: MedPerspective
+      type: string
+    - admin_ui: {width: 200}
+      name: Interventions
+      type: string
+    - admin_ui: {width: 200}
+      name: WorkingWith
+      type: string
+    - admin_ui: {width: 200}
+      name: Investigations
+      type: string
+    - admin_ui: {width: 200}
+      name: Almica
+      type: string
+    - admin_ui: {order: 15, width: 200}
+      name: created
+      type: datetime
+    - admin_ui: {order: 16, width: 200}
+      name: Consejos
+      type: string
+    server: full
+    title: articles
+  categories:
+    client: search
+    columns:
+    - admin_ui: {width: 200}
+      name: name
+      type: string
+    server: full
+    title: categories
+  images:
+    client: none
+    columns:
+    - admin_ui: {width: 200}
+      name: images
+      type: media
+    server: full
+    title: images
+  users:
+    client: full
+    columns:
+    - admin_ui: {width: 237}
+      name: email
+      type: string
+    - admin_ui: {width: 200}
+      name: enabled
+      type: bool
+    - admin_ui: {width: 200}
+      name: last_login
+      type: datetime
+    - admin_ui: {width: 200}
+      name: password_hash
+      type: string
+    - admin_ui: {width: 200}
+      name: n_password_failures
+      type: number
+    - admin_ui: {width: 200}
+      name: confirmed_email
+      type: bool
+    - admin_ui: {width: 200}
+      name: remembered_logins
+      type: simpleObject
+    - admin_ui: {width: 200}
+      name: signed_up
+      type: datetime
+    - admin_ui: {width: 200}
+      name: email_confirmation_key
+      type: string
+    server: full
+    title: Users
+dependencies: []
+metadata: {description: 'Nosotros en Sangre Viva & Sangre Seca combinamos la técnica revolucionaria de microscopia celular con la parte espiritual, no solo revelando los desequilibrios biológicos que presenta muestra de sangre, sino también el plan del Alma en esta encarnación.', logo_img: 'asset:logo.png', title: análisis de células sanguíneas vivas}
 name: Sangre Viva
+package_name: CRUDnewsappwalkthrough
+renamed: true
 runtime_options:
-  version: 2
-  server_version: python3-full
   client_version: '2'
   server_spec: {base: python310-machine-learning}
-metadata: {description: 'Nosotros en Sangre Viva & Sangre Seca combinamos la técnica revolucionaria de microscopia celular con la parte espiritual, no solo revelando los desequilibrios biológicos que presenta muestra de sangre, sino también el plan del Alma en esta encarnación.', title: análisis de células sanguíneas vivas, logo_img: 'asset:logo.png'}
+  server_version: python3-full
+  version: 2
+services:
+- client_config: {}
+  server_config: {}
+  source: /runtime/services/tables.yml
+- client_config: {allow_remember_me: true, allow_signup: true, confirm_email: true, enable_automatically: true, remember_me_days: 30, require_secure_passwords: true, use_email: true}
+  server_config: {email_from_address: thestonemx@outlook.com, user_table: users}
+  source: /runtime/services/anvil/users.yml
+startup: {module: HomeForm, type: form}
 startup_form: null
-db_schema:
-  articles:
-    title: articles
-    client: none
-    server: full
-    columns:
-    - name: Title
-      admin_ui: {width: 200}
-      type: string
-    - name: Appearance
-      admin_ui: {width: 200}
-      type: string
-    - name: Image
-      admin_ui: {width: 200}
-      type: media
-    - name: Created
-      admin_ui: {width: 200}
-      type: datetime
-    - name: UpDated
-      admin_ui: {width: 200}
-      type: datetime
-    - name: Category
-      admin_ui: {width: 200}
-      type: link_single
-      target: categories
-    - name: Relevance
-      admin_ui: {width: 200}
-      type: string
-    - name: Implications
-      admin_ui: {width: 200}
-      type: string
-    - name: Symptoms
-      admin_ui: {width: 200}
-      type: string
-    - name: Pleomorphic
-      admin_ui: {width: 200}
-      type: string
-    - name: MedPerspective
-      admin_ui: {width: 200}
-      type: string
-    - name: Interventions
-      admin_ui: {width: 200}
-      type: string
-    - name: WorkingWith
-      admin_ui: {width: 200}
-      type: string
-    - name: Investigations
-      admin_ui: {width: 200}
-      type: string
-    - name: Almica
-      admin_ui: {width: 200}
-      type: string
-    - name: created
-      admin_ui: {order: 15, width: 200}
-      type: datetime
-    - name: Consejos
-      admin_ui: {order: 16, width: 200}
-      type: string
-  categories:
-    title: categories
-    client: search
-    server: full
-    columns:
-    - name: name
-      admin_ui: {width: 200}
-      type: string
-  anomalies:
-    title: anomalies
-    client: none
-    server: full
-    columns:
-    - name: Appearace
-      admin_ui: {width: 200}
-      type: string
-    - name: Relevance
-      admin_ui: {width: 200}
-      type: string
-    - name: implications
-      admin_ui: {width: 200}
-      type: string
-    - name: Symptoms
-      admin_ui: {width: 200}
-      type: string
-    - name: Pleomorphic
-      admin_ui: {width: 200}
-      type: string
-    - name: Medical
-      admin_ui: {width: 200}
-      type: string
-    - name: Intervntions
-      admin_ui: {width: 200}
-      type: string
-    - name: Correcting
-      admin_ui: {width: 200}
-      type: string
-    - name: investigations
-      admin_ui: {width: 200}
-      type: string
-    - name: images
-      admin_ui: {width: 200}
-      type: link_multiple
-      target: images
-  images:
-    title: images
-    client: none
-    server: full
-    columns:
-    - name: images
-      admin_ui: {width: 200}
-      type: media
-  users:
-    title: Users
-    client: full
-    server: full
-    columns:
-    - name: email
-      admin_ui: {width: 237}
-      type: string
-    - name: enabled
-      admin_ui: {width: 200}
-      type: bool
-    - name: last_login
-      admin_ui: {width: 200}
-      type: datetime
-    - name: password_hash
-      admin_ui: {width: 200}
-      type: string
-    - name: n_password_failures
-      admin_ui: {width: 200}
-      type: number
-    - name: confirmed_email
-      admin_ui: {width: 200}
-      type: bool
-    - name: remembered_logins
-      admin_ui: {width: 200}
-      type: simpleObject
-    - name: signed_up
-      admin_ui: {width: 200}
-      type: datetime
-    - name: email_confirmation_key
-      admin_ui: {width: 200}
-      type: string
-renamed: true

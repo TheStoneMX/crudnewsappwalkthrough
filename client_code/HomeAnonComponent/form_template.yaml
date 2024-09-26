@@ -1,45 +1,46 @@
-container:
-  type: ColumnPanel
-  properties: {col_widths: '{}', background: '#fbf4df'}
 components:
-- name: label_1
-  properties: {text: Análisis Holístico de Células Sanguíneas en Sangre Viva & Sangre Seca, bold: true, align: center, visible: true, font_size: 26}
+- layout_properties: {grid_position: 'YSBKKQ,UYJQPY'}
+  name: label_1
+  properties: {align: center, bold: true, font_size: 26, text: Análisis Holístico de Células Sanguíneas en Sangre Viva & Sangre Seca, visible: true}
   type: Label
-  layout_properties: {grid_position: 'YSBKKQ,UYJQPY'}
-- name: label_8
+- layout_properties: {grid_position: 'EDIWOU,HJPIJB'}
+  name: label_8
   properties:
+    font_size: 21
     text: |-
       El análisis de células sanguíneas vivas implica la observación directa de estas células mediante un microscopio de campo oscuro, proyectando su imagen en una pantalla para que tanto el especialista como el cliente puedan visualizar y analizar juntas las células vivas. Este proceso permite grabar imágenes y videos para un estudio y análisis más detallado.
 
       En Sangre Viva & Sangre Seca, combinamos esta innovadora técnica de microscopía celular con una perspectiva espiritual única. No solo detectamos los desequilibrios biológicos en tu sangre, sino que también exploramos el propósito del alma en esta encarnación.
 
       ¿Qué significa esto? Si alguna vez te has preguntado cuál es tu misión en la Tierra, por qué naciste en tu familia, con tus padres y en la vida que llevas, entonces estás en el lugar correcto. Creemos que nacemos para cumplir un plan diseñado antes de nuestra llegada al mundo material, lo que llamamos "el plan del alma". Te invitamos a descubrir los misterios de la Sangre Viva y Sangre Seca con nosotros.
-    font_size: 21
   type: Label
-  layout_properties: {grid_position: 'EDIWOU,HJPIJB'}
-- name: label_4
-  properties: {text: '¿Cómo lo logramos?', align: center, bold: true, font_size: 28, italic: false}
+- layout_properties: {grid_position: 'EVJLVN,YUQMPP'}
+  name: label_4
+  properties: {align: center, bold: true, font_size: 28, italic: false, text: '¿Cómo lo logramos?'}
   type: Label
-  layout_properties: {grid_position: 'EVJLVN,YUQMPP'}
-- name: label_2
+- layout_properties: {grid_position: 'IZFTTO,QTVJLR'}
+  name: label_2
   properties:
-    text: |
-      Tomamos una muestra de sangre a través de un pequeño pinchazo en el dedo índice y colocamos una gota en un portaobjetos de vidrio. Luego, la muestra se coloca bajo el microscopio y se proyecta en una pantalla. En el análisis de sangre viva, la muestra no se seca ni se tiñe previamente, lo que permite observar los elementos de la sangre en su estado vivo.
     align: center
     bold: true
     font_size: 21
+    text: |
+      Tomamos una muestra de sangre a través de un pequeño pinchazo en el dedo índice y colocamos una gota en un portaobjetos de vidrio. Luego, la muestra se coloca bajo el microscopio y se proyecta en una pantalla. En el análisis de sangre viva, la muestra no se seca ni se tiñe previamente, lo que permite observar los elementos de la sangre en su estado vivo.
   type: Label
-  layout_properties: {grid_position: 'IZFTTO,QTVJLR'}
-- name: label_7
-  properties: {text: 'Ejemplo de un desequilibrio biológico revelado:  Acanthocitos', align: center, bold: true, font_size: 21}
+- layout_properties: {grid_position: 'KYPERJ,ALUOIG'}
+  name: label_7
+  properties: {align: center, bold: true, font_size: 21, text: 'Ejemplo de un desequilibrio biológico revelado:  Acanthocitos'}
   type: Label
-  layout_properties: {grid_position: 'KYPERJ,ALUOIG'}
-- name: image_3
-  properties: {source: _/theme/Acan_04b.jpg, height: 354.66015625}
+- layout_properties: {grid_position: 'JASGDD,ICYZPG'}
+  name: image_3
+  properties: {height: 354.66015625, source: _/theme/Acan_04b.jpg}
   type: Image
-  layout_properties: {grid_position: 'JASGDD,ICYZPG'}
-- name: label_3
+- layout_properties: {grid_position: 'MXKYRV,JBODUJ'}
+  name: label_3
   properties:
+    align: left
+    bold: true
+    font_size: 21
     text: |2-
 
       La presencia de acantocitos indica una posible disfunción en el hígado y el bazo, órganos responsables del mantenimiento de las membranas de los glóbulos rojos. Esta anormalidad se debe a un cambio en la distribución de lípidos en la membrana de los glóbulos rojos, resultando en una composición lipídica alterada. Los acantocitos tienen un exceso de colesterol en su membrana celular, lo que expande su exterior.
@@ -51,44 +52,43 @@ components:
       • en la membrana de los glóbulos rojos, lo que da como resultado una composición lipídica de la membrana alterada.
 
       • Los acantocitos tienen un exceso de colesterol en la membrana celular, lo que expande el exterior
-    font_size: 21
-    align: left
-    bold: true
   type: Label
-  layout_properties: {grid_position: 'MXKYRV,JBODUJ'}
-- name: youtube_video_ACANTHOCYTES
-  properties: {border: '3', autoplay: true, loop: true, youtube_id: sFg4JzrJ-p8}
-  type: YouTubeVideo
-  layout_properties: {grid_position: 'FMLNAV,ORPVUY FVOULT,DYIABM'}
-  data_bindings: []
+- data_bindings: []
   event_bindings: {state_change: youtube_video_ACANTHOCYTES_state_change}
-- type: Label
-  properties:
-    role: null
-    bold: true
-    align: left
-    spacing_above: small
-    background: ''
-    icon: ''
-    underline: false
-    font: ''
-    icon_align: left
-    foreground: ''
-    spacing_below: small
-    visible: true
-    border: ''
-    italic: false
-    font_size: 21
-    tooltip: ''
-    text: "\nInterpretación Emocional\n\n•\tFalta de energía creativa. \n•\tPersonas molestas, enojadas.\n•\tEn algunos casos se presenta con cuadros depresivos.\n•\tCapacidad reducida para crear en todos los aspectos de la vida.\n\n"
+  layout_properties: {grid_position: 'FMLNAV,ORPVUY FVOULT,DYIABM'}
+  name: youtube_video_ACANTHOCYTES
+  properties: {autoplay: true, border: '3', loop: true, youtube_id: sFg4JzrJ-p8}
+  type: YouTubeVideo
+- layout_properties: {grid_position: 'FMLNAV,WYOMOF'}
   name: label_6
-  layout_properties: {grid_position: 'FMLNAV,WYOMOF'}
-- name: label_5
-  properties: {text: 'Josefina D. Es una mujer de 32 años. Trabaja en una agencia de publicidad y está sujeta a la entrega semanal de resultados. Acudió a la consulta porque tenía un constante dolor en el lado derecho del abdomen y la espalda, migrañas y experimentaba una falta de ganas de trabajar, sobre todo porque su rendimiento había bajado de tal modo que ya no lograba sacar adelante ideas, campañas, ni tampoco hacer contactos de ventas. Su cuota de creatividad se había agotado. Mostraba cierta agitación al hablar de su fatiga y de las veces que le habían llamado la atención en el trabajo por no cumplir con su cuota de la semana. Necesitaba vacaciones o cambiar de rutina. Al menos eso creía ella.', font_size: 21}
+  properties:
+    align: left
+    background: ''
+    bold: true
+    border: ''
+    font: ''
+    font_size: 21
+    foreground: ''
+    icon: ''
+    icon_align: left
+    italic: false
+    role: null
+    spacing_above: small
+    spacing_below: small
+    text: "\nInterpretación Emocional\n\n•\tFalta de energía creativa. \n•\tPersonas molestas, enojadas.\n•\tEn algunos casos se presenta con cuadros depresivos.\n•\tCapacidad reducida para crear en todos los aspectos de la vida.\n\n"
+    tooltip: ''
+    underline: false
+    visible: true
   type: Label
-  layout_properties: {grid_position: 'GXCYWZ,MKBEEP'}
-- type: Spacer
-  properties: {height: 142}
+- layout_properties: {grid_position: 'GXCYWZ,MKBEEP'}
+  name: label_5
+  properties: {font_size: 21, text: 'Josefina D. Es una mujer de 32 años. Trabaja en una agencia de publicidad y está sujeta a la entrega semanal de resultados. Acudió a la consulta porque tenía un constante dolor en el lado derecho del abdomen y la espalda, migrañas y experimentaba una falta de ganas de trabajar, sobre todo porque su rendimiento había bajado de tal modo que ya no lograba sacar adelante ideas, campañas, ni tampoco hacer contactos de ventas. Su cuota de creatividad se había agotado. Mostraba cierta agitación al hablar de su fatiga y de las veces que le habían llamado la atención en el trabajo por no cumplir con su cuota de la semana. Necesitaba vacaciones o cambiar de rutina. Al menos eso creía ella.'}
+  type: Label
+- layout_properties: {grid_position: 'EDOVEQ,FQZUNI'}
   name: spacer_1
-  layout_properties: {grid_position: 'EDOVEQ,FQZUNI'}
+  properties: {height: 142}
+  type: Spacer
+container:
+  properties: {background: '#fbf4df', col_widths: '{}'}
+  type: ColumnPanel
 is_package: true

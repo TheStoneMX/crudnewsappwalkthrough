@@ -1,63 +1,63 @@
-container:
-  type: HtmlTemplate
-  properties: {html: '@theme:standard-page.html', background: '#fbf4df'}
 components:
-- type: ColumnPanel
-  properties: {col_widths: '{}'}
-  name: content_panel
-  layout_properties: {slot: default}
-  components:
-  - type: ColumnPanel
-    properties: {}
+- components:
+  - layout_properties: {grid_position: 'YIJRSG,IMJXZK'}
     name: column_panel_content
-    layout_properties: {grid_position: 'YIJRSG,IMJXZK'}
-- type: FlowPanel
-  properties: {}
-  name: navbar_links
-  layout_properties: {slot: nav-right}
-  components:
-  - type: Link
-    properties: {role: null, bold: false, align: left, col_widths: '', spacing_above: small, background: '', icon: '', wrap_on: mobile, underline: false, font: '', col_spacing: medium, icon_align: left, foreground: '', url: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: Register}
+    properties: {}
+    type: ColumnPanel
+  layout_properties: {slot: default}
+  name: content_panel
+  properties: {col_widths: '{}'}
+  type: ColumnPanel
+- components:
+  - layout_properties: {}
     name: link_register
-    layout_properties: {}
-  - type: Link
-    properties: {role: null, bold: false, align: left, col_widths: '', spacing_above: small, background: '', icon: '', wrap_on: mobile, underline: false, font: '', col_spacing: medium, icon_align: left, foreground: '', url: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: Login}
+    properties: {align: left, background: '', bold: false, border: '', col_spacing: medium, col_widths: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Register, tooltip: '', underline: false, url: '', visible: true, wrap_on: mobile}
+    type: Link
+  - layout_properties: {}
     name: link_1
-    layout_properties: {}
-  - type: Link
-    properties: {role: null, bold: false, align: left, col_widths: '', spacing_above: small, background: '', icon: '', wrap_on: mobile, underline: false, font: '', col_spacing: medium, icon_align: left, foreground: '', url: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: Logout}
+    properties: {align: left, background: '', bold: false, border: '', col_spacing: medium, col_widths: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Login, tooltip: '', underline: false, url: '', visible: true, wrap_on: mobile}
+    type: Link
+  - layout_properties: {}
     name: link_logout
-    layout_properties: {}
-- type: Label
-  properties: {role: headline, bold: false, align: left, spacing_above: small, background: '', icon: 'fa:ambulance', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: 'Sangre Viva '}
+    properties: {align: left, background: '', bold: false, border: '', col_spacing: medium, col_widths: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Logout, tooltip: '', underline: false, url: '', visible: true, wrap_on: mobile}
+    type: Link
+  layout_properties: {slot: nav-right}
+  name: navbar_links
+  properties: {}
+  type: FlowPanel
+- layout_properties: {slot: title}
   name: headline_1
-  layout_properties: {slot: title}
-- type: ColumnPanel
-  properties: {col_widths: '{}', background: '#fbf4df'}
-  name: column_panel_1
-  layout_properties: {slot: left-nav}
-  components:
-  - type: Link
-    properties: {role: null, bold: false, align: left, col_widths: '', spacing_above: small, background: '#fbf4df', icon: 'fa:home', wrap_on: mobile, underline: false, font: '', col_spacing: medium, icon_align: left, foreground: '', url: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: Home}
-    name: link_home
+  properties: {align: left, background: '', bold: false, border: '', font: '', font_size: null, foreground: '', icon: 'fa:ambulance', icon_align: left, italic: false, role: headline, spacing_above: small, spacing_below: small, text: 'Sangre Viva ', tooltip: '', underline: false, visible: true}
+  type: Label
+- components:
+  - event_bindings: {click: link_home_click}
     layout_properties: {grid_position: 'HMTSNH,QYARTW'}
-    event_bindings: {click: link_home_click}
-  - type: Link
-    properties: {role: null, bold: false, align: left, col_widths: '', spacing_above: small, background: '#fbf4df', icon: 'fa:file-pdf-o', wrap_on: mobile, underline: false, font: '', col_spacing: medium, icon_align: left, foreground: '', url: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: Create Report}
-    name: link_create_report
+    name: link_home
+    properties: {align: left, background: '#fbf4df', bold: false, border: '', col_spacing: medium, col_widths: '', font: '', font_size: null, foreground: '', icon: 'fa:home', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Home, tooltip: '', underline: false, url: '', visible: true, wrap_on: mobile}
+    type: Link
+  - event_bindings: {click: link_create_report_click}
     layout_properties: {grid_position: 'OPANTG,VTOUCJ'}
-    event_bindings: {click: link_create_report_click}
-  - type: Link
-    properties: {role: null, bold: false, align: left, col_widths: '', spacing_above: small, background: '#fbf4df', icon: 'fa:list', wrap_on: mobile, underline: false, font: '', col_spacing: medium, icon_align: left, foreground: '', url: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: Vademécum}
-    name: link_biblioteca_anomalies
+    name: link_create_report
+    properties: {align: left, background: '#fbf4df', bold: false, border: '', col_spacing: medium, col_widths: '', font: '', font_size: null, foreground: '', icon: 'fa:file-pdf-o', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Create Report, tooltip: '', underline: false, url: '', visible: true, wrap_on: mobile}
+    type: Link
+  - event_bindings: {click: link_biblioteca_anomalies_click}
     layout_properties: {grid_position: 'LPAFEW,GGCFZD'}
-    event_bindings: {click: link_biblioteca_anomalies_click}
-  - type: Link
-    properties: {role: null, bold: false, align: left, col_widths: '', spacing_above: small, background: '#fbf4df', icon: 'fa:database', wrap_on: mobile, underline: false, font: '', col_spacing: medium, icon_align: left, foreground: '', url: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: Register Anomaly}
-    name: link_register_anomaly
+    name: link_biblioteca_anomalies
+    properties: {align: left, background: '#fbf4df', bold: true, border: '', col_spacing: medium, col_widths: '', font: '', font_size: null, foreground: '', icon: 'fa:list', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Vademécum, tooltip: '', underline: false, url: '', visible: true, wrap_on: mobile}
+    type: Link
+  - event_bindings: {click: link_add_anomaly_click}
     layout_properties: {grid_position: 'LEZTUA,NWRLNW'}
-    event_bindings: {click: link_add_anomaly_click}
-  - type: Link
-    properties: {role: null, bold: false, align: left, col_widths: '', spacing_above: small, background: '#fbf4df', icon: 'fa:file-image-o', wrap_on: mobile, underline: false, font: '', col_spacing: medium, icon_align: left, foreground: '', url: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: Solo Imagenes}
+    name: link_register_anomaly
+    properties: {align: left, background: '#fbf4df', bold: false, border: '', col_spacing: medium, col_widths: '', font: '', font_size: null, foreground: '', icon: 'fa:database', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Register Anomaly, tooltip: '', underline: false, url: '', visible: true, wrap_on: mobile}
+    type: Link
+  - layout_properties: {grid_position: 'KKWSLX,JWBJXV'}
     name: link_solo_images
-    layout_properties: {grid_position: 'KKWSLX,JWBJXV'}
+    properties: {align: left, background: '#fbf4df', bold: false, border: '', col_spacing: medium, col_widths: '', font: '', font_size: null, foreground: '', icon: 'fa:file-image-o', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Solo Imagenes, tooltip: '', underline: false, url: '', visible: true, wrap_on: mobile}
+    type: Link
+  layout_properties: {slot: left-nav}
+  name: column_panel_1
+  properties: {background: '#fbf4df', col_widths: '{}'}
+  type: ColumnPanel
+container:
+  properties: {background: '#fbf4df', html: '@theme:standard-page.html'}
+  type: HtmlTemplate
