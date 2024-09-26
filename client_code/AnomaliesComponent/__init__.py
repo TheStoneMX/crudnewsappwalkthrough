@@ -16,9 +16,9 @@ class AnomaliesComponent(AnomaliesComponentTemplate):
     self.init_components(**properties)
     # Any code you write here will run before the form opens.
 
-  def button_Info_click(self, **event_args):
-    cmpt = InfoForm()
-    self.add_component_2_tab_control(cmpt)
+  # def button_Info_click(self, **event_args):
+  #   cmpt = InfoForm()
+  #   self.add_component_2_tab_control(cmpt)
 
   def button_erythrocyte_click(self, **event_args):
     cmpt = erythrocyte()
@@ -28,12 +28,12 @@ class AnomaliesComponent(AnomaliesComponentTemplate):
     cmpt = leukocyte()
     self.add_component_2_tab_control(cmpt)
 
-  def button_plasma_click(self, **event_args):
-    cmpt = plasma()
-    self.add_component_2_tab_control(cmpt)
-
   def button_pleomorphic_click(self, **event_args):
     cmpt = pleomorphic()
+    self.add_component_2_tab_control(cmpt)
+     
+  def button_plasma_click(self, **event_args):
+    cmpt = plasma()
     self.add_component_2_tab_control(cmpt)
     
   def add_component_2_tab_control(self, cmpt):

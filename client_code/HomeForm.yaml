@@ -35,24 +35,24 @@ components:
     name: link_home
     properties: {align: left, background: '#fbf4df', bold: false, border: '', col_spacing: medium, col_widths: '', font: '', font_size: null, foreground: '', icon: 'fa:home', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Home, tooltip: '', underline: false, url: '', visible: true, wrap_on: mobile}
     type: Link
+  - event_bindings: {click: link_biblioteca_anomalies_click}
+    layout_properties: {grid_position: 'SFEESJ,XKFHTO'}
+    name: link_biblioteca_anomalies
+    properties: {align: left, background: '#fbf4df', bold: true, border: '', col_spacing: medium, col_widths: '', font: '', font_size: null, foreground: '', icon: 'fa:list', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Vademécum, tooltip: '', underline: false, url: '', visible: true, wrap_on: mobile}
+    type: Link
+  - layout_properties: {grid_position: 'ODKZMK,NZCUBR'}
+    name: link_solo_images
+    properties: {align: left, background: '#fbf4df', bold: false, border: '', col_spacing: medium, col_widths: '', font: '', font_size: null, foreground: '', icon: 'fa:file-image-o', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Solo Imagenes, tooltip: '', underline: false, url: '', visible: true, wrap_on: mobile}
+    type: Link
   - event_bindings: {click: link_create_report_click}
     layout_properties: {grid_position: 'OPANTG,VTOUCJ'}
     name: link_create_report
     properties: {align: left, background: '#fbf4df', bold: false, border: '', col_spacing: medium, col_widths: '', font: '', font_size: null, foreground: '', icon: 'fa:file-pdf-o', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Create Report, tooltip: '', underline: false, url: '', visible: true, wrap_on: mobile}
     type: Link
-  - event_bindings: {click: link_biblioteca_anomalies_click}
-    layout_properties: {grid_position: 'LPAFEW,GGCFZD'}
-    name: link_biblioteca_anomalies
-    properties: {align: left, background: '#fbf4df', bold: true, border: '', col_spacing: medium, col_widths: '', font: '', font_size: null, foreground: '', icon: 'fa:list', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Vademécum, tooltip: '', underline: false, url: '', visible: true, wrap_on: mobile}
-    type: Link
   - event_bindings: {click: link_add_anomaly_click}
     layout_properties: {grid_position: 'LEZTUA,NWRLNW'}
     name: link_register_anomaly
     properties: {align: left, background: '#fbf4df', bold: false, border: '', col_spacing: medium, col_widths: '', font: '', font_size: null, foreground: '', icon: 'fa:database', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Register Anomaly, tooltip: '', underline: false, url: '', visible: true, wrap_on: mobile}
-    type: Link
-  - layout_properties: {grid_position: 'KKWSLX,JWBJXV'}
-    name: link_solo_images
-    properties: {align: left, background: '#fbf4df', bold: false, border: '', col_spacing: medium, col_widths: '', font: '', font_size: null, foreground: '', icon: 'fa:file-image-o', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Solo Imagenes, tooltip: '', underline: false, url: '', visible: true, wrap_on: mobile}
     type: Link
   layout_properties: {slot: left-nav}
   name: column_panel_1

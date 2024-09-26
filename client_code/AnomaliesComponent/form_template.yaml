@@ -46,21 +46,22 @@ components:
   name: spacer_2
   properties: {height: 32}
   type: Spacer
-- layout_properties: {grid_position: 'KEXIDJ,FPZIXL'}
+- layout_properties: {full_width_row: true, grid_position: 'KEXIDJ,FPZIXL'}
   name: spacer_3
   properties: {height: 112.83984375}
   type: Spacer
-- layout_properties:
+- data_bindings: []
+  layout_properties:
     col_widths: {}
     grid_position: LGUHKW,PIUVGU
   name: label_3
   properties:
-    align: left
+    align: center
     background: ''
     bold: true
-    border: ''
+    border: '3'
     font: ''
-    font_size: 8
+    font_size: 10
     foreground: ''
     icon: ''
     icon_align: left
@@ -74,6 +75,6 @@ components:
     visible: true
   type: Label
 container:
-  properties: {col_widths: '{}'}
+  properties: {border: '3', col_widths: '{}', role: null}
   type: ColumnPanel
 is_package: true
