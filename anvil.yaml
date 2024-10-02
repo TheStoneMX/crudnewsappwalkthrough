@@ -1,41 +1,5 @@
 allow_embedding: false
 db_schema:
-  anomalies:
-    client: none
-    columns:
-    - admin_ui: {width: 200}
-      name: Appearace
-      type: string
-    - admin_ui: {width: 200}
-      name: Relevance
-      type: string
-    - admin_ui: {width: 200}
-      name: implications
-      type: string
-    - admin_ui: {width: 200}
-      name: Symptoms
-      type: string
-    - admin_ui: {width: 200}
-      name: Pleomorphic
-      type: string
-    - admin_ui: {width: 200}
-      name: Medical
-      type: string
-    - admin_ui: {width: 200}
-      name: Intervntions
-      type: string
-    - admin_ui: {width: 200}
-      name: Correcting
-      type: string
-    - admin_ui: {width: 200}
-      name: investigations
-      type: string
-    - admin_ui: {width: 200}
-      name: images
-      target: images
-      type: link_multiple
-    server: full
-    title: anomalies
   articles:
     client: none
     columns:
