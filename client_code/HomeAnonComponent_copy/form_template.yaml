@@ -1,5 +1,5 @@
 components:
-- layout_properties: {grid_position: 'KGYVQY,PXDOIA'}
+- layout_properties: {grid_position: 'KGYVQY,MVWJSL'}
   name: label_1
   properties: {align: left, background: '#fbf4df', bold: false, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: large, spacing_below: medium, text: 'El análisis de células sanguíneas vivas es la observación de células sanguíneas vivas utilizando un microscopio especializado de alta potencia con una cámara que proyecta una imagen de las células sanguíneas vivas en una pantalla para que el médico y el cliente las vean juntos, lo que permite grabar imágenes y videos para su estudio y analisis.', tooltip: '', underline: false, visible: true}
   type: Label
