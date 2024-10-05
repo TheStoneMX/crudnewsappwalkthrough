@@ -117,7 +117,19 @@ class InfoForm(InfoFormTemplate):
   def button_consejos_click(self, **event_args):
     """This method is called when the button is clicked"""
     self.rich_text_main_text.content = self.Consejos
-    
+
+  def format_text(self, text):
+      # Split the text into sentences based on periods
+      bullet_points = text.split(". ")
+  
+      # Create a list of bullet points for the RichText control
+      formatted_content = [
+          {"tag": "ul", "content": [{"tag": "li", "content": point} for point in bullet_points if point]}
+      ]
+      
+      # Return the formatted content to be used in the RichText control
+    return formatted_content
+ 
   def enable_buttons(self):
     #
     self.button_relacion.enabled = True
