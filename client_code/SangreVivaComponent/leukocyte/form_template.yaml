@@ -1,201 +1,135 @@
-container:
-  type: ColumnPanel
-  properties: {col_widths: '{}'}
 components:
-- type: Label
-  properties: {role: headline, align: center, tooltip: '', border: '', foreground: 'theme:White',
-    visible: true, text: ANOMALiAS DE LEUCOCITOS, font_size: null, font: '', spacing_above: small,
-    icon_align: left, spacing_below: small, italic: false, background: 'theme:Primary
-      500', bold: false, underline: false, icon: ''}
+- layout_properties: {grid_position: 'EQNUJV,YVKBJP'}
   name: headline_1
-  layout_properties: {grid_position: 'EQNUJV,YVKBJP'}
-- type: Spacer
-  properties: {height: 32}
+  properties: {align: center, background: 'theme:Primary 500', bold: false, border: '', font: '', font_size: null, foreground: 'theme:White', icon: '', icon_align: left, italic: false, role: headline, spacing_above: small, spacing_below: small, text: ANOMALiAS DE LEUCOCITOS, tooltip: '', underline: false, visible: true}
+  type: Label
+- layout_properties: {grid_position: 'TTHWOI,UJFQXW'}
   name: spacer_1
-  layout_properties: {grid_position: 'TTHWOI,UJFQXW'}
-- type: CheckBox
-  properties: {role: null, align: left, tooltip: '', border: '', enabled: true, foreground: '',
-    allow_indeterminate: false, visible: true, text: 'Basophils: Increased', font_size: null,
-    font: '', spacing_above: small, spacing_below: small, italic: false, background: '',
-    bold: false, checked: false, underline: false}
+  properties: {height: 32}
+  type: Spacer
+- layout_properties: {grid_position: 'DCKAKG,INOZDG'}
   name: check_box_Basophils_Increased
-  layout_properties: {grid_position: 'DCKAKG,INOZDG'}
-- type: CheckBox
-  properties: {role: null, align: left, tooltip: '', border: '', enabled: true, foreground: '',
-    allow_indeterminate: false, visible: true, text: 'Basophils: Decreased', font_size: null,
-    font: '', spacing_above: small, spacing_below: small, italic: false, background: '',
-    bold: false, checked: false, underline: false}
+  properties: {align: left, allow_indeterminate: false, background: '', bold: false, border: '', checked: false, enabled: true, font: '', font_size: null, foreground: '', italic: false, role: null, spacing_above: small, spacing_below: small, text: 'Basophils: Increased', tooltip: '', underline: false, visible: true}
+  type: CheckBox
+- layout_properties: {grid_position: 'DCKAKG,OKKLZS'}
   name: check_box_Basophils_decreased
-  layout_properties: {grid_position: 'DCKAKG,OKKLZS'}
-- type: CheckBox
-  properties: {role: null, align: left, tooltip: '', border: '', enabled: true, foreground: '',
-    allow_indeterminate: false, visible: true, text: 'Eosinophils: Increased', font_size: null,
-    font: '', spacing_above: small, spacing_below: small, italic: false, background: '',
-    bold: false, checked: false, underline: false}
-  name: check_box_Eosinophils_Increased
-  layout_properties:
+  properties: {align: left, allow_indeterminate: false, background: '', bold: false, border: '', checked: false, enabled: true, font: '', font_size: null, foreground: '', italic: false, role: null, spacing_above: small, spacing_below: small, text: 'Basophils: Decreased', tooltip: '', underline: false, visible: true}
+  type: CheckBox
+- layout_properties:
     col_widths: {}
     grid_position: JJXDCU,XFFONE
-- type: CheckBox
-  properties: {role: null, align: left, tooltip: '', border: '', enabled: true, foreground: '',
-    allow_indeterminate: false, visible: true, text: 'Eosinophils: Decreased', font_size: null,
-    font: '', spacing_above: small, spacing_below: small, italic: false, background: '',
-    bold: false, checked: false, underline: false}
-  name: check_box_Eosinophils_Decreased
-  layout_properties:
+  name: check_box_Eosinophils_Increased
+  properties: {align: left, allow_indeterminate: false, background: '', bold: false, border: '', checked: false, enabled: true, font: '', font_size: null, foreground: '', italic: false, role: null, spacing_above: small, spacing_below: small, text: 'Eosinophils: Increased', tooltip: '', underline: false, visible: true}
+  type: CheckBox
+- layout_properties:
     col_widths: {}
     grid_position: JJXDCU,PXEGOA
-- type: CheckBox
-  properties: {role: null, align: left, tooltip: '', border: '', enabled: true, foreground: '',
-    allow_indeterminate: false, visible: true, text: 'Lymphocytes: Increased', font_size: null,
-    font: '', spacing_above: small, spacing_below: small, italic: false, background: '',
-    bold: false, checked: false, underline: false}
-  name: check_box_Lymphocytes_Increased
-  layout_properties:
+  name: check_box_Eosinophils_Decreased
+  properties: {align: left, allow_indeterminate: false, background: '', bold: false, border: '', checked: false, enabled: true, font: '', font_size: null, foreground: '', italic: false, role: null, spacing_above: small, spacing_below: small, text: 'Eosinophils: Decreased', tooltip: '', underline: false, visible: true}
+  type: CheckBox
+- layout_properties:
     col_widths: {}
     grid_position: YATIOA,JWHKTJ
-- type: CheckBox
-  properties: {role: null, align: left, tooltip: '', border: '', enabled: true, foreground: '',
-    allow_indeterminate: false, visible: true, text: 'Lymphocytes: Decreased', font_size: null,
-    font: '', spacing_above: small, spacing_below: small, italic: false, background: '',
-    bold: false, checked: false, underline: false}
-  name: check_box_Lymphocytes_Decreased
-  layout_properties:
+  name: check_box_Lymphocytes_Increased
+  properties: {align: left, allow_indeterminate: false, background: '', bold: false, border: '', checked: false, enabled: true, font: '', font_size: null, foreground: '', italic: false, role: null, spacing_above: small, spacing_below: small, text: 'Lymphocytes: Increased', tooltip: '', underline: false, visible: true}
+  type: CheckBox
+- layout_properties:
     col_widths: {}
     grid_position: YATIOA,MFSXWG
-- type: CheckBox
-  properties: {role: null, align: left, tooltip: '', border: '', enabled: true, foreground: '',
-    allow_indeterminate: false, visible: true, text: Lymphocytes - Plasma Cells, font_size: null,
-    font: '', spacing_above: small, spacing_below: small, italic: false, background: '',
-    bold: false, checked: false, underline: false}
-  name: check_box_Lymphocytes_Plasma_Cells
-  layout_properties:
+  name: check_box_Lymphocytes_Decreased
+  properties: {align: left, allow_indeterminate: false, background: '', bold: false, border: '', checked: false, enabled: true, font: '', font_size: null, foreground: '', italic: false, role: null, spacing_above: small, spacing_below: small, text: 'Lymphocytes: Decreased', tooltip: '', underline: false, visible: true}
+  type: CheckBox
+- layout_properties:
     col_widths: {}
     grid_position: EBVYXH,YYIRFV
-- type: CheckBox
-  properties: {role: null, align: left, tooltip: '', border: '', enabled: true, foreground: '',
-    allow_indeterminate: false, visible: true, text: 'Monocytes: Increased', font_size: null,
-    font: '', spacing_above: small, spacing_below: small, italic: false, background: '',
-    bold: false, checked: false, underline: false}
-  name: check_box_Monocytes_Increased
-  layout_properties:
+  name: check_box_Lymphocytes_Plasma_Cells
+  properties: {align: left, allow_indeterminate: false, background: '', bold: false, border: '', checked: false, enabled: true, font: '', font_size: null, foreground: '', italic: false, role: null, spacing_above: small, spacing_below: small, text: Lymphocytes - Plasma Cells, tooltip: '', underline: false, visible: true}
+  type: CheckBox
+- layout_properties:
     col_widths: {}
     grid_position: JFGNGR,TLFLWS
-- type: CheckBox
-  properties: {role: null, align: left, tooltip: '', border: '', enabled: true, foreground: '',
-    allow_indeterminate: false, visible: true, text: 'Monocytes: Decreased', font_size: null,
-    font: '', spacing_above: small, spacing_below: small, italic: false, background: '',
-    bold: false, checked: false, underline: false}
-  name: check_box_Monocytes_Decreased
-  layout_properties:
+  name: check_box_Monocytes_Increased
+  properties: {align: left, allow_indeterminate: false, background: '', bold: false, border: '', checked: false, enabled: true, font: '', font_size: null, foreground: '', italic: false, role: null, spacing_above: small, spacing_below: small, text: 'Monocytes: Increased', tooltip: '', underline: false, visible: true}
+  type: CheckBox
+- layout_properties:
     col_widths: {}
     grid_position: JFGNGR,BGYJMD
-- type: CheckBox
-  properties: {role: null, align: left, tooltip: '', border: '', enabled: true, foreground: '',
-    allow_indeterminate: false, visible: true, text: Neutrophils - Band Cells, font_size: null,
-    font: '', spacing_above: small, spacing_below: small, italic: false, background: '',
-    bold: false, checked: false, underline: false}
-  name: check_box_3_copy
-  layout_properties:
+  name: check_box_Monocytes_Decreased
+  properties: {align: left, allow_indeterminate: false, background: '', bold: false, border: '', checked: false, enabled: true, font: '', font_size: null, foreground: '', italic: false, role: null, spacing_above: small, spacing_below: small, text: 'Monocytes: Decreased', tooltip: '', underline: false, visible: true}
+  type: CheckBox
+- layout_properties:
     col_widths: {}
     grid_position: IOSDRQ,VBNYCM
-- type: CheckBox
-  properties: {role: null, align: left, tooltip: '', border: '', enabled: true, foreground: '',
-    allow_indeterminate: false, visible: true, text: Neutrophils - Cohesion, font_size: null,
-    font: '', spacing_above: small, spacing_below: small, italic: false, background: '',
-    bold: false, checked: false, underline: false}
-  name: check_box_Neutrophils_Cohesion
-  layout_properties:
+  name: check_box_3_copy
+  properties: {align: left, allow_indeterminate: false, background: '', bold: false, border: '', checked: false, enabled: true, font: '', font_size: null, foreground: '', italic: false, role: null, spacing_above: small, spacing_below: small, text: Neutrophils - Band Cells, tooltip: '', underline: false, visible: true}
+  type: CheckBox
+- layout_properties:
     col_widths: {}
     grid_position: IOSDRQ,KZJWMR
-- type: CheckBox
-  properties: {role: null, align: left, tooltip: '', border: '', enabled: true, foreground: '',
-    allow_indeterminate: false, visible: true, text: 'Neutrophils: Increased', font_size: null,
-    font: '', spacing_above: small, spacing_below: small, italic: false, background: '',
-    bold: false, checked: false, underline: false}
-  name: check_box_Neutrophils_Increased
-  layout_properties:
+  name: check_box_Neutrophils_Cohesion
+  properties: {align: left, allow_indeterminate: false, background: '', bold: false, border: '', checked: false, enabled: true, font: '', font_size: null, foreground: '', italic: false, role: null, spacing_above: small, spacing_below: small, text: Neutrophils - Cohesion, tooltip: '', underline: false, visible: true}
+  type: CheckBox
+- layout_properties:
     col_widths: {}
     grid_position: TASHFR,KDTROJ
-- type: CheckBox
-  properties: {role: null, align: left, tooltip: '', border: '', enabled: true, foreground: '',
-    allow_indeterminate: false, visible: true, text: 'Neutrophils: Decreased', font_size: null,
-    font: '', spacing_above: small, spacing_below: small, italic: false, background: '',
-    bold: false, checked: false, underline: false}
+  name: check_box_Neutrophils_Increased
+  properties: {align: left, allow_indeterminate: false, background: '', bold: false, border: '', checked: false, enabled: true, font: '', font_size: null, foreground: '', italic: false, role: null, spacing_above: small, spacing_below: small, text: 'Neutrophils: Increased', tooltip: '', underline: false, visible: true}
+  type: CheckBox
+- layout_properties: {grid_position: 'TASHFR,PHJSFB'}
   name: check_box_Neutrophils_Decreased
-  layout_properties: {grid_position: 'TASHFR,PHJSFB'}
-- type: CheckBox
-  properties: {role: null, align: left, tooltip: '', border: '', enabled: true, foreground: '',
-    allow_indeterminate: false, visible: true, text: Neutrophils - Disrupted, font_size: null,
-    font: '', spacing_above: small, spacing_below: small, italic: false, background: '',
-    bold: false, checked: false, underline: false}
-  name: check_box_Neutrophils_Disrupted
-  layout_properties:
+  properties: {align: left, allow_indeterminate: false, background: '', bold: false, border: '', checked: false, enabled: true, font: '', font_size: null, foreground: '', italic: false, role: null, spacing_above: small, spacing_below: small, text: 'Neutrophils: Decreased', tooltip: '', underline: false, visible: true}
+  type: CheckBox
+- layout_properties:
     col_widths: {}
     grid_position: BDEVEF,NIOGWN
-- type: CheckBox
-  properties: {role: null, align: left, tooltip: '', border: '', enabled: true, foreground: '',
-    allow_indeterminate: false, visible: true, text: Neutrophils - Hypersegmented,
-    font_size: null, font: '', spacing_above: small, spacing_below: small, italic: false,
-    background: '', bold: false, checked: false, underline: false}
-  name: check_box_Neutrophils_Hypersegmented
-  layout_properties:
+  name: check_box_Neutrophils_Disrupted
+  properties: {align: left, allow_indeterminate: false, background: '', bold: false, border: '', checked: false, enabled: true, font: '', font_size: null, foreground: '', italic: false, role: null, spacing_above: small, spacing_below: small, text: Neutrophils - Disrupted, tooltip: '', underline: false, visible: true}
+  type: CheckBox
+- layout_properties:
     col_widths: {}
     grid_position: BDEVEF,AXGHBJ
-- type: CheckBox
-  properties: {role: null, align: left, tooltip: '', border: '', enabled: true, foreground: '',
-    allow_indeterminate: false, visible: true, text: Neutrophils - Macrocytosis, font_size: null,
-    font: '', spacing_above: small, spacing_below: small, italic: false, background: '',
-    bold: false, checked: false, underline: false}
-  name: check_box_Neutrophils_Macrocytosis
-  layout_properties:
+  name: check_box_Neutrophils_Hypersegmented
+  properties: {align: left, allow_indeterminate: false, background: '', bold: false, border: '', checked: false, enabled: true, font: '', font_size: null, foreground: '', italic: false, role: null, spacing_above: small, spacing_below: small, text: Neutrophils - Hypersegmented, tooltip: '', underline: false, visible: true}
+  type: CheckBox
+- layout_properties:
     col_widths: {}
     grid_position: GFCSXI,ZZOODZ
-- type: CheckBox
-  properties: {role: null, align: left, tooltip: '', border: '', enabled: true, foreground: '',
-    allow_indeterminate: false, visible: true, text: Neutrophils - Metamyelocytes,
-    font_size: null, font: '', spacing_above: small, spacing_below: small, italic: false,
-    background: '', bold: false, checked: false, underline: false}
-  name: check_box_Neutrophils_Metamyelocytes
-  layout_properties:
+  name: check_box_Neutrophils_Macrocytosis
+  properties: {align: left, allow_indeterminate: false, background: '', bold: false, border: '', checked: false, enabled: true, font: '', font_size: null, foreground: '', italic: false, role: null, spacing_above: small, spacing_below: small, text: Neutrophils - Macrocytosis, tooltip: '', underline: false, visible: true}
+  type: CheckBox
+- layout_properties:
     col_widths: {}
     grid_position: GFCSXI,BHNLMF
-- type: CheckBox
-  properties: {role: null, align: left, tooltip: '', border: '', enabled: true, foreground: '',
-    allow_indeterminate: false, visible: true, text: Neutrophils - Myelocytes, font_size: null,
-    font: '', spacing_above: small, spacing_below: small, italic: false, background: '',
-    bold: false, checked: false, underline: false}
-  name: check_box_Neutrophils_Myelocytes
-  layout_properties:
+  name: check_box_Neutrophils_Metamyelocytes
+  properties: {align: left, allow_indeterminate: false, background: '', bold: false, border: '', checked: false, enabled: true, font: '', font_size: null, foreground: '', italic: false, role: null, spacing_above: small, spacing_below: small, text: Neutrophils - Metamyelocytes, tooltip: '', underline: false, visible: true}
+  type: CheckBox
+- layout_properties:
     col_widths: {}
     grid_position: ZPJGDZ,HVWBQB
-- type: CheckBox
-  properties: {role: null, align: left, tooltip: '', border: '', enabled: true, foreground: '',
-    allow_indeterminate: false, visible: true, text: Neutrophils - Nonviable, font_size: null,
-    font: '', spacing_above: small, spacing_below: small, italic: false, background: '',
-    bold: false, checked: false, underline: false}
-  name: check_box_Neutrophils_Nonviable
-  layout_properties:
+  name: check_box_Neutrophils_Myelocytes
+  properties: {align: left, allow_indeterminate: false, background: '', bold: false, border: '', checked: false, enabled: true, font: '', font_size: null, foreground: '', italic: false, role: null, spacing_above: small, spacing_below: small, text: Neutrophils - Myelocytes, tooltip: '', underline: false, visible: true}
+  type: CheckBox
+- layout_properties:
     col_widths: {}
     grid_position: ZPJGDZ,CZPYGG
-- type: CheckBox
-  properties: {role: null, align: left, tooltip: '', border: '', enabled: true, foreground: '',
-    allow_indeterminate: false, visible: true, text: Empty WBCs, font_size: null,
-    font: '', spacing_above: small, spacing_below: small, italic: false, background: '',
-    bold: false, checked: false, underline: false}
+  name: check_box_Neutrophils_Nonviable
+  properties: {align: left, allow_indeterminate: false, background: '', bold: false, border: '', checked: false, enabled: true, font: '', font_size: null, foreground: '', italic: false, role: null, spacing_above: small, spacing_below: small, text: Neutrophils - Nonviable, tooltip: '', underline: false, visible: true}
+  type: CheckBox
+- layout_properties: {grid_position: 'XJXZXF,YEVOJP'}
   name: check_box_Empty_WBCs
-  layout_properties: {grid_position: 'XJXZXF,YEVOJP'}
-- type: CheckBox
-  properties: {role: null, align: left, tooltip: '', border: '', enabled: true, foreground: '',
-    allow_indeterminate: false, visible: true, text: 'WBCs: Translucent Membrane',
-    font_size: null, font: '', spacing_above: small, spacing_below: small, italic: false,
-    background: '', bold: false, checked: false, underline: false}
-  name: check_box_WBCs_Translucent_Membrane
-  layout_properties:
+  properties: {align: left, allow_indeterminate: false, background: '', bold: false, border: '', checked: false, enabled: true, font: '', font_size: null, foreground: '', italic: false, role: null, spacing_above: small, spacing_below: small, text: Empty WBCs, tooltip: '', underline: false, visible: true}
+  type: CheckBox
+- layout_properties:
     col_widths: {}
     grid_position: XJXZXF,QQTCEJ
-- type: Spacer
-  properties: {height: 32}
+  name: check_box_WBCs_Translucent_Membrane
+  properties: {align: left, allow_indeterminate: false, background: '', bold: false, border: '', checked: false, enabled: true, font: '', font_size: null, foreground: '', italic: false, role: null, spacing_above: small, spacing_below: small, text: 'WBCs: Translucent Membrane', tooltip: '', underline: false, visible: true}
+  type: CheckBox
+- layout_properties: {grid_position: 'RTWGGW,JBHBOA'}
   name: spacer_2
-  layout_properties: {grid_position: 'RTWGGW,JBHBOA'}
+  properties: {height: 32}
+  type: Spacer
+container:
+  properties: {col_widths: '{}'}
+  type: ColumnPanel
 is_package: true

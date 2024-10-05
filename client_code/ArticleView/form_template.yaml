@@ -1,67 +1,49 @@
-container:
-  type: ColumnPanel
-  properties: {col_widths: '{}'}
 components:
-- type: ColumnPanel
-  properties: {role: card, tooltip: '', border: '', foreground: '', visible: true,
-    wrap_on: never, col_spacing: medium, spacing_above: small, col_widths: '{"UGLGMG":40,"URYFFC":40}',
-    spacing_below: small, background: ''}
-  name: card_1
-  layout_properties: {grid_position: 'GYZCCJ,UHWKUF'}
-  components:
-  - type: Label
-    properties: {role: headline, align: left, tooltip: '', border: '', foreground: 'theme:Primary
-        500', visible: true, text: '', font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
-      underline: false, icon: ''}
-    name: title_label
+- components:
+  - data_bindings:
+    - {code: 'self.item[''title'']', property: text}
     layout_properties: {grid_position: 'YYARYO,UGLGMG'}
-    data_bindings:
-    - {property: text, code: 'self.item[''title'']'}
-  - type: Label
-    properties: {role: headline, align: right, tooltip: '', border: '', foreground: 'theme:Primary
-        500', visible: true, text: '', font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
-      underline: false, icon: ''}
-    name: category_label
+    name: title_label
+    properties: {align: left, background: '', bold: true, border: '', font: '', font_size: null, foreground: 'theme:Primary 500', icon: '', icon_align: left, italic: false, role: headline, spacing_above: small, spacing_below: small, text: '', tooltip: '', underline: false, visible: true}
+    type: Label
+  - data_bindings:
+    - {code: 'self.item[''category''][''name'']', property: text}
     layout_properties: {grid_position: 'YYARYO,URYFFC'}
-    data_bindings:
-    - {property: text, code: 'self.item[''category''][''name'']'}
-  - type: FlowPanel
-    properties: {role: null, spacing: medium, align: right, tooltip: '', border: '',
-      foreground: '', visible: true, spacing_above: small, spacing_below: small, background: ''}
-    name: flow_panel_1
-    layout_properties: {grid_position: 'YYARYO,UQRFZI'}
-    components:
-    - type: Button
-      properties: {role: primary-color, align: right, tooltip: '', border: '', enabled: true,
-        foreground: '', visible: true, text: '', font_size: null, font: '', spacing_above: small,
-        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-        underline: false, icon: 'fa:pencil-square'}
-      name: edit_article_button
+    name: category_label
+    properties: {align: right, background: '', bold: true, border: '', font: '', font_size: null, foreground: 'theme:Primary 500', icon: '', icon_align: left, italic: false, role: headline, spacing_above: small, spacing_below: small, text: '', tooltip: '', underline: false, visible: true}
+    type: Label
+  - components:
+    - event_bindings: {click: edit_article_button_click}
       layout_properties: {grid_position: 'OIKTWM,BYGSGE'}
-      event_bindings: {click: edit_article_button_click}
-    - type: Button
-      properties: {role: secondary-color, align: right, tooltip: '', border: '', enabled: true,
-        foreground: '', visible: true, text: '', font_size: null, font: '', spacing_above: small,
-        icon_align: left, spacing_below: small, italic: false, background: red, bold: false,
-        underline: false, icon: 'fa:trash'}
-      name: delete_article_button
+      name: edit_article_button
+      properties: {align: right, background: '', bold: false, border: '', enabled: true, font: '', font_size: null, foreground: '', icon: 'fa:pencil-square', icon_align: left, italic: false, role: primary-color, spacing_above: small, spacing_below: small, text: '', tooltip: '', underline: false, visible: true}
+      type: Button
+    - event_bindings: {click: delete_article_button_click}
       layout_properties: {grid_position: 'AKCOOL,UVOCIO'}
-      event_bindings: {click: delete_article_button_click}
-  - type: Image
-    properties: {height: 518}
-    name: image_1
+      name: delete_article_button
+      properties: {align: right, background: red, bold: false, border: '', enabled: true, font: '', font_size: null, foreground: '', icon: 'fa:trash', icon_align: left, italic: false, role: secondary-color, spacing_above: small, spacing_below: small, text: '', tooltip: '', underline: false, visible: true}
+      type: Button
+    layout_properties: {grid_position: 'YYARYO,UQRFZI'}
+    name: flow_panel_1
+    properties: {align: right, background: '', border: '', foreground: '', role: null, spacing: medium, spacing_above: small, spacing_below: small, tooltip: '', visible: true}
+    type: FlowPanel
+  - data_bindings:
+    - {code: 'self.item[''image'']', property: source}
     layout_properties: {grid_position: 'ASOVLX,YDRGVD'}
-    data_bindings:
-    - {property: source, code: 'self.item[''image'']'}
-  - type: Label
-    properties: {role: text, align: left, tooltip: '', border: '', foreground: 'theme:Black',
-      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
-      spacing_below: small, italic: false, background: '', bold: false, underline: false,
-      icon: ''}
-    name: content_label
+    name: image_1
+    properties: {height: 518}
+    type: Image
+  - data_bindings:
+    - {code: 'self.item[''content'']', property: text}
     layout_properties: {grid_position: 'BAMLQY,MUHZFM'}
-    data_bindings:
-    - {property: text, code: 'self.item[''content'']'}
+    name: content_label
+    properties: {align: left, background: '', bold: false, border: '', font: '', font_size: null, foreground: 'theme:Black', icon: '', icon_align: left, italic: false, role: text, spacing_above: small, spacing_below: small, text: '', tooltip: '', underline: false, visible: true}
+    type: Label
+  layout_properties: {grid_position: 'GYZCCJ,UHWKUF'}
+  name: card_1
+  properties: {background: '', border: '', col_spacing: medium, col_widths: '{"UGLGMG":40,"URYFFC":40}', foreground: '', role: card, spacing_above: small, spacing_below: small, tooltip: '', visible: true, wrap_on: never}
+  type: ColumnPanel
+container:
+  properties: {col_widths: '{}'}
+  type: ColumnPanel
 is_package: true

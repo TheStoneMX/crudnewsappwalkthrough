@@ -1,21 +1,17 @@
-container:
-  type: ColumnPanel
-  properties: {col_widths: '{}'}
 components:
-- type: Label
-  properties: {role: headline, align: left, tooltip: '', border: '', foreground: '',
-    visible: true, text: "5.\tPleomorphic Perspective: this discusses the cause of\
-      \ the anomaly in terms of the pleomorphic contributing factors", font_size: null,
-    font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-    background: '', bold: false, underline: false, icon: ''}
+- layout_properties: {grid_position: 'HLEAXB,VCOKOP'}
   name: headline_1
-  layout_properties: {grid_position: 'HLEAXB,VCOKOP'}
-- type: TextArea
-  properties: {height: 700.1596999999999}
-  name: text_area_Pleomorphic
+  properties: {align: left, background: '', bold: false, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: headline, spacing_above: small, spacing_below: small, text: "5.\tPleomorphic Perspective: this discusses the cause of the anomaly in terms of the pleomorphic contributing factors", tooltip: '', underline: false, visible: true}
+  type: Label
+- data_bindings:
+  - {code: 'self.item[''Pleomorphic'']', property: text, writeback: true}
   layout_properties:
     col_widths: {}
     grid_position: VQKXSN,TXFQOC
-  data_bindings:
-  - {property: text, code: 'self.item[''Pleomorphic'']', writeback: true}
+  name: text_area_Pleomorphic
+  properties: {height: 700.1596999999999}
+  type: TextArea
+container:
+  properties: {col_widths: '{}'}
+  type: ColumnPanel
 is_package: true

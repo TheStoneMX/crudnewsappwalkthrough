@@ -1,74 +1,50 @@
-container:
-  type: ColumnPanel
-  properties: {col_widths: '{}'}
 components:
-- type: Label
-  properties: {role: headline, align: center, tooltip: '', border: '', foreground: 'theme:White',
-    visible: true, text: ANOMALIAS DE MICROBES, font_size: null, font: '', spacing_above: small,
-    icon_align: left, spacing_below: small, italic: false, background: 'theme:Primary
-      500', bold: false, underline: false, icon: ''}
+- layout_properties: {grid_position: 'HCFNWP,TIDNGY'}
   name: headline_1
-  layout_properties: {grid_position: 'HCFNWP,TIDNGY'}
-- type: Spacer
-  properties: {height: 32}
+  properties: {align: center, background: 'theme:Primary 500', bold: false, border: '', font: '', font_size: null, foreground: 'theme:White', icon: '', icon_align: left, italic: false, role: headline, spacing_above: small, spacing_below: small, text: ANOMALIAS DE MICROBES, tooltip: '', underline: false, visible: true}
+  type: Label
+- layout_properties: {grid_position: 'SMOHQR,GMHNFB'}
   name: spacer_1
-  layout_properties: {grid_position: 'SMOHQR,GMHNFB'}
-- type: ColumnPanel
-  properties: {col_widths: '{}'}
-  name: column_panel_1
-  layout_properties: {grid_position: 'BXTWOX,AENJFX'}
-  components:
-  - type: CheckBox
-    properties: {role: null, align: left, tooltip: '', border: '', enabled: true,
-      foreground: '', allow_indeterminate: false, visible: true, text: Bacteria - L-Form Bacteria,
-      font_size: null, font: '', spacing_above: small, spacing_below: small, italic: false,
-      background: '', bold: false, checked: false, underline: false}
-    name: check_box_Bacteria_L_Form_Bacteria
-    layout_properties: {grid_position: 'YLOSJH,BVCWXR'}
-  - type: CheckBox
-    properties: {role: null, align: left, tooltip: '', border: '', enabled: true,
-      foreground: '', allow_indeterminate: false, visible: true, text: Bacteria - Rod-Form Bacteria,
-      font_size: null, font: '', spacing_above: small, spacing_below: small, italic: false,
-      background: '', bold: false, checked: false, underline: false}
-    name: check_box_Bacteria_Rod_Form_Bacteria
-    layout_properties: {grid_position: 'YLOSJH,FPLSID'}
-  - type: CheckBox
-    properties: {role: null, align: left, tooltip: '', border: '', enabled: true,
-      foreground: '', allow_indeterminate: false, visible: true, text: Fermentation - Plasma,
-      font_size: null, font: '', spacing_above: small, spacing_below: small, italic: false,
-      background: '', bold: false, checked: false, underline: false}
-    name: check_box_Fermentation_Plasma
-    layout_properties: {grid_position: 'IPWMYN,PCCJDS'}
-  - type: CheckBox
-    properties: {role: null, align: left, tooltip: '', border: '', enabled: true,
-      foreground: '', allow_indeterminate: false, visible: true, text: Fermentation - RBCs,
-      font_size: null, font: '', spacing_above: small, spacing_below: small, italic: false,
-      background: '', bold: false, checked: false, underline: false}
-    name: check_box_Fermentation_RBCs
-    layout_properties: {grid_position: 'IPWMYN,YEYMGX'}
-- type: CheckBox
-  properties: {role: null, align: left, tooltip: '', border: '', enabled: true, foreground: '',
-    allow_indeterminate: false, visible: true, text: Fermentation - Thrombocytes,
-    font_size: null, font: '', spacing_above: small, spacing_below: small, italic: false,
-    background: '', bold: false, checked: false, underline: false}
-  name: check_box_Fermentation_Thrombocytes
-  layout_properties: {grid_position: 'HQDLBB,PXVTOK'}
-- type: CheckBox
-  properties: {role: null, align: left, tooltip: '', border: '', enabled: true, foreground: '',
-    allow_indeterminate: false, visible: true, text: Mycoplasma, font_size: null,
-    font: '', spacing_above: small, spacing_below: small, italic: false, background: '',
-    bold: false, checked: false, underline: false}
-  name: check_box_Mycoplasma
-  layout_properties: {grid_position: 'HQDLBB,WZUJSB'}
-- type: CheckBox
-  properties: {role: null, align: left, tooltip: '', border: '', enabled: true, foreground: '',
-    allow_indeterminate: false, visible: true, text: Parasites, font_size: null, font: '',
-    spacing_above: small, spacing_below: small, italic: false, background: '', bold: false,
-    checked: false, underline: false}
-  name: check_box_Parasites
-  layout_properties: {grid_position: 'ILQMVP,ZQAGON'}
-- type: Spacer
   properties: {height: 32}
+  type: Spacer
+- components:
+  - layout_properties: {grid_position: 'YLOSJH,BVCWXR'}
+    name: check_box_Bacteria_L_Form_Bacteria
+    properties: {align: left, allow_indeterminate: false, background: '', bold: false, border: '', checked: false, enabled: true, font: '', font_size: null, foreground: '', italic: false, role: null, spacing_above: small, spacing_below: small, text: Bacteria - L-Form Bacteria, tooltip: '', underline: false, visible: true}
+    type: CheckBox
+  - layout_properties: {grid_position: 'YLOSJH,FPLSID'}
+    name: check_box_Bacteria_Rod_Form_Bacteria
+    properties: {align: left, allow_indeterminate: false, background: '', bold: false, border: '', checked: false, enabled: true, font: '', font_size: null, foreground: '', italic: false, role: null, spacing_above: small, spacing_below: small, text: Bacteria - Rod-Form Bacteria, tooltip: '', underline: false, visible: true}
+    type: CheckBox
+  - layout_properties: {grid_position: 'IPWMYN,PCCJDS'}
+    name: check_box_Fermentation_Plasma
+    properties: {align: left, allow_indeterminate: false, background: '', bold: false, border: '', checked: false, enabled: true, font: '', font_size: null, foreground: '', italic: false, role: null, spacing_above: small, spacing_below: small, text: Fermentation - Plasma, tooltip: '', underline: false, visible: true}
+    type: CheckBox
+  - layout_properties: {grid_position: 'IPWMYN,YEYMGX'}
+    name: check_box_Fermentation_RBCs
+    properties: {align: left, allow_indeterminate: false, background: '', bold: false, border: '', checked: false, enabled: true, font: '', font_size: null, foreground: '', italic: false, role: null, spacing_above: small, spacing_below: small, text: Fermentation - RBCs, tooltip: '', underline: false, visible: true}
+    type: CheckBox
+  layout_properties: {grid_position: 'BXTWOX,AENJFX'}
+  name: column_panel_1
+  properties: {col_widths: '{}'}
+  type: ColumnPanel
+- layout_properties: {grid_position: 'HQDLBB,PXVTOK'}
+  name: check_box_Fermentation_Thrombocytes
+  properties: {align: left, allow_indeterminate: false, background: '', bold: false, border: '', checked: false, enabled: true, font: '', font_size: null, foreground: '', italic: false, role: null, spacing_above: small, spacing_below: small, text: Fermentation - Thrombocytes, tooltip: '', underline: false, visible: true}
+  type: CheckBox
+- layout_properties: {grid_position: 'HQDLBB,WZUJSB'}
+  name: check_box_Mycoplasma
+  properties: {align: left, allow_indeterminate: false, background: '', bold: false, border: '', checked: false, enabled: true, font: '', font_size: null, foreground: '', italic: false, role: null, spacing_above: small, spacing_below: small, text: Mycoplasma, tooltip: '', underline: false, visible: true}
+  type: CheckBox
+- layout_properties: {grid_position: 'ILQMVP,ZQAGON'}
+  name: check_box_Parasites
+  properties: {align: left, allow_indeterminate: false, background: '', bold: false, border: '', checked: false, enabled: true, font: '', font_size: null, foreground: '', italic: false, role: null, spacing_above: small, spacing_below: small, text: Parasites, tooltip: '', underline: false, visible: true}
+  type: CheckBox
+- layout_properties: {grid_position: 'TGFERH,NVBYSM'}
   name: spacer_2
-  layout_properties: {grid_position: 'TGFERH,NVBYSM'}
+  properties: {height: 32}
+  type: Spacer
+container:
+  properties: {col_widths: '{}'}
+  type: ColumnPanel
 is_package: true
