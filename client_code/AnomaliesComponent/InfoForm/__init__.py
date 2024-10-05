@@ -95,9 +95,7 @@ class InfoForm(InfoFormTemplate):
       ##
       self.Categoty = article_data['Category']
       # self.Categoty = self.format_text_with_bullets(article_data['Category'])
-      print('second group:')
-      # self.Relevance = self.format_text_with_bullets(article_data['Relevance'])
-  
+      self.Relevance = self.format_text_with_bullets(article_data['Relevance'])
       self.Implications = self.format_text_with_bullets(article_data['Implications'])
       self.Symptoms = self.format_text_with_bullets(article_data['Symptoms'])
       self.Pleomorphic = self.format_text_with_bullets(article_data['Pleomorphic'])
