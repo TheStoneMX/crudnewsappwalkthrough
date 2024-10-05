@@ -8,59 +8,59 @@ components:
     - event_bindings: {click: button_apariencia_click}
       layout_properties: {}
       name: button_apariencia
-      properties: {align: center, background: '', bold: false, border: '', enabled: true, font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: raised, spacing_above: small, spacing_below: small, text: Apariencia, tooltip: '', underline: false, visible: true}
+      properties: {align: center, background: '', bold: false, border: '', enabled: true, font: '', font_size: 12, foreground: '', icon: '', icon_align: left, italic: false, role: raised, spacing_above: small, spacing_below: small, text: Apariencia, tooltip: '', underline: false, visible: true}
       type: Button
     - event_bindings: {click: button_relacion_click}
       layout_properties: {}
       name: button_relacion
-      properties: {align: center, background: '', bold: false, border: '', enabled: true, font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: raised, spacing_above: small, spacing_below: small, text: Relación, tooltip: '', underline: false, visible: true}
+      properties: {align: center, background: '', bold: false, border: '', enabled: true, font: '', font_size: 12, foreground: '', icon: '', icon_align: left, italic: false, role: raised, spacing_above: small, spacing_below: small, text: Relación, tooltip: '', underline: false, visible: true}
       type: Button
     - event_bindings: {click: button_Implicaciones_click}
       layout_properties:
         col_widths: {}
         grid_position: OUMJUF,FEUWUF
       name: button_Implicaciones
-      properties: {align: center, background: '', bold: false, border: '', enabled: true, font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: raised, spacing_above: small, spacing_below: small, text: Implicaciones, tooltip: '', underline: false, visible: true}
+      properties: {align: center, background: '', bold: false, border: '', enabled: true, font: '', font_size: 12, foreground: '', icon: '', icon_align: left, italic: false, role: raised, spacing_above: small, spacing_below: small, text: Implicaciones, tooltip: '', underline: false, visible: true}
       type: Button
     - event_bindings: {click: button_Sintomas_click}
       layout_properties: {}
       name: button_Sintomas
-      properties: {align: center, background: '', bold: false, border: '', enabled: true, font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: raised, spacing_above: small, spacing_below: small, text: Sintomas, tooltip: '', underline: false, visible: true}
+      properties: {align: center, background: '', bold: false, border: '', enabled: true, font: '', font_size: 12, foreground: '', icon: '', icon_align: left, italic: false, role: raised, spacing_above: small, spacing_below: small, text: Sintomas, tooltip: '', underline: false, visible: true}
       type: Button
     - event_bindings: {click: button_Pleomorfica_click}
       layout_properties: {}
       name: button_Pleomorfica
-      properties: {align: center, background: '', bold: false, border: '', enabled: true, font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: raised, spacing_above: small, spacing_below: small, text: Pleomórfica, tooltip: '', underline: false, visible: true}
+      properties: {align: center, background: '', bold: false, border: '', enabled: true, font: '', font_size: 12, foreground: '', icon: '', icon_align: left, italic: false, role: raised, spacing_above: small, spacing_below: small, text: Pleomórfica, tooltip: '', underline: false, visible: true}
       type: Button
     - event_bindings: {click: button_Medica_click}
       layout_properties: {}
       name: button_Medica
-      properties: {align: center, background: '', bold: false, border: '', enabled: true, font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: raised, spacing_above: small, spacing_below: small, text: Perspectiva Médica, tooltip: '', underline: false, visible: true}
+      properties: {align: center, background: '', bold: false, border: '', enabled: true, font: '', font_size: 12, foreground: '', icon: '', icon_align: left, italic: false, role: raised, spacing_above: small, spacing_below: small, text: Perspectiva Médica, tooltip: '', underline: false, visible: true}
       type: Button
     - event_bindings: {click: button_Intervenciones_click}
       layout_properties: {}
       name: button_Intervenciones
-      properties: {align: center, background: '', bold: false, border: '', enabled: true, font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: raised, spacing_above: small, spacing_below: small, text: Recomendaciones, tooltip: '', underline: false, visible: true}
+      properties: {align: center, background: '', bold: false, border: '', enabled: true, font: '', font_size: 12, foreground: '', icon: '', icon_align: left, italic: false, role: raised, spacing_above: small, spacing_below: small, text: Recomendaciones, tooltip: '', underline: false, visible: true}
       type: Button
     - event_bindings: {click: button_Trabajando_click}
       layout_properties: {}
       name: button_Trabajando
-      properties: {align: center, background: '', bold: false, border: '', enabled: true, font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: raised, spacing_above: small, spacing_below: small, text: Manejo del Sintoma, tooltip: '', underline: false, visible: true}
+      properties: {align: center, background: '', bold: false, border: '', enabled: true, font: '', font_size: 12, foreground: '', icon: '', icon_align: left, italic: false, role: raised, spacing_above: small, spacing_below: small, text: Manejo del Sintoma, tooltip: '', underline: false, visible: true}
       type: Button
     - event_bindings: {click: button_Investigaciones_click}
       layout_properties: {}
       name: button_Investigaciones
-      properties: {align: center, background: '', bold: false, border: '', enabled: true, font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: raised, spacing_above: small, spacing_below: small, text: Investigaciones, tooltip: '', underline: false, visible: true}
+      properties: {align: center, background: '', bold: false, border: '', enabled: true, font: '', font_size: 12, foreground: '', icon: '', icon_align: left, italic: false, role: raised, spacing_above: small, spacing_below: small, text: Investigaciones, tooltip: '', underline: false, visible: true}
       type: Button
     - event_bindings: {click: button_Almica_click}
       layout_properties: {}
       name: button_Almica
-      properties: {align: center, background: '', bold: false, border: '', enabled: true, font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: raised, spacing_above: small, spacing_below: small, text: Plan del Alma, tooltip: '', underline: false, visible: true}
+      properties: {align: center, background: '', bold: false, border: '', enabled: true, font: '', font_size: 12, foreground: '', icon: '', icon_align: left, italic: false, role: raised, spacing_above: small, spacing_below: small, text: Plan del Alma, tooltip: '', underline: false, visible: true}
       type: Button
     - event_bindings: {click: button_consejos_click}
       layout_properties: {}
       name: button_Consejos
-      properties: {align: center, background: '', bold: false, border: '', enabled: true, font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: raised, spacing_above: small, spacing_below: small, text: Consejos, tooltip: '', underline: false, visible: true}
+      properties: {align: center, background: '', bold: false, border: '', enabled: true, font: '', font_size: 12, foreground: '', icon: '', icon_align: left, italic: false, role: raised, spacing_above: small, spacing_below: small, text: Consejos, tooltip: '', underline: false, visible: true}
       type: Button
     layout_properties: {grid_position: 'FNEJED,MOVFNL'}
     name: flow_panel_1
@@ -92,6 +92,6 @@ components:
   type: ColumnPanel
 container:
   event_bindings: {show: form_show}
-  properties: {col_widths: '{}'}
+  properties: {col_spacing: small, col_widths: '{}'}
   type: ColumnPanel
 is_package: true
