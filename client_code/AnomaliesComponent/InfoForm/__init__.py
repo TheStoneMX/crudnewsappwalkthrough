@@ -5,6 +5,7 @@ import anvil.users
 import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
+import re
 
 class InfoForm(InfoFormTemplate):
   def __init__(self, **properties):
@@ -47,7 +48,11 @@ class InfoForm(InfoFormTemplate):
   def set_form_controls(self, article_data):
     # Set the values of the form controls for each article
     self.label_tittle.text = article_data['Title']
-    self.rich_text_main_text.content = self.format_text( article_data['Appearance'] )
+
+    self.rich_text_main_text.content = self.format_text(str(article_data['Appearance']))
+    # self.rich_text_main_text.content = self.format_text(article_data['Appearance'])
+    # self.rich_text_main_text.content = self.format_text( article_data['Appearance'] )
+    
     self.Anomaly_Image.source = article_data['Image']
     ##
     self.Created = article_data['Created']
@@ -64,34 +69,35 @@ class InfoForm(InfoFormTemplate):
     self.Investigations = article_data['Investigations']
     self.Almica = article_data['Almica']
     self.Consejos = article_data['Consejos']
-    
+
+  
+  # def button_apariencia_click(self, **event_args):
+  #     try:
+  #         # we query DB and fill the Info Form
+  #         article_data = anvil.server.call('get_desequilibrio', self._my_string)
+  #         #
+  #         self.set_form_controls(article_data)
+  #         self.enable_buttons()
+  #     except Exception as e:
+  #         # handle the exception here, for example:
+  #         print("An error occurred:", e)
   def button_apariencia_click(self, **event_args):
       try:
-          # we query DB and fill the Info Form
+          print("Fetching data for:", self._my_string)
           article_data = anvil.server.call('get_desequilibrio', self._my_string)
-          # Check if data was returned successfully
-          if article_data:
-              # Create a list to store formatted content for display in RichText
-              rich_text_content = []
-          
-              # Loop through all columns and add them to the RichText content
-              for column_name, column_content in article_data.items():
-                  # Add the column name as a header and the content as bullet points or paragraphs
-                  rich_text_content.append({"tag": "h4", "content": column_name})  # Column name as a header
-                  rich_text_content.append({"tag": "p", "content": column_content})  # Column content as a paragraph
-          
-              # Set the RichText content dynamically
-              self.rich_text_1.content = rich_text_content
-          else:
-              print("No data received from server or formatting issue.")
-    
-          #
-          # self.set_form_controls(article_data)
-          # self.enable_buttons()
+          print("Data fetched successfully")
+          print("Raw 'Appearance' data:", repr(article_data['Appearance']))
+          formatted_content = self.format_text(article_data['Appearance'])
+          print("Formatted content:")
+          for item in formatted_content:
+              print(repr(item))  # This will print each formatted item
+          self.rich_text_main_text.content = formatted_content
+          print("Content set to Rich Text control")
+          self.set_form_controls(article_data)
+          self.enable_buttons()
       except Exception as e:
-          # handle the exception here, for example:
-          print("An error occurred:", e)
-  
+          print("An error occurred:", str(e))
+          print("Error type:", type(e))
 
   def button_relacion_click(self, **event_args):
     """This method is called when the button is clicked"""
@@ -133,28 +139,26 @@ class InfoForm(InfoFormTemplate):
     """This method is called when the button is clicked"""
     self.rich_text_main_text.content = self.Consejos
   
+  import re
+  
   def format_text(self, text):
-      # Ensure the text is always treated as a string
-      text = str(text)  # Convert to string if it's not already
-  
-      # Replace escaped sequences with their actual characters
-      try:
-          # Encode the text to bytes, then decode it back to handle escaped characters
-          text = text.encode('latin1').decode('unicode_escape').encode('latin1').decode('utf-8')
-      except Exception as e:
-          print("Encoding Error: ", e)
-  
-      # Split the text into sentences based on periods
-      bullet_points = text.split(". ")
+      # Split the text into sentences
+      sentences = re.split(r'(?<=[.!?])\s+', text)
   
       # Create a list of bullet points for the RichText control
-      formatted_content = [
-          {"tag": "ul", "content": [{"tag": "li", "content": point} for point in bullet_points if point]}
-      ]
+      formatted_content = []
+      for sentence in sentences:
+          if sentence.strip():  # Ignore empty sentences
+              formatted_content.append({
+                  'text': '• ' + sentence.strip() + '\n',
+                  'bold': False,  # Ensure text is not bold
+                  'italic': False,  # Ensure text is not italic
+                  'font': 'Arial, sans-serif',  # Use a standard font
+                  'font_size': 14  # Set a standard font size
+              })
   
-      # Return the formatted content to be used in the RichText control
       return formatted_content
-
+        
   def enable_buttons(self):
     #
     self.button_relacion.enabled = True
@@ -170,7 +174,7 @@ class InfoForm(InfoFormTemplate):
 
   def disable_buttons(self):
     #
-    print('enable_buttons', self.enable_buttons)
+    print('Disabling buttons') 
     self.button_apariencia.enabled = True
     self.button_relacion.enabled = False
     self.button_Implicaciones.enabled = False

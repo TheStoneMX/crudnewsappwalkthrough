@@ -37,41 +37,25 @@ def delete_article(article):
   else:
     # Raise an exception if the article doesn't exist in the Data Table
     raise Exception("Article does not exist")
-
+  
 @anvil.server.callable
 def get_desequilibrio(desequilibrio):
     try:
-        # Retrieve the article from the articles table using the Title column
-        results = app_tables.articles.get(Title=desequilibrio)
-        
-        # Check if a result was found
-        if results:
-            # Create a dictionary to hold all formatted columns
-            formatted_columns = {}
-
-            # Loop through all columns in the results dictionary
-            for column_name, text_content in results.items():
-                
-                # Skip non-text fields or fields that don't need formatting
-                if isinstance(text_content, (str, bytes)):
-                    # If the text content is of type bytes, decode it
-                    if isinstance(text_content, bytes):
-                        text_content = text_content.decode('utf-8')
-
-                    # Handle any escaped characters if necessary
-                    try:
-                        text_content = text_content.encode('latin1').decode('unicode_escape').encode('latin1').decode('utf-8')
-                    except Exception as encoding_exception:
-                        print(f"Error handling text encoding for column {column_name}:", encoding_exception)
-
-                    # Store the formatted text content in the dictionary
-                    formatted_columns[column_name] = text_content
-
-            # Return the dictionary containing all columns and their formatted content
-            return formatted_columns
-        else:
+      # filter the 'articles' table by the 'title' column
+      results = app_tables.articles.get(Title = desequilibrio)
+      # desequilibrio = Anomalies()
+      # print('Appearance', results['Appearance'])
+      # column_names = app_tables.articles.list_columns()
+      # Print the row properties
+      # for column_name in column_names:
+      #     # Skip the 'name' column since it was printed separately
+      #     print('column_name', column_name)
+              
+      # if a matching row is found, return it; otherwise, raise an exception
+      if len(results) > 0:
+          return results#[0]
+      else:
             raise Exception(f"No article found with title '{desequilibrio}'")
-
     except Exception as e:
         print(str(e))
         return None
@@ -79,27 +63,8 @@ def get_desequilibrio(desequilibrio):
 
 
 
-# @anvil.server.callable
-# def get_desequilibrio(desequilibrio):
-#     try:
-#       # filter the 'articles' table by the 'title' column
-#       results = app_tables.articles.get(Title = desequilibrio)
-#       # desequilibrio = Anomalies()
-#       # print('Appearance', results['Appearance'])
-#       # column_names = app_tables.articles.list_columns()
-#       # Print the row properties
-#       # for column_name in column_names:
-#       #     # Skip the 'name' column since it was printed separately
-#       #     print('column_name', column_name)
-              
-#       # if a matching row is found, return it; otherwise, raise an exception
-#       if len(results) > 0:
-#           return results#[0]
-#       else:
-#             raise Exception(f"No article found with title '{desequilibrio}'")
-#     except Exception as e:
-#         print(str(e))
-#         return None
+
+
       
   
   
