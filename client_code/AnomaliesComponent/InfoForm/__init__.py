@@ -49,11 +49,14 @@ class InfoForm(InfoFormTemplate):
     # Set the values of the form controls for each article
     self.label_tittle.text = article_data['Title']
 
-    self.rich_text_main_text.content = self.format_text(str(article_data['Appearance']))
+    print('Appearence before', article_data['Appearance'])
+    print('Appearence after ', self.format_text(article_data['Appearance']))
+    
     # self.rich_text_main_text.content = self.format_text(article_data['Appearance'])
-    # self.rich_text_main_text.content = self.format_text( article_data['Appearance'] )
+
     
     self.Anomaly_Image.source = article_data['Image']
+    
     ##
     self.Created = article_data['Created']
     self.UpDated = article_data['UpDated']
@@ -71,33 +74,45 @@ class InfoForm(InfoFormTemplate):
     self.Consejos = article_data['Consejos']
 
   
-  # def button_apariencia_click(self, **event_args):
-  #     try:
-  #         # we query DB and fill the Info Form
-  #         article_data = anvil.server.call('get_desequilibrio', self._my_string)
-  #         #
-  #         self.set_form_controls(article_data)
-  #         self.enable_buttons()
-  #     except Exception as e:
-  #         # handle the exception here, for example:
-  #         print("An error occurred:", e)
   def button_apariencia_click(self, **event_args):
       try:
           print("Fetching data for:", self._my_string)
           article_data = anvil.server.call('get_desequilibrio', self._my_string)
           print("Data fetched successfully")
-          print("Raw 'Appearance' data:", repr(article_data['Appearance']))
-          formatted_content = self.format_text(article_data['Appearance'])
-          print("Formatted content:")
-          for item in formatted_content:
-              print(repr(item))  # This will print each formatted item
+          
+          print("Appearance before:", repr(article_data['Appearance']))
+          
+          # Unescape Unicode characters
+          unescaped_text = self.unescape_unicode(article_data['Appearance'])
+          print("Unescaped text:", repr(unescaped_text))
+          
+          formatted_content = self.format_text(unescaped_text)
+          print("Formatted content:", formatted_content)
+          
           self.rich_text_main_text.content = formatted_content
-          print("Content set to Rich Text control")
           self.set_form_controls(article_data)
           self.enable_buttons()
       except Exception as e:
           print("An error occurred:", str(e))
           print("Error type:", type(e))
+      
+  # def button_apariencia_click(self, **event_args):
+  #     try:
+  #         print("Fetching data for:", self._my_string)
+  #         article_data = anvil.server.call('get_desequilibrio', self._my_string)
+  #         print("Data fetched successfully")
+  #         print("Raw 'Appearance' data:", repr(article_data['Appearance']))
+  #         formatted_content = self.format_text(article_data['Appearance'])
+  #         print("Formatted content:")
+  #         for item in formatted_content:
+  #             print(repr(item))  # This will print each formatted item
+  #         self.rich_text_main_text.content = formatted_content
+  #         print("Content set to Rich Text control")
+  #         self.set_form_controls(article_data)
+  #         self.enable_buttons()
+  #     except Exception as e:
+  #         print("An error occurred:", str(e))
+  #         print("Error type:", type(e))
 
   def button_relacion_click(self, **event_args):
     """This method is called when the button is clicked"""
@@ -139,26 +154,30 @@ class InfoForm(InfoFormTemplate):
     """This method is called when the button is clicked"""
     self.rich_text_main_text.content = self.Consejos
   
-  import re
+  import codecs
+  
+  def unescape_unicode(self, text):
+      return codecs.decode(text, 'unicode_escape')
   
   def format_text(self, text):
+      # Unescape Unicode characters
+      text = self.unescape_unicode(text)
+      
       # Split the text into sentences
-      sentences = re.split(r'(?<=[.!?])\s+', text)
+      sentences = text.split('. ')
   
       # Create a list of bullet points for the RichText control
       formatted_content = []
       for sentence in sentences:
           if sentence.strip():  # Ignore empty sentences
               formatted_content.append({
-                  'text': '• ' + sentence.strip() + '\n',
-                  'bold': False,  # Ensure text is not bold
-                  'italic': False,  # Ensure text is not italic
-                  'font': 'Arial, sans-serif',  # Use a standard font
-                  'font_size': 14  # Set a standard font size
+                  'text': '• ' + sentence.strip() + '.\n',
+                  'font': 'Arial, sans-serif',
+                  'font_size': 14
               })
   
       return formatted_content
-        
+    
   def enable_buttons(self):
     #
     self.button_relacion.enabled = True
