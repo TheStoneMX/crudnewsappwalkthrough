@@ -110,7 +110,11 @@ metadata: {description: 'Nosotros en Sangre Viva & Sangre Seca combinamos la té
 name: Sangre Viva
 package_name: CRUDnewsappwalkthrough
 renamed: true
-runtime_options: {client_version: '3', server_spec: null, server_version: python3-full, version: 2}
+runtime_options:
+  client_version: '3'
+  server_spec: {base: python310-minimal}
+  server_version: python3-full
+  version: 2
 services:
 - client_config: {}
   server_config: {}
