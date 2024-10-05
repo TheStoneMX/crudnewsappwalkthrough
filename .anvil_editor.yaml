@@ -10,6 +10,8 @@ unique_ids:
     Add_DesequilibrioComponent: KFP6EL23AR4FHAYQCBLPS5KKBA2CKM5S
     AnomaliesComponent: '1677604341531460803477265.81006'
     AnomaliesComponent.InfoForm: '1677796195983756796796343.1337'
+    AnomaliesComponent.InfoForm.RowTemplate1: '1728134744791940018480899.0825'
+    AnomaliesComponent.InfoForm.RowTemplate2: '1728134770208485621087204.2839'
     AnomaliesComponent.erythrocyte: '1677794938865663414123154.4817'
     AnomaliesComponent.leukocyte: '1678297306681240522075346.1761'
     AnomaliesComponent.plasma: '1678297331823411924613243.42865'

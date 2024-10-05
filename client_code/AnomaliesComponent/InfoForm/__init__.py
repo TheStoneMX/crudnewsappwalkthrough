@@ -82,18 +82,22 @@ class InfoForm(InfoFormTemplate):
   
   def set_form_controls(self, article_data):
     try:
+      print('entering set_form_controls(self, article_data):')
       # Set the values of the form controls for each article
       self.label_tittle.text = article_data['Title']
       self.Anomaly_Image.source = article_data['Image']
-      
+      print('first group:')
       self.rich_text_main_text.content = self.format_text_with_bullets(article_data['Appearance'])
   
       ##
-      self.Created = self.format_text_with_bullets(article_data['Created'])
-      self.UpDated = self.format_text_with_bullets(article_data['UpDated'])
+      # self.Created = self.format_text_with_bullets(article_data['Created'])
+      # self.UpDated = self.format_text_with_bullets(article_data['UpDated'])
       ##
-      self.Categoty = self.format_text_with_bullets(article_data['Category'])
-      self.Relevance = self.format_text_with_bullets(article_data['Relevance'])
+      self.Categoty = article_data['Category']
+      # self.Categoty = self.format_text_with_bullets(article_data['Category'])
+      print('second group:')
+      # self.Relevance = self.format_text_with_bullets(article_data['Relevance'])
+  
       self.Implications = self.format_text_with_bullets(article_data['Implications'])
       self.Symptoms = self.format_text_with_bullets(article_data['Symptoms'])
       self.Pleomorphic = self.format_text_with_bullets(article_data['Pleomorphic'])
@@ -108,8 +112,9 @@ class InfoForm(InfoFormTemplate):
     except Exception as e:
       print("Error in set_form_controls:", e)
       
-  def button_relacion_click(self, **event_args):
+  def button_relacion_click(self, **event_args): 
     """This method is called when the button is clicked"""
+    print('self.Relevance', self.Relevance)
     self.rich_text_main_text.content = self.Relevance
     
   def button_Implicaciones_click(self, **event_args):
