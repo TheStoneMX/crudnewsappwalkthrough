@@ -69,9 +69,25 @@ class InfoForm(InfoFormTemplate):
       try:
           # we query DB and fill the Info Form
           article_data = anvil.server.call('get_desequilibrio', self._my_string)
+          # Check if data was returned successfully
+          if article_data:
+              # Create a list to store formatted content for display in RichText
+              rich_text_content = []
+          
+              # Loop through all columns and add them to the RichText content
+              for column_name, column_content in article_data.items():
+                  # Add the column name as a header and the content as bullet points or paragraphs
+                  rich_text_content.append({"tag": "h4", "content": column_name})  # Column name as a header
+                  rich_text_content.append({"tag": "p", "content": column_content})  # Column content as a paragraph
+          
+              # Set the RichText content dynamically
+              self.rich_text_1.content = rich_text_content
+          else:
+              print("No data received from server or formatting issue.")
+    
           #
-          self.set_form_controls(article_data)
-          self.enable_buttons()
+          # self.set_form_controls(article_data)
+          # self.enable_buttons()
       except Exception as e:
           # handle the exception here, for example:
           print("An error occurred:", e)
