@@ -6,7 +6,6 @@ import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
 
-
 class InfoForm(InfoFormTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
@@ -48,7 +47,7 @@ class InfoForm(InfoFormTemplate):
   def set_form_controls(self, article_data):
     # Set the values of the form controls for each article
     self.label_tittle.text = article_data['Title']
-    self.rich_text_main_text.content = article_data['Appearance']
+    self.rich_text_main_text.content = self.format_text( article_data['Appearance'] )
     self.Anomaly_Image.source = article_data['Image']
     ##
     self.Created = article_data['Created']
@@ -117,8 +116,18 @@ class InfoForm(InfoFormTemplate):
   def button_consejos_click(self, **event_args):
     """This method is called when the button is clicked"""
     self.rich_text_main_text.content = self.Consejos
-
+  
   def format_text(self, text):
+      # Ensure the text is always treated as a string
+      text = str(text)  # Convert to string if it's not already
+  
+      # Replace escaped sequences with their actual characters
+      try:
+          # Encode the text to bytes, then decode it back to handle escaped characters
+          text = text.encode('latin1').decode('unicode_escape').encode('latin1').decode('utf-8')
+      except Exception as e:
+          print("Encoding Error: ", e)
+  
       # Split the text into sentences based on periods
       bullet_points = text.split(". ")
   
@@ -126,10 +135,10 @@ class InfoForm(InfoFormTemplate):
       formatted_content = [
           {"tag": "ul", "content": [{"tag": "li", "content": point} for point in bullet_points if point]}
       ]
-      
+  
       # Return the formatted content to be used in the RichText control
-    return formatted_content
- 
+      return formatted_content
+
   def enable_buttons(self):
     #
     self.button_relacion.enabled = True
