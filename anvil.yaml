@@ -16,9 +16,6 @@ db_schema:
       name: Created
       type: datetime
     - admin_ui: {width: 200}
-      name: UpDated
-      type: datetime
-    - admin_ui: {width: 200}
       name: Category
       target: categories
       type: link_single
