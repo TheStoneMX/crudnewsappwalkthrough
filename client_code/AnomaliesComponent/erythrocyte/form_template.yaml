@@ -59,7 +59,7 @@ components:
 - event_bindings: {clicked: radio_button_Protein_Linkage_clicked}
   layout_properties: {grid_position: 'PMFWCK,GNSAXM'}
   name: radio_button_Protein_Linkage
-  properties: {align: left, background: '', bold: false, border: '', enabled: true, font: '', font_size: null, foreground: '', group_name: ERITOCYTES, italic: false, role: null, selected: false, spacing_above: small, spacing_below: small, text: Protein Linkage, tooltip: '', underline: false, value: '', visible: true}
+  properties: {align: left, background: '', bold: false, border: '', enabled: true, font: '', font_size: null, foreground: '', group_name: ERITOCYTES, italic: false, role: null, selected: false, spacing_above: small, spacing_below: small, text: Enlace de proteínas, tooltip: '', underline: false, value: '', visible: true}
   type: RadioButton
 - event_bindings: {clicked: radio_button_RBC_Rings_clicked}
   layout_properties: {grid_position: 'PMFWCK,EMXUXN'}

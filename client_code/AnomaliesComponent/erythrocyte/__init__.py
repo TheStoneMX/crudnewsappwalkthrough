@@ -41,7 +41,7 @@ class erythrocyte(erythrocyteTemplate):
   def radio_button_Protein_Linkage_clicked(self, **event_args):
     cmpt = InfoForm()
     self.add_component_2_tab_control(cmpt)
-    cmpt.my_string = 'Protein Linkage'
+    cmpt.my_string = 'Enlace de proteínas'
     cmpt.button_apariencia_click()
 
   def radio_button_Schistocytes_clicked(self, **event_args):
