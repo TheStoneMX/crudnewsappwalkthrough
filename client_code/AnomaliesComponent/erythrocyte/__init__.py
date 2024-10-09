@@ -16,26 +16,26 @@ class erythrocyte(erythrocyteTemplate):
   def radio_button_Acanthocytes_clicked(self, **event_args):
     cmpt = InfoForm()
     self.add_component_2_tab_control(cmpt)
-    cmpt.my_string = 'Acanthocytes'
+    cmpt.my_string = 'Acantocitos'
     cmpt.button_apariencia_click()
 
   def radio_button_Anisocytosis_clicked(self, **event_args):
     cmpt = InfoForm()
     self.add_component_2_tab_control(cmpt)
-    cmpt.my_string = 'Anisocytosis'
+    cmpt.my_string = 'Anisocitosis'
     cmpt.button_apariencia_click()
     
   def radio_button_cloud_patterns_clicked(self, **event_args):
     cmpt = InfoForm()
     self.add_component_2_tab_control(cmpt)
-    cmpt.my_string = 'Cloud Patterns'
+    cmpt.my_string = 'Patron de Nubes'
     cmpt.button_apariencia_click()
     
 
   def radio_button_Ghost_Cells_clicked(self, **event_args):
     cmpt = InfoForm()
     self.add_component_2_tab_control(cmpt)
-    cmpt.my_string = 'Ghost Cells'
+    cmpt.my_string = 'Celulas Fantasmas'
     cmpt.button_apariencia_click()
 
   def radio_button_Protein_Linkage_clicked(self, **event_args):
@@ -47,73 +47,73 @@ class erythrocyte(erythrocyteTemplate):
   def radio_button_Schistocytes_clicked(self, **event_args):
     cmpt = InfoForm()
     self.add_component_2_tab_control(cmpt)
-    cmpt.my_string = 'Schistocytes'
+    cmpt.my_string = 'Esquistocitos'
     cmpt.button_apariencia_click()
 
   def radio_button_Target_Cells_clicked(self, **event_args):
     cmpt = InfoForm()
     self.add_component_2_tab_control(cmpt)
-    cmpt.my_string = 'Target Cells'
+    cmpt.my_string = 'Células Diana'
     cmpt.button_apariencia_click()
 
   def radio_button_Erythrocyte_Aggregation_clicked(self, **event_args):
     cmpt = InfoForm()
     self.add_component_2_tab_control(cmpt)
-    cmpt.my_string = 'Erythrocyte Aggregation'
+    cmpt.my_string = 'Agregación de eritrocitos'
     cmpt.button_apariencia_click()
 
   def radio_button_Single_Membrane_Protrusion_clicked(self, **event_args):
     cmpt = InfoForm()
     self.add_component_2_tab_control(cmpt)
-    cmpt.my_string = 'Single Membrane Protrusion'
+    cmpt.my_string = 'Protrusión de membrana única'
     cmpt.button_apariencia_click()
 
   def radio_button_Spherocytes_clicked(self, **event_args):
     cmpt = InfoForm()
     self.add_component_2_tab_control(cmpt)
-    cmpt.my_string = 'Spherocytes'
+    cmpt.my_string = 'Esferocitos'
     cmpt.button_apariencia_click()
 
   def radio_button_Sickle_Cells_clicked(self, **event_args):
     cmpt = InfoForm()
     self.add_component_2_tab_control(cmpt)
-    cmpt.my_string = 'Sickle Cells'
+    cmpt.my_string = 'Células Falciformes'
     cmpt.button_apariencia_click()
 
   def radio_button_RBC_Rings_clicked(self, **event_args):
     cmpt = InfoForm()
     self.add_component_2_tab_control(cmpt)
-    cmpt.my_string = 'RBC Rings'
+    cmpt.my_string = 'Anillos de glóbulos rojos'
     cmpt.button_apariencia_click()
 
   def radio_button_Keratocytes_clicked(self, **event_args):
     cmpt = InfoForm()
     self.add_component_2_tab_control(cmpt)
-    cmpt.my_string = 'Keratocytes'
+    cmpt.my_string = 'Queratocitos'
     cmpt.button_apariencia_click()
 
   def radio_button_Echinocytes_clicked(self, **event_args):
     cmpt = InfoForm()
     self.add_component_2_tab_control(cmpt)
-    cmpt.my_string = 'Echinocytes'
+    cmpt.my_string = 'Equinocitos'
     cmpt.button_apariencia_click()
 
   def radio_button_Anisopoikilocytosis_clicked(self, **event_args):
     cmpt = InfoForm()
     self.add_component_2_tab_control(cmpt)
-    cmpt.my_string = 'Anisopoikilocytosis'
+    cmpt.my_string = 'Anisopoiquilocitosis'
     cmpt.button_apariencia_click()
 
   def radio_button_Elliptocytes_clicked(self, **event_args):
     cmpt = InfoForm()
     self.add_component_2_tab_control(cmpt)
-    cmpt.my_string = 'Elliptocytes'
+    cmpt.my_string = 'Eliptocitos'
     cmpt.button_apariencia_click()
 
   def radio_button_Poikilocytes_clicked(self, **event_args):
     cmpt = InfoForm()
     self.add_component_2_tab_control(cmpt)
-    cmpt.my_string = 'Poikilocytes'
+    cmpt.my_string = 'Poiquilocitos'
     cmpt.button_apariencia_click()
 
   def radio_button_Rouleau_clicked(self, **event_args):

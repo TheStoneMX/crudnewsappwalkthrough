@@ -44,7 +44,7 @@ components:
 - event_bindings: {clicked: radio_button_Ghost_Cells_clicked}
   layout_properties: {grid_position: 'GKWWSH,AUJUSP'}
   name: radio_button_Ghost_Cells
-  properties: {align: left, background: '', bold: false, border: '', enabled: true, font: '', font_size: null, foreground: '', group_name: ERITOCYTES, italic: false, role: null, selected: false, spacing_above: small, spacing_below: small, text: Celulas Fantasmas, tooltip: '', underline: false, value: '', visible: true}
+  properties: {align: left, background: '', bold: false, border: '', enabled: true, font: '', font_size: null, foreground: '', group_name: ERITOCYTES, italic: false, role: null, selected: false, spacing_above: small, spacing_below: small, text: Células Fantasmas, tooltip: '', underline: false, value: '', visible: true}
   type: RadioButton
 - event_bindings: {clicked: radio_button_Keratocytes_clicked}
   layout_properties: {grid_position: 'GKWWSH,CPPYEI'}
@@ -84,12 +84,12 @@ components:
 - event_bindings: {clicked: radio_button_Stomatocytes_clicked}
   layout_properties: {grid_position: 'BKQSDZ,JILFPM'}
   name: radio_button_Stomatocytes
-  properties: {align: left, background: '', bold: false, border: '', enabled: true, font: '', font_size: null, foreground: '', group_name: ERITOCYTES, italic: false, role: null, selected: false, spacing_above: small, spacing_below: small, text: Stomatocytes, tooltip: '', underline: false, value: '', visible: true}
+  properties: {align: left, background: '', bold: false, border: '', enabled: true, font: '', font_size: null, foreground: '', group_name: ERITOCYTES, italic: false, role: null, selected: false, spacing_above: small, spacing_below: small, text: Estomatocitos, tooltip: '', underline: false, value: '', visible: true}
   type: RadioButton
 - event_bindings: {clicked: radio_button_Target_Cells_clicked}
   layout_properties: {grid_position: 'YJETHB,RZEQZA'}
   name: radio_button_Target_Cells
-  properties: {align: left, background: '', bold: false, border: '', enabled: true, font: '', font_size: null, foreground: '', group_name: ERITOCYTES, italic: false, role: null, selected: false, spacing_above: small, spacing_below: small, text: Células diana, tooltip: '', underline: false, value: '', visible: true}
+  properties: {align: left, background: '', bold: false, border: '', enabled: true, font: '', font_size: null, foreground: '', group_name: ERITOCYTES, italic: false, role: null, selected: false, spacing_above: small, spacing_below: small, text: Células Diana, tooltip: '', underline: false, value: '', visible: true}
   type: RadioButton
 - event_bindings: {clicked: radio_button_Spherocytes_clicked}
   layout_properties: {grid_position: 'YJETHB,KVFODD'}
@@ -104,7 +104,7 @@ components:
 - event_bindings: {clicked: radio_button_Single_Membrane_Protrusion_clicked}
   layout_properties: {grid_position: 'FRTUWC,RVIOKF'}
   name: radio_button_Single_Membrane_Protrusion
-  properties: {align: left, background: '', bold: false, border: '', enabled: true, font: '', font_size: null, foreground: '', group_name: ERITOCYTES, italic: false, role: null, selected: false, spacing_above: small, spacing_below: small, text: Protrusión de membrana, tooltip: '', underline: false, value: '', visible: true}
+  properties: {align: left, background: '', bold: false, border: '', enabled: true, font: '', font_size: null, foreground: '', group_name: ERITOCYTES, italic: false, role: null, selected: false, spacing_above: small, spacing_below: small, text: Protrusión de membrana única, tooltip: '', underline: false, value: '', visible: true}
   type: RadioButton
 - layout_properties:
     col_widths: {}
